@@ -8,7 +8,6 @@
 <files />
 <projects>
 <v>.\Braille_device.cydsn\Braille_device.cyprj</v>
-<v>.\Char_LCD_Horizontal_Bar_Graph01.cydsn\Char_LCD_Horizontal_Bar_Graph01.cyprj</v>
 </projects>
 <workspace_id v="79109121-d1e3-494d-a444-d1cc1f98a3b9" />
 <WriteAppVersionLastSavedWith v="4.4.0.80" />
