@@ -1,0 +1,6 @@
+D:/UCU_4th_year/diploma/refreshable_braille_device/RBD/Braille_device.cydsn/CortexM0/ARM_GCC_541/Debug/char_to_braille.o : D:/UCU_4th_year/diploma/refreshable_braille_device/RBD/Braille_device.cydsn/RBD_headers/char_to_braille.h D:/UCU_4th_year/diploma/refreshable_braille_device/RBD/Braille_device.cydsn/RBD_sources/char_to_braille.c 
+
+D:/UCU_4th_year/diploma/refreshable_braille_device/RBD/Braille_device.cydsn/RBD_headers/char_to_braille.h : 
+
+D:/UCU_4th_year/diploma/refreshable_braille_device/RBD/Braille_device.cydsn/RBD_sources/char_to_braille.c : 
+

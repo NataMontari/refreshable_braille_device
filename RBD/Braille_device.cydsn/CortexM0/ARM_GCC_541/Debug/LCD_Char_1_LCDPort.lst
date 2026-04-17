@@ -1,0 +1,1274 @@
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"LCD_Char_1_LCDPort.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.LCD_Char_1_LCDPort_SetDriveMode,"ax",%progbits
+  20              		.align	2
+  21              		.global	LCD_Char_1_LCDPort_SetDriveMode
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	LCD_Char_1_LCDPort_SetDriveMode, %function
+  25              	LCD_Char_1_LCDPort_SetDriveMode:
+  26              	.LFB0:
+  27              		.file 1 "Generated_Source\\PSoC4\\LCD_Char_1_LCDPort.c"
+   1:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * File Name: LCD_Char_1_LCDPort.c  
+   3:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * Version 2.20
+   4:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+   5:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * Description:
+   6:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+   8:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** ********************************************************************************
+   9:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  10:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  11:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  12:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * the software package with which this file was provided.
+  13:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *******************************************************************************/
+  14:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+  15:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** #include "cytypes.h"
+  16:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** #include "LCD_Char_1_LCDPort.h"
+  17:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+  18:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+  19:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** #if defined(LCD_Char_1_LCDPort__PC)
+  20:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     #define LCD_Char_1_LCDPort_SetP4PinDriveMode(shift, mode)  \
+  21:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     do { \
+  22:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****         LCD_Char_1_LCDPort_PC =   (LCD_Char_1_LCDPort_PC & \
+  23:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****                                 (uint32)(~(uint32)(LCD_Char_1_LCDPort_DRIVE_MODE_IND_MASK << \
+  24:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****                                 (LCD_Char_1_LCDPort_DRIVE_MODE_BITS * (shift))))) | \
+  25:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****                                 (uint32)((uint32)(mode) << \
+  26:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****                                 (LCD_Char_1_LCDPort_DRIVE_MODE_BITS * (shift))); \
+  27:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     } while (0)
+  28:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** #else
+  29:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     #if (CY_PSOC4_4200L)
+  30:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****         #define LCD_Char_1_LCDPort_SetP4PinDriveMode(shift, mode)  \
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 2
+
+
+  31:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****         do { \
+  32:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****             LCD_Char_1_LCDPort_USBIO_CTRL_REG = (LCD_Char_1_LCDPort_USBIO_CTRL_REG & \
+  33:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****                                     (uint32)(~(uint32)(LCD_Char_1_LCDPort_DRIVE_MODE_IND_MASK << \
+  34:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****                                     (LCD_Char_1_LCDPort_DRIVE_MODE_BITS * (shift))))) | \
+  35:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****                                     (uint32)((uint32)(mode) << \
+  36:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****                                     (LCD_Char_1_LCDPort_DRIVE_MODE_BITS * (shift))); \
+  37:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****         } while (0)
+  38:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     #endif
+  39:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** #endif
+  40:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****   
+  41:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+  42:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** #if defined(LCD_Char_1_LCDPort__PC) || (CY_PSOC4_4200L) 
+  43:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     /*******************************************************************************
+  44:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * Function Name: LCD_Char_1_LCDPort_SetDriveMode
+  45:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     ****************************************************************************//**
+  46:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *
+  47:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * \brief Sets the drive mode for each of the Pins component's pins.
+  48:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * 
+  49:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * <b>Note</b> This affects all pins in the Pins component instance. Use the
+  50:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * Per-Pin APIs if you wish to control individual pin's drive modes.
+  51:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *
+  52:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * <b>Note</b> USBIOs have limited drive functionality. Refer to the Drive Mode
+  53:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * parameter for more information.
+  54:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *
+  55:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * \param mode
+  56:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *  Mode for the selected signals. Valid options are documented in 
+  57:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *  \ref driveMode.
+  58:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *
+  59:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * \return
+  60:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *  None
+  61:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *
+  62:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * \sideeffect
+  63:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *  If you use read-modify-write operations that are not atomic, the ISR can
+  64:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *  cause corruption of this function. An ISR that interrupts this function 
+  65:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *  and performs writes to the Pins component Drive Mode registers can cause 
+  66:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *  corrupted port data. To avoid this issue, you should either use the Per-Pin
+  67:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *  APIs (primary method) or disable interrupts around this function.
+  68:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *
+  69:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     * \funcusage
+  70:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *  \snippet LCD_Char_1_LCDPort_SUT.c usage_LCD_Char_1_LCDPort_SetDriveMode
+  71:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     *******************************************************************************/
+  72:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     void LCD_Char_1_LCDPort_SetDriveMode(uint8 mode)
+  73:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     {
+  28              		.loc 1 73 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 8
+  31              		@ frame_needed = 1, uses_anonymous_args = 0
+  32 0000 80B5     		push	{r7, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 7, -8
+  35              		.cfi_offset 14, -4
+  36 0002 82B0     		sub	sp, sp, #8
+  37              		.cfi_def_cfa_offset 16
+  38 0004 00AF     		add	r7, sp, #0
+  39              		.cfi_def_cfa_register 7
+  40 0006 0200     		movs	r2, r0
+  41 0008 FB1D     		adds	r3, r7, #7
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 3
+
+
+  42 000a 1A70     		strb	r2, [r3]
+  74:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 		LCD_Char_1_LCDPort_SetP4PinDriveMode(LCD_Char_1_LCDPort__0__SHIFT, mode);
+  43              		.loc 1 74 0
+  44 000c 254B     		ldr	r3, .L2
+  45 000e 254A     		ldr	r2, .L2
+  46 0010 1268     		ldr	r2, [r2]
+  47 0012 0721     		movs	r1, #7
+  48 0014 8A43     		bics	r2, r1
+  49 0016 1100     		movs	r1, r2
+  50 0018 FA1D     		adds	r2, r7, #7
+  51 001a 1278     		ldrb	r2, [r2]
+  52 001c 0A43     		orrs	r2, r1
+  53 001e 1A60     		str	r2, [r3]
+  75:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 		LCD_Char_1_LCDPort_SetP4PinDriveMode(LCD_Char_1_LCDPort__1__SHIFT, mode);
+  54              		.loc 1 75 0
+  55 0020 204B     		ldr	r3, .L2
+  56 0022 204A     		ldr	r2, .L2
+  57 0024 1268     		ldr	r2, [r2]
+  58 0026 3821     		movs	r1, #56
+  59 0028 8A43     		bics	r2, r1
+  60 002a 1100     		movs	r1, r2
+  61 002c FA1D     		adds	r2, r7, #7
+  62 002e 1278     		ldrb	r2, [r2]
+  63 0030 D200     		lsls	r2, r2, #3
+  64 0032 0A43     		orrs	r2, r1
+  65 0034 1A60     		str	r2, [r3]
+  76:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 		LCD_Char_1_LCDPort_SetP4PinDriveMode(LCD_Char_1_LCDPort__2__SHIFT, mode);
+  66              		.loc 1 76 0
+  67 0036 1B4B     		ldr	r3, .L2
+  68 0038 1A4A     		ldr	r2, .L2
+  69 003a 1268     		ldr	r2, [r2]
+  70 003c 1A49     		ldr	r1, .L2+4
+  71 003e 1140     		ands	r1, r2
+  72 0040 FA1D     		adds	r2, r7, #7
+  73 0042 1278     		ldrb	r2, [r2]
+  74 0044 9201     		lsls	r2, r2, #6
+  75 0046 0A43     		orrs	r2, r1
+  76 0048 1A60     		str	r2, [r3]
+  77:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 		LCD_Char_1_LCDPort_SetP4PinDriveMode(LCD_Char_1_LCDPort__3__SHIFT, mode);
+  77              		.loc 1 77 0
+  78 004a 164B     		ldr	r3, .L2
+  79 004c 154A     		ldr	r2, .L2
+  80 004e 1268     		ldr	r2, [r2]
+  81 0050 1649     		ldr	r1, .L2+8
+  82 0052 1140     		ands	r1, r2
+  83 0054 FA1D     		adds	r2, r7, #7
+  84 0056 1278     		ldrb	r2, [r2]
+  85 0058 5202     		lsls	r2, r2, #9
+  86 005a 0A43     		orrs	r2, r1
+  87 005c 1A60     		str	r2, [r3]
+  78:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 		LCD_Char_1_LCDPort_SetP4PinDriveMode(LCD_Char_1_LCDPort__4__SHIFT, mode);
+  88              		.loc 1 78 0
+  89 005e 114B     		ldr	r3, .L2
+  90 0060 104A     		ldr	r2, .L2
+  91 0062 1268     		ldr	r2, [r2]
+  92 0064 1249     		ldr	r1, .L2+12
+  93 0066 1140     		ands	r1, r2
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 4
+
+
+  94 0068 FA1D     		adds	r2, r7, #7
+  95 006a 1278     		ldrb	r2, [r2]
+  96 006c 1203     		lsls	r2, r2, #12
+  97 006e 0A43     		orrs	r2, r1
+  98 0070 1A60     		str	r2, [r3]
+  79:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 		LCD_Char_1_LCDPort_SetP4PinDriveMode(LCD_Char_1_LCDPort__5__SHIFT, mode);
+  99              		.loc 1 79 0
+ 100 0072 0C4B     		ldr	r3, .L2
+ 101 0074 0B4A     		ldr	r2, .L2
+ 102 0076 1268     		ldr	r2, [r2]
+ 103 0078 0E49     		ldr	r1, .L2+16
+ 104 007a 1140     		ands	r1, r2
+ 105 007c FA1D     		adds	r2, r7, #7
+ 106 007e 1278     		ldrb	r2, [r2]
+ 107 0080 D203     		lsls	r2, r2, #15
+ 108 0082 0A43     		orrs	r2, r1
+ 109 0084 1A60     		str	r2, [r3]
+  80:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 		LCD_Char_1_LCDPort_SetP4PinDriveMode(LCD_Char_1_LCDPort__6__SHIFT, mode);
+ 110              		.loc 1 80 0
+ 111 0086 074B     		ldr	r3, .L2
+ 112 0088 064A     		ldr	r2, .L2
+ 113 008a 1268     		ldr	r2, [r2]
+ 114 008c 0A49     		ldr	r1, .L2+20
+ 115 008e 1140     		ands	r1, r2
+ 116 0090 FA1D     		adds	r2, r7, #7
+ 117 0092 1278     		ldrb	r2, [r2]
+ 118 0094 9204     		lsls	r2, r2, #18
+ 119 0096 0A43     		orrs	r2, r1
+ 120 0098 1A60     		str	r2, [r3]
+  81:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     }
+ 121              		.loc 1 81 0
+ 122 009a C046     		nop
+ 123 009c BD46     		mov	sp, r7
+ 124 009e 02B0     		add	sp, sp, #8
+ 125              		@ sp needed
+ 126 00a0 80BD     		pop	{r7, pc}
+ 127              	.L3:
+ 128 00a2 C046     		.align	2
+ 129              	.L2:
+ 130 00a4 08020440 		.word	1074004488
+ 131 00a8 3FFEFFFF 		.word	-449
+ 132 00ac FFF1FFFF 		.word	-3585
+ 133 00b0 FF8FFFFF 		.word	-28673
+ 134 00b4 FF7FFCFF 		.word	-229377
+ 135 00b8 FFFFE3FF 		.word	-1835009
+ 136              		.cfi_endproc
+ 137              	.LFE0:
+ 138              		.size	LCD_Char_1_LCDPort_SetDriveMode, .-LCD_Char_1_LCDPort_SetDriveMode
+ 139              		.section	.text.LCD_Char_1_LCDPort_Write,"ax",%progbits
+ 140              		.align	2
+ 141              		.global	LCD_Char_1_LCDPort_Write
+ 142              		.code	16
+ 143              		.thumb_func
+ 144              		.type	LCD_Char_1_LCDPort_Write, %function
+ 145              	LCD_Char_1_LCDPort_Write:
+ 146              	.LFB1:
+  82:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** #endif
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 5
+
+
+  83:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+  84:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+  85:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** /*******************************************************************************
+  86:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * Function Name: LCD_Char_1_LCDPort_Write
+  87:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** ****************************************************************************//**
+  88:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+  89:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \brief Writes the value to the physical port (data output register), masking
+  90:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  and shifting the bits appropriately. 
+  91:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+  92:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * The data output register controls the signal applied to the physical pin in 
+  93:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * conjunction with the drive mode parameter. This function avoids changing 
+  94:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * other bits in the port by using the appropriate method (read-modify-write or
+  95:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * bit banding).
+  96:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+  97:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * <b>Note</b> This function should not be used on a hardware digital output pin 
+  98:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * as it is driven by the hardware signal attached to it.
+  99:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 100:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \param value
+ 101:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  Value to write to the component instance.
+ 102:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 103:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \return 
+ 104:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  None 
+ 105:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 106:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \sideeffect
+ 107:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  If you use read-modify-write operations that are not atomic; the Interrupt 
+ 108:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  Service Routines (ISR) can cause corruption of this function. An ISR that 
+ 109:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  interrupts this function and performs writes to the Pins component data 
+ 110:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  register can cause corrupted port data. To avoid this issue, you should 
+ 111:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
+ 112:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  this function.
+ 113:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 114:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \funcusage
+ 115:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  \snippet LCD_Char_1_LCDPort_SUT.c usage_LCD_Char_1_LCDPort_Write
+ 116:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *******************************************************************************/
+ 117:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** void LCD_Char_1_LCDPort_Write(uint8 value)
+ 118:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** {
+ 147              		.loc 1 118 0
+ 148              		.cfi_startproc
+ 149              		@ args = 0, pretend = 0, frame = 16
+ 150              		@ frame_needed = 1, uses_anonymous_args = 0
+ 151 0000 80B5     		push	{r7, lr}
+ 152              		.cfi_def_cfa_offset 8
+ 153              		.cfi_offset 7, -8
+ 154              		.cfi_offset 14, -4
+ 155 0002 84B0     		sub	sp, sp, #16
+ 156              		.cfi_def_cfa_offset 24
+ 157 0004 00AF     		add	r7, sp, #0
+ 158              		.cfi_def_cfa_register 7
+ 159 0006 0200     		movs	r2, r0
+ 160 0008 FB1D     		adds	r3, r7, #7
+ 161 000a 1A70     		strb	r2, [r3]
+ 119:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     uint8 drVal = (uint8)(LCD_Char_1_LCDPort_DR & (uint8)(~LCD_Char_1_LCDPort_MASK));
+ 162              		.loc 1 119 0
+ 163 000c 0E4B     		ldr	r3, .L5
+ 164 000e 1B68     		ldr	r3, [r3]
+ 165 0010 DAB2     		uxtb	r2, r3
+ 166 0012 0F23     		movs	r3, #15
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 6
+
+
+ 167 0014 FB18     		adds	r3, r7, r3
+ 168 0016 7F21     		movs	r1, #127
+ 169 0018 8A43     		bics	r2, r1
+ 170 001a 1A70     		strb	r2, [r3]
+ 120:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     drVal = (drVal | ((uint8)(value << LCD_Char_1_LCDPort_SHIFT) & LCD_Char_1_LCDPort_MASK));
+ 171              		.loc 1 120 0
+ 172 001c FB1D     		adds	r3, r7, #7
+ 173 001e 1B78     		ldrb	r3, [r3]
+ 174 0020 7F22     		movs	r2, #127
+ 175 0022 1340     		ands	r3, r2
+ 176 0024 D9B2     		uxtb	r1, r3
+ 177 0026 0F23     		movs	r3, #15
+ 178 0028 FB18     		adds	r3, r7, r3
+ 179 002a 0F22     		movs	r2, #15
+ 180 002c BA18     		adds	r2, r7, r2
+ 181 002e 1278     		ldrb	r2, [r2]
+ 182 0030 0A43     		orrs	r2, r1
+ 183 0032 1A70     		strb	r2, [r3]
+ 121:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     LCD_Char_1_LCDPort_DR = (uint32)drVal;
+ 184              		.loc 1 121 0
+ 185 0034 044B     		ldr	r3, .L5
+ 186 0036 0F22     		movs	r2, #15
+ 187 0038 BA18     		adds	r2, r7, r2
+ 188 003a 1278     		ldrb	r2, [r2]
+ 189 003c 1A60     		str	r2, [r3]
+ 122:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** }
+ 190              		.loc 1 122 0
+ 191 003e C046     		nop
+ 192 0040 BD46     		mov	sp, r7
+ 193 0042 04B0     		add	sp, sp, #16
+ 194              		@ sp needed
+ 195 0044 80BD     		pop	{r7, pc}
+ 196              	.L6:
+ 197 0046 C046     		.align	2
+ 198              	.L5:
+ 199 0048 00020440 		.word	1074004480
+ 200              		.cfi_endproc
+ 201              	.LFE1:
+ 202              		.size	LCD_Char_1_LCDPort_Write, .-LCD_Char_1_LCDPort_Write
+ 203              		.section	.text.LCD_Char_1_LCDPort_Read,"ax",%progbits
+ 204              		.align	2
+ 205              		.global	LCD_Char_1_LCDPort_Read
+ 206              		.code	16
+ 207              		.thumb_func
+ 208              		.type	LCD_Char_1_LCDPort_Read, %function
+ 209              	LCD_Char_1_LCDPort_Read:
+ 210              	.LFB2:
+ 123:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+ 124:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+ 125:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** /*******************************************************************************
+ 126:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * Function Name: LCD_Char_1_LCDPort_Read
+ 127:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** ****************************************************************************//**
+ 128:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 129:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \brief Reads the associated physical port (pin status register) and masks 
+ 130:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  the required bits according to the width and bit position of the component
+ 131:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  instance. 
+ 132:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 7
+
+
+ 133:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * The pin's status register returns the current logic level present on the 
+ 134:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * physical pin.
+ 135:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 136:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \return 
+ 137:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  The current value for the pins in the component as a right justified number.
+ 138:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 139:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \funcusage
+ 140:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  \snippet LCD_Char_1_LCDPort_SUT.c usage_LCD_Char_1_LCDPort_Read  
+ 141:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *******************************************************************************/
+ 142:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** uint8 LCD_Char_1_LCDPort_Read(void)
+ 143:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** {
+ 211              		.loc 1 143 0
+ 212              		.cfi_startproc
+ 213              		@ args = 0, pretend = 0, frame = 0
+ 214              		@ frame_needed = 1, uses_anonymous_args = 0
+ 215 0000 80B5     		push	{r7, lr}
+ 216              		.cfi_def_cfa_offset 8
+ 217              		.cfi_offset 7, -8
+ 218              		.cfi_offset 14, -4
+ 219 0002 00AF     		add	r7, sp, #0
+ 220              		.cfi_def_cfa_register 7
+ 144:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     return (uint8)((LCD_Char_1_LCDPort_PS & LCD_Char_1_LCDPort_MASK) >> LCD_Char_1_LCDPort_SHIFT);
+ 221              		.loc 1 144 0
+ 222 0004 044B     		ldr	r3, .L9
+ 223 0006 1B68     		ldr	r3, [r3]
+ 224 0008 DBB2     		uxtb	r3, r3
+ 225 000a 7F22     		movs	r2, #127
+ 226 000c 1340     		ands	r3, r2
+ 227 000e DBB2     		uxtb	r3, r3
+ 145:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** }
+ 228              		.loc 1 145 0
+ 229 0010 1800     		movs	r0, r3
+ 230 0012 BD46     		mov	sp, r7
+ 231              		@ sp needed
+ 232 0014 80BD     		pop	{r7, pc}
+ 233              	.L10:
+ 234 0016 C046     		.align	2
+ 235              	.L9:
+ 236 0018 04020440 		.word	1074004484
+ 237              		.cfi_endproc
+ 238              	.LFE2:
+ 239              		.size	LCD_Char_1_LCDPort_Read, .-LCD_Char_1_LCDPort_Read
+ 240              		.section	.text.LCD_Char_1_LCDPort_ReadDataReg,"ax",%progbits
+ 241              		.align	2
+ 242              		.global	LCD_Char_1_LCDPort_ReadDataReg
+ 243              		.code	16
+ 244              		.thumb_func
+ 245              		.type	LCD_Char_1_LCDPort_ReadDataReg, %function
+ 246              	LCD_Char_1_LCDPort_ReadDataReg:
+ 247              	.LFB3:
+ 146:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+ 147:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+ 148:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** /*******************************************************************************
+ 149:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * Function Name: LCD_Char_1_LCDPort_ReadDataReg
+ 150:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** ****************************************************************************//**
+ 151:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 152:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \brief Reads the associated physical port's data output register and masks 
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 8
+
+
+ 153:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  the correct bits according to the width and bit position of the component 
+ 154:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  instance. 
+ 155:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 156:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * The data output register controls the signal applied to the physical pin in 
+ 157:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * conjunction with the drive mode parameter. This is not the same as the 
+ 158:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * preferred LCD_Char_1_LCDPort_Read() API because the 
+ 159:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * LCD_Char_1_LCDPort_ReadDataReg() reads the data register instead of the status 
+ 160:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * register. For output pins this is a useful function to determine the value 
+ 161:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * just written to the pin.
+ 162:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 163:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \return 
+ 164:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  The current value of the data register masked and shifted into a right 
+ 165:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  justified number for the component instance.
+ 166:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 167:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \funcusage
+ 168:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  \snippet LCD_Char_1_LCDPort_SUT.c usage_LCD_Char_1_LCDPort_ReadDataReg 
+ 169:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *******************************************************************************/
+ 170:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** uint8 LCD_Char_1_LCDPort_ReadDataReg(void)
+ 171:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** {
+ 248              		.loc 1 171 0
+ 249              		.cfi_startproc
+ 250              		@ args = 0, pretend = 0, frame = 0
+ 251              		@ frame_needed = 1, uses_anonymous_args = 0
+ 252 0000 80B5     		push	{r7, lr}
+ 253              		.cfi_def_cfa_offset 8
+ 254              		.cfi_offset 7, -8
+ 255              		.cfi_offset 14, -4
+ 256 0002 00AF     		add	r7, sp, #0
+ 257              		.cfi_def_cfa_register 7
+ 172:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     return (uint8)((LCD_Char_1_LCDPort_DR & LCD_Char_1_LCDPort_MASK) >> LCD_Char_1_LCDPort_SHIFT);
+ 258              		.loc 1 172 0
+ 259 0004 044B     		ldr	r3, .L13
+ 260 0006 1B68     		ldr	r3, [r3]
+ 261 0008 DBB2     		uxtb	r3, r3
+ 262 000a 7F22     		movs	r2, #127
+ 263 000c 1340     		ands	r3, r2
+ 264 000e DBB2     		uxtb	r3, r3
+ 173:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** }
+ 265              		.loc 1 173 0
+ 266 0010 1800     		movs	r0, r3
+ 267 0012 BD46     		mov	sp, r7
+ 268              		@ sp needed
+ 269 0014 80BD     		pop	{r7, pc}
+ 270              	.L14:
+ 271 0016 C046     		.align	2
+ 272              	.L13:
+ 273 0018 00020440 		.word	1074004480
+ 274              		.cfi_endproc
+ 275              	.LFE3:
+ 276              		.size	LCD_Char_1_LCDPort_ReadDataReg, .-LCD_Char_1_LCDPort_ReadDataReg
+ 277              		.section	.text.LCD_Char_1_LCDPort_SetInterruptMode,"ax",%progbits
+ 278              		.align	2
+ 279              		.global	LCD_Char_1_LCDPort_SetInterruptMode
+ 280              		.code	16
+ 281              		.thumb_func
+ 282              		.type	LCD_Char_1_LCDPort_SetInterruptMode, %function
+ 283              	LCD_Char_1_LCDPort_SetInterruptMode:
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 9
+
+
+ 284              	.LFB4:
+ 174:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+ 175:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+ 176:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** /*******************************************************************************
+ 177:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * Function Name: LCD_Char_1_LCDPort_SetInterruptMode
+ 178:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** ****************************************************************************//**
+ 179:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 180:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \brief Configures the interrupt mode for each of the Pins component's
+ 181:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  pins. Alternatively you may set the interrupt mode for all the pins
+ 182:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  specified in the Pins component.
+ 183:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 184:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  <b>Note</b> The interrupt is port-wide and therefore any enabled pin
+ 185:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  interrupt may trigger it.
+ 186:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 187:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \param position
+ 188:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  The pin position as listed in the Pins component. You may OR these to be 
+ 189:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  able to configure the interrupt mode of multiple pins within a Pins 
+ 190:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  component. Or you may use LCD_Char_1_LCDPort_INTR_ALL to configure the
+ 191:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  interrupt mode of all the pins in the Pins component.       
+ 192:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  - LCD_Char_1_LCDPort_0_INTR       (First pin in the list)
+ 193:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  - LCD_Char_1_LCDPort_1_INTR       (Second pin in the list)
+ 194:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  - ...
+ 195:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  - LCD_Char_1_LCDPort_INTR_ALL     (All pins in Pins component)
+ 196:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 197:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \param mode
+ 198:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  Interrupt mode for the selected pins. Valid options are documented in
+ 199:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  \ref intrMode.
+ 200:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 201:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \return 
+ 202:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  None
+ 203:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  
+ 204:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \sideeffect
+ 205:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  It is recommended that the interrupt be disabled before calling this 
+ 206:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  function to avoid unintended interrupt requests. Note that the interrupt
+ 207:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  type is port wide, and therefore will trigger for any enabled pin on the 
+ 208:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  port.
+ 209:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 210:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \funcusage
+ 211:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  \snippet LCD_Char_1_LCDPort_SUT.c usage_LCD_Char_1_LCDPort_SetInterruptMode
+ 212:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *******************************************************************************/
+ 213:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** void LCD_Char_1_LCDPort_SetInterruptMode(uint16 position, uint16 mode)
+ 214:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** {
+ 285              		.loc 1 214 0
+ 286              		.cfi_startproc
+ 287              		@ args = 0, pretend = 0, frame = 16
+ 288              		@ frame_needed = 1, uses_anonymous_args = 0
+ 289 0000 80B5     		push	{r7, lr}
+ 290              		.cfi_def_cfa_offset 8
+ 291              		.cfi_offset 7, -8
+ 292              		.cfi_offset 14, -4
+ 293 0002 84B0     		sub	sp, sp, #16
+ 294              		.cfi_def_cfa_offset 24
+ 295 0004 00AF     		add	r7, sp, #0
+ 296              		.cfi_def_cfa_register 7
+ 297 0006 0200     		movs	r2, r0
+ 298 0008 BB1D     		adds	r3, r7, #6
+ 299 000a 1A80     		strh	r2, [r3]
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 10
+
+
+ 300 000c 3B1D     		adds	r3, r7, #4
+ 301 000e 0A1C     		adds	r2, r1, #0
+ 302 0010 1A80     		strh	r2, [r3]
+ 215:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     uint32 intrCfg;
+ 216:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     
+ 217:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     intrCfg =  LCD_Char_1_LCDPort_INTCFG & (uint32)(~(uint32)position);
+ 303              		.loc 1 217 0
+ 304 0012 0B4B     		ldr	r3, .L16
+ 305 0014 1B68     		ldr	r3, [r3]
+ 306 0016 BA1D     		adds	r2, r7, #6
+ 307 0018 1288     		ldrh	r2, [r2]
+ 308 001a D243     		mvns	r2, r2
+ 309 001c 1340     		ands	r3, r2
+ 310 001e FB60     		str	r3, [r7, #12]
+ 218:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     LCD_Char_1_LCDPort_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
+ 311              		.loc 1 218 0
+ 312 0020 074B     		ldr	r3, .L16
+ 313 0022 BA1D     		adds	r2, r7, #6
+ 314 0024 391D     		adds	r1, r7, #4
+ 315 0026 1288     		ldrh	r2, [r2]
+ 316 0028 0988     		ldrh	r1, [r1]
+ 317 002a 0A40     		ands	r2, r1
+ 318 002c 92B2     		uxth	r2, r2
+ 319 002e 1100     		movs	r1, r2
+ 320 0030 FA68     		ldr	r2, [r7, #12]
+ 321 0032 0A43     		orrs	r2, r1
+ 322 0034 1A60     		str	r2, [r3]
+ 219:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** }
+ 323              		.loc 1 219 0
+ 324 0036 C046     		nop
+ 325 0038 BD46     		mov	sp, r7
+ 326 003a 04B0     		add	sp, sp, #16
+ 327              		@ sp needed
+ 328 003c 80BD     		pop	{r7, pc}
+ 329              	.L17:
+ 330 003e C046     		.align	2
+ 331              	.L16:
+ 332 0040 0C020440 		.word	1074004492
+ 333              		.cfi_endproc
+ 334              	.LFE4:
+ 335              		.size	LCD_Char_1_LCDPort_SetInterruptMode, .-LCD_Char_1_LCDPort_SetInterruptMode
+ 336              		.section	.text.LCD_Char_1_LCDPort_ClearInterrupt,"ax",%progbits
+ 337              		.align	2
+ 338              		.global	LCD_Char_1_LCDPort_ClearInterrupt
+ 339              		.code	16
+ 340              		.thumb_func
+ 341              		.type	LCD_Char_1_LCDPort_ClearInterrupt, %function
+ 342              	LCD_Char_1_LCDPort_ClearInterrupt:
+ 343              	.LFB5:
+ 220:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+ 221:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 
+ 222:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** /*******************************************************************************
+ 223:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * Function Name: LCD_Char_1_LCDPort_ClearInterrupt
+ 224:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** ****************************************************************************//**
+ 225:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 226:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \brief Clears any active interrupts attached with the component and returns 
+ 227:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  the value of the interrupt status register allowing determination of which
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 11
+
+
+ 228:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  pins generated an interrupt event.
+ 229:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 230:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \return 
+ 231:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  The right-shifted current value of the interrupt status register. Each pin 
+ 232:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  has one bit set if it generated an interrupt event. For example, bit 0 is 
+ 233:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  for pin 0 and bit 1 is for pin 1 of the Pins component.
+ 234:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  
+ 235:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \sideeffect
+ 236:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  Clears all bits of the physical port's interrupt status register, not just
+ 237:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  those associated with the Pins component.
+ 238:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *
+ 239:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** * \funcusage
+ 240:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *  \snippet LCD_Char_1_LCDPort_SUT.c usage_LCD_Char_1_LCDPort_ClearInterrupt
+ 241:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** *******************************************************************************/
+ 242:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** uint8 LCD_Char_1_LCDPort_ClearInterrupt(void)
+ 243:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** {
+ 344              		.loc 1 243 0
+ 345              		.cfi_startproc
+ 346              		@ args = 0, pretend = 0, frame = 8
+ 347              		@ frame_needed = 1, uses_anonymous_args = 0
+ 348 0000 80B5     		push	{r7, lr}
+ 349              		.cfi_def_cfa_offset 8
+ 350              		.cfi_offset 7, -8
+ 351              		.cfi_offset 14, -4
+ 352 0002 82B0     		sub	sp, sp, #8
+ 353              		.cfi_def_cfa_offset 16
+ 354 0004 00AF     		add	r7, sp, #0
+ 355              		.cfi_def_cfa_register 7
+ 244:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 	uint8 maskedStatus = (uint8)(LCD_Char_1_LCDPort_INTSTAT & LCD_Char_1_LCDPort_MASK);
+ 356              		.loc 1 244 0
+ 357 0006 084B     		ldr	r3, .L20
+ 358 0008 1B68     		ldr	r3, [r3]
+ 359 000a DAB2     		uxtb	r2, r3
+ 360 000c FB1D     		adds	r3, r7, #7
+ 361 000e 7F21     		movs	r1, #127
+ 362 0010 0A40     		ands	r2, r1
+ 363 0012 1A70     		strb	r2, [r3]
+ 245:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** 	LCD_Char_1_LCDPort_INTSTAT = maskedStatus;
+ 364              		.loc 1 245 0
+ 365 0014 044B     		ldr	r3, .L20
+ 366 0016 FA1D     		adds	r2, r7, #7
+ 367 0018 1278     		ldrb	r2, [r2]
+ 368 001a 1A60     		str	r2, [r3]
+ 246:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c ****     return maskedStatus >> LCD_Char_1_LCDPort_SHIFT;
+ 369              		.loc 1 246 0
+ 370 001c FB1D     		adds	r3, r7, #7
+ 371 001e 1B78     		ldrb	r3, [r3]
+ 247:Generated_Source\PSoC4/LCD_Char_1_LCDPort.c **** }
+ 372              		.loc 1 247 0
+ 373 0020 1800     		movs	r0, r3
+ 374 0022 BD46     		mov	sp, r7
+ 375 0024 02B0     		add	sp, sp, #8
+ 376              		@ sp needed
+ 377 0026 80BD     		pop	{r7, pc}
+ 378              	.L21:
+ 379              		.align	2
+ 380              	.L20:
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 12
+
+
+ 381 0028 10020440 		.word	1074004496
+ 382              		.cfi_endproc
+ 383              	.LFE5:
+ 384              		.size	LCD_Char_1_LCDPort_ClearInterrupt, .-LCD_Char_1_LCDPort_ClearInterrupt
+ 385              		.text
+ 386              	.Letext0:
+ 387              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 388              		.section	.debug_info,"",%progbits
+ 389              	.Ldebug_info0:
+ 390 0000 96010000 		.4byte	0x196
+ 391 0004 0400     		.2byte	0x4
+ 392 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 393 000a 04       		.byte	0x4
+ 394 000b 01       		.uleb128 0x1
+ 395 000c BA000000 		.4byte	.LASF28
+ 396 0010 0C       		.byte	0xc
+ 397 0011 FE010000 		.4byte	.LASF29
+ 398 0015 2A020000 		.4byte	.LASF30
+ 399 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 400 001d 00000000 		.4byte	0
+ 401 0021 00000000 		.4byte	.Ldebug_line0
+ 402 0025 02       		.uleb128 0x2
+ 403 0026 01       		.byte	0x1
+ 404 0027 06       		.byte	0x6
+ 405 0028 8F020000 		.4byte	.LASF0
+ 406 002c 02       		.uleb128 0x2
+ 407 002d 01       		.byte	0x1
+ 408 002e 08       		.byte	0x8
+ 409 002f 81000000 		.4byte	.LASF1
+ 410 0033 02       		.uleb128 0x2
+ 411 0034 02       		.byte	0x2
+ 412 0035 05       		.byte	0x5
+ 413 0036 B7010000 		.4byte	.LASF2
+ 414 003a 02       		.uleb128 0x2
+ 415 003b 02       		.byte	0x2
+ 416 003c 07       		.byte	0x7
+ 417 003d A7000000 		.4byte	.LASF3
+ 418 0041 02       		.uleb128 0x2
+ 419 0042 04       		.byte	0x4
+ 420 0043 05       		.byte	0x5
+ 421 0044 4E000000 		.4byte	.LASF4
+ 422 0048 02       		.uleb128 0x2
+ 423 0049 04       		.byte	0x4
+ 424 004a 07       		.byte	0x7
+ 425 004b 95000000 		.4byte	.LASF5
+ 426 004f 02       		.uleb128 0x2
+ 427 0050 08       		.byte	0x8
+ 428 0051 05       		.byte	0x5
+ 429 0052 97010000 		.4byte	.LASF6
+ 430 0056 02       		.uleb128 0x2
+ 431 0057 08       		.byte	0x8
+ 432 0058 07       		.byte	0x7
+ 433 0059 7B010000 		.4byte	.LASF7
+ 434 005d 03       		.uleb128 0x3
+ 435 005e 04       		.byte	0x4
+ 436 005f 05       		.byte	0x5
+ 437 0060 696E7400 		.ascii	"int\000"
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 13
+
+
+ 438 0064 02       		.uleb128 0x2
+ 439 0065 04       		.byte	0x4
+ 440 0066 07       		.byte	0x7
+ 441 0067 6E010000 		.4byte	.LASF8
+ 442 006b 04       		.uleb128 0x4
+ 443 006c F8010000 		.4byte	.LASF9
+ 444 0070 02       		.byte	0x2
+ 445 0071 FB01     		.2byte	0x1fb
+ 446 0073 2C000000 		.4byte	0x2c
+ 447 0077 04       		.uleb128 0x4
+ 448 0078 4F010000 		.4byte	.LASF10
+ 449 007c 02       		.byte	0x2
+ 450 007d FC01     		.2byte	0x1fc
+ 451 007f 3A000000 		.4byte	0x3a
+ 452 0083 04       		.uleb128 0x4
+ 453 0084 5F010000 		.4byte	.LASF11
+ 454 0088 02       		.byte	0x2
+ 455 0089 FD01     		.2byte	0x1fd
+ 456 008b 48000000 		.4byte	0x48
+ 457 008f 02       		.uleb128 0x2
+ 458 0090 04       		.byte	0x4
+ 459 0091 04       		.byte	0x4
+ 460 0092 57000000 		.4byte	.LASF12
+ 461 0096 02       		.uleb128 0x2
+ 462 0097 08       		.byte	0x8
+ 463 0098 04       		.byte	0x4
+ 464 0099 48010000 		.4byte	.LASF13
+ 465 009d 02       		.uleb128 0x2
+ 466 009e 01       		.byte	0x1
+ 467 009f 08       		.byte	0x8
+ 468 00a0 B2010000 		.4byte	.LASF14
+ 469 00a4 04       		.uleb128 0x4
+ 470 00a5 00000000 		.4byte	.LASF15
+ 471 00a9 02       		.byte	0x2
+ 472 00aa A702     		.2byte	0x2a7
+ 473 00ac B0000000 		.4byte	0xb0
+ 474 00b0 05       		.uleb128 0x5
+ 475 00b1 83000000 		.4byte	0x83
+ 476 00b5 06       		.uleb128 0x6
+ 477 00b6 06000000 		.4byte	.LASF16
+ 478 00ba 01       		.byte	0x1
+ 479 00bb 48       		.byte	0x48
+ 480 00bc 00000000 		.4byte	.LFB0
+ 481 00c0 BC000000 		.4byte	.LFE0-.LFB0
+ 482 00c4 01       		.uleb128 0x1
+ 483 00c5 9C       		.byte	0x9c
+ 484 00c6 D9000000 		.4byte	0xd9
+ 485 00ca 07       		.uleb128 0x7
+ 486 00cb 92010000 		.4byte	.LASF18
+ 487 00cf 01       		.byte	0x1
+ 488 00d0 48       		.byte	0x48
+ 489 00d1 6B000000 		.4byte	0x6b
+ 490 00d5 02       		.uleb128 0x2
+ 491 00d6 91       		.byte	0x91
+ 492 00d7 77       		.sleb128 -9
+ 493 00d8 00       		.byte	0
+ 494 00d9 06       		.uleb128 0x6
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 14
+
+
+ 495 00da 76020000 		.4byte	.LASF17
+ 496 00de 01       		.byte	0x1
+ 497 00df 75       		.byte	0x75
+ 498 00e0 00000000 		.4byte	.LFB1
+ 499 00e4 4C000000 		.4byte	.LFE1-.LFB1
+ 500 00e8 01       		.uleb128 0x1
+ 501 00e9 9C       		.byte	0x9c
+ 502 00ea 0B010000 		.4byte	0x10b
+ 503 00ee 07       		.uleb128 0x7
+ 504 00ef 26000000 		.4byte	.LASF19
+ 505 00f3 01       		.byte	0x1
+ 506 00f4 75       		.byte	0x75
+ 507 00f5 6B000000 		.4byte	0x6b
+ 508 00f9 02       		.uleb128 0x2
+ 509 00fa 91       		.byte	0x91
+ 510 00fb 6F       		.sleb128 -17
+ 511 00fc 08       		.uleb128 0x8
+ 512 00fd 8F000000 		.4byte	.LASF24
+ 513 0101 01       		.byte	0x1
+ 514 0102 77       		.byte	0x77
+ 515 0103 6B000000 		.4byte	0x6b
+ 516 0107 02       		.uleb128 0x2
+ 517 0108 91       		.byte	0x91
+ 518 0109 77       		.sleb128 -9
+ 519 010a 00       		.byte	0
+ 520 010b 09       		.uleb128 0x9
+ 521 010c C1010000 		.4byte	.LASF20
+ 522 0110 01       		.byte	0x1
+ 523 0111 8E       		.byte	0x8e
+ 524 0112 6B000000 		.4byte	0x6b
+ 525 0116 00000000 		.4byte	.LFB2
+ 526 011a 1C000000 		.4byte	.LFE2-.LFB2
+ 527 011e 01       		.uleb128 0x1
+ 528 011f 9C       		.byte	0x9c
+ 529 0120 09       		.uleb128 0x9
+ 530 0121 D9010000 		.4byte	.LASF21
+ 531 0125 01       		.byte	0x1
+ 532 0126 AA       		.byte	0xaa
+ 533 0127 6B000000 		.4byte	0x6b
+ 534 012b 00000000 		.4byte	.LFB3
+ 535 012f 1C000000 		.4byte	.LFE3-.LFB3
+ 536 0133 01       		.uleb128 0x1
+ 537 0134 9C       		.byte	0x9c
+ 538 0135 06       		.uleb128 0x6
+ 539 0136 5D000000 		.4byte	.LASF22
+ 540 013a 01       		.byte	0x1
+ 541 013b D5       		.byte	0xd5
+ 542 013c 00000000 		.4byte	.LFB4
+ 543 0140 44000000 		.4byte	.LFE4-.LFB4
+ 544 0144 01       		.uleb128 0x1
+ 545 0145 9C       		.byte	0x9c
+ 546 0146 75010000 		.4byte	0x175
+ 547 014a 07       		.uleb128 0x7
+ 548 014b 56010000 		.4byte	.LASF23
+ 549 014f 01       		.byte	0x1
+ 550 0150 D5       		.byte	0xd5
+ 551 0151 77000000 		.4byte	0x77
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 15
+
+
+ 552 0155 02       		.uleb128 0x2
+ 553 0156 91       		.byte	0x91
+ 554 0157 6E       		.sleb128 -18
+ 555 0158 07       		.uleb128 0x7
+ 556 0159 92010000 		.4byte	.LASF18
+ 557 015d 01       		.byte	0x1
+ 558 015e D5       		.byte	0xd5
+ 559 015f 77000000 		.4byte	0x77
+ 560 0163 02       		.uleb128 0x2
+ 561 0164 91       		.byte	0x91
+ 562 0165 6C       		.sleb128 -20
+ 563 0166 08       		.uleb128 0x8
+ 564 0167 66010000 		.4byte	.LASF25
+ 565 016b 01       		.byte	0x1
+ 566 016c D7       		.byte	0xd7
+ 567 016d 83000000 		.4byte	0x83
+ 568 0171 02       		.uleb128 0x2
+ 569 0172 91       		.byte	0x91
+ 570 0173 74       		.sleb128 -12
+ 571 0174 00       		.byte	0
+ 572 0175 0A       		.uleb128 0xa
+ 573 0176 2C000000 		.4byte	.LASF26
+ 574 017a 01       		.byte	0x1
+ 575 017b F2       		.byte	0xf2
+ 576 017c 6B000000 		.4byte	0x6b
+ 577 0180 00000000 		.4byte	.LFB5
+ 578 0184 2C000000 		.4byte	.LFE5-.LFB5
+ 579 0188 01       		.uleb128 0x1
+ 580 0189 9C       		.byte	0x9c
+ 581 018a 08       		.uleb128 0x8
+ 582 018b A5010000 		.4byte	.LASF27
+ 583 018f 01       		.byte	0x1
+ 584 0190 F4       		.byte	0xf4
+ 585 0191 6B000000 		.4byte	0x6b
+ 586 0195 02       		.uleb128 0x2
+ 587 0196 91       		.byte	0x91
+ 588 0197 77       		.sleb128 -9
+ 589 0198 00       		.byte	0
+ 590 0199 00       		.byte	0
+ 591              		.section	.debug_abbrev,"",%progbits
+ 592              	.Ldebug_abbrev0:
+ 593 0000 01       		.uleb128 0x1
+ 594 0001 11       		.uleb128 0x11
+ 595 0002 01       		.byte	0x1
+ 596 0003 25       		.uleb128 0x25
+ 597 0004 0E       		.uleb128 0xe
+ 598 0005 13       		.uleb128 0x13
+ 599 0006 0B       		.uleb128 0xb
+ 600 0007 03       		.uleb128 0x3
+ 601 0008 0E       		.uleb128 0xe
+ 602 0009 1B       		.uleb128 0x1b
+ 603 000a 0E       		.uleb128 0xe
+ 604 000b 55       		.uleb128 0x55
+ 605 000c 17       		.uleb128 0x17
+ 606 000d 11       		.uleb128 0x11
+ 607 000e 01       		.uleb128 0x1
+ 608 000f 10       		.uleb128 0x10
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 16
+
+
+ 609 0010 17       		.uleb128 0x17
+ 610 0011 00       		.byte	0
+ 611 0012 00       		.byte	0
+ 612 0013 02       		.uleb128 0x2
+ 613 0014 24       		.uleb128 0x24
+ 614 0015 00       		.byte	0
+ 615 0016 0B       		.uleb128 0xb
+ 616 0017 0B       		.uleb128 0xb
+ 617 0018 3E       		.uleb128 0x3e
+ 618 0019 0B       		.uleb128 0xb
+ 619 001a 03       		.uleb128 0x3
+ 620 001b 0E       		.uleb128 0xe
+ 621 001c 00       		.byte	0
+ 622 001d 00       		.byte	0
+ 623 001e 03       		.uleb128 0x3
+ 624 001f 24       		.uleb128 0x24
+ 625 0020 00       		.byte	0
+ 626 0021 0B       		.uleb128 0xb
+ 627 0022 0B       		.uleb128 0xb
+ 628 0023 3E       		.uleb128 0x3e
+ 629 0024 0B       		.uleb128 0xb
+ 630 0025 03       		.uleb128 0x3
+ 631 0026 08       		.uleb128 0x8
+ 632 0027 00       		.byte	0
+ 633 0028 00       		.byte	0
+ 634 0029 04       		.uleb128 0x4
+ 635 002a 16       		.uleb128 0x16
+ 636 002b 00       		.byte	0
+ 637 002c 03       		.uleb128 0x3
+ 638 002d 0E       		.uleb128 0xe
+ 639 002e 3A       		.uleb128 0x3a
+ 640 002f 0B       		.uleb128 0xb
+ 641 0030 3B       		.uleb128 0x3b
+ 642 0031 05       		.uleb128 0x5
+ 643 0032 49       		.uleb128 0x49
+ 644 0033 13       		.uleb128 0x13
+ 645 0034 00       		.byte	0
+ 646 0035 00       		.byte	0
+ 647 0036 05       		.uleb128 0x5
+ 648 0037 35       		.uleb128 0x35
+ 649 0038 00       		.byte	0
+ 650 0039 49       		.uleb128 0x49
+ 651 003a 13       		.uleb128 0x13
+ 652 003b 00       		.byte	0
+ 653 003c 00       		.byte	0
+ 654 003d 06       		.uleb128 0x6
+ 655 003e 2E       		.uleb128 0x2e
+ 656 003f 01       		.byte	0x1
+ 657 0040 3F       		.uleb128 0x3f
+ 658 0041 19       		.uleb128 0x19
+ 659 0042 03       		.uleb128 0x3
+ 660 0043 0E       		.uleb128 0xe
+ 661 0044 3A       		.uleb128 0x3a
+ 662 0045 0B       		.uleb128 0xb
+ 663 0046 3B       		.uleb128 0x3b
+ 664 0047 0B       		.uleb128 0xb
+ 665 0048 27       		.uleb128 0x27
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 17
+
+
+ 666 0049 19       		.uleb128 0x19
+ 667 004a 11       		.uleb128 0x11
+ 668 004b 01       		.uleb128 0x1
+ 669 004c 12       		.uleb128 0x12
+ 670 004d 06       		.uleb128 0x6
+ 671 004e 40       		.uleb128 0x40
+ 672 004f 18       		.uleb128 0x18
+ 673 0050 9742     		.uleb128 0x2117
+ 674 0052 19       		.uleb128 0x19
+ 675 0053 01       		.uleb128 0x1
+ 676 0054 13       		.uleb128 0x13
+ 677 0055 00       		.byte	0
+ 678 0056 00       		.byte	0
+ 679 0057 07       		.uleb128 0x7
+ 680 0058 05       		.uleb128 0x5
+ 681 0059 00       		.byte	0
+ 682 005a 03       		.uleb128 0x3
+ 683 005b 0E       		.uleb128 0xe
+ 684 005c 3A       		.uleb128 0x3a
+ 685 005d 0B       		.uleb128 0xb
+ 686 005e 3B       		.uleb128 0x3b
+ 687 005f 0B       		.uleb128 0xb
+ 688 0060 49       		.uleb128 0x49
+ 689 0061 13       		.uleb128 0x13
+ 690 0062 02       		.uleb128 0x2
+ 691 0063 18       		.uleb128 0x18
+ 692 0064 00       		.byte	0
+ 693 0065 00       		.byte	0
+ 694 0066 08       		.uleb128 0x8
+ 695 0067 34       		.uleb128 0x34
+ 696 0068 00       		.byte	0
+ 697 0069 03       		.uleb128 0x3
+ 698 006a 0E       		.uleb128 0xe
+ 699 006b 3A       		.uleb128 0x3a
+ 700 006c 0B       		.uleb128 0xb
+ 701 006d 3B       		.uleb128 0x3b
+ 702 006e 0B       		.uleb128 0xb
+ 703 006f 49       		.uleb128 0x49
+ 704 0070 13       		.uleb128 0x13
+ 705 0071 02       		.uleb128 0x2
+ 706 0072 18       		.uleb128 0x18
+ 707 0073 00       		.byte	0
+ 708 0074 00       		.byte	0
+ 709 0075 09       		.uleb128 0x9
+ 710 0076 2E       		.uleb128 0x2e
+ 711 0077 00       		.byte	0
+ 712 0078 3F       		.uleb128 0x3f
+ 713 0079 19       		.uleb128 0x19
+ 714 007a 03       		.uleb128 0x3
+ 715 007b 0E       		.uleb128 0xe
+ 716 007c 3A       		.uleb128 0x3a
+ 717 007d 0B       		.uleb128 0xb
+ 718 007e 3B       		.uleb128 0x3b
+ 719 007f 0B       		.uleb128 0xb
+ 720 0080 27       		.uleb128 0x27
+ 721 0081 19       		.uleb128 0x19
+ 722 0082 49       		.uleb128 0x49
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 18
+
+
+ 723 0083 13       		.uleb128 0x13
+ 724 0084 11       		.uleb128 0x11
+ 725 0085 01       		.uleb128 0x1
+ 726 0086 12       		.uleb128 0x12
+ 727 0087 06       		.uleb128 0x6
+ 728 0088 40       		.uleb128 0x40
+ 729 0089 18       		.uleb128 0x18
+ 730 008a 9742     		.uleb128 0x2117
+ 731 008c 19       		.uleb128 0x19
+ 732 008d 00       		.byte	0
+ 733 008e 00       		.byte	0
+ 734 008f 0A       		.uleb128 0xa
+ 735 0090 2E       		.uleb128 0x2e
+ 736 0091 01       		.byte	0x1
+ 737 0092 3F       		.uleb128 0x3f
+ 738 0093 19       		.uleb128 0x19
+ 739 0094 03       		.uleb128 0x3
+ 740 0095 0E       		.uleb128 0xe
+ 741 0096 3A       		.uleb128 0x3a
+ 742 0097 0B       		.uleb128 0xb
+ 743 0098 3B       		.uleb128 0x3b
+ 744 0099 0B       		.uleb128 0xb
+ 745 009a 27       		.uleb128 0x27
+ 746 009b 19       		.uleb128 0x19
+ 747 009c 49       		.uleb128 0x49
+ 748 009d 13       		.uleb128 0x13
+ 749 009e 11       		.uleb128 0x11
+ 750 009f 01       		.uleb128 0x1
+ 751 00a0 12       		.uleb128 0x12
+ 752 00a1 06       		.uleb128 0x6
+ 753 00a2 40       		.uleb128 0x40
+ 754 00a3 18       		.uleb128 0x18
+ 755 00a4 9742     		.uleb128 0x2117
+ 756 00a6 19       		.uleb128 0x19
+ 757 00a7 00       		.byte	0
+ 758 00a8 00       		.byte	0
+ 759 00a9 00       		.byte	0
+ 760              		.section	.debug_aranges,"",%progbits
+ 761 0000 44000000 		.4byte	0x44
+ 762 0004 0200     		.2byte	0x2
+ 763 0006 00000000 		.4byte	.Ldebug_info0
+ 764 000a 04       		.byte	0x4
+ 765 000b 00       		.byte	0
+ 766 000c 0000     		.2byte	0
+ 767 000e 0000     		.2byte	0
+ 768 0010 00000000 		.4byte	.LFB0
+ 769 0014 BC000000 		.4byte	.LFE0-.LFB0
+ 770 0018 00000000 		.4byte	.LFB1
+ 771 001c 4C000000 		.4byte	.LFE1-.LFB1
+ 772 0020 00000000 		.4byte	.LFB2
+ 773 0024 1C000000 		.4byte	.LFE2-.LFB2
+ 774 0028 00000000 		.4byte	.LFB3
+ 775 002c 1C000000 		.4byte	.LFE3-.LFB3
+ 776 0030 00000000 		.4byte	.LFB4
+ 777 0034 44000000 		.4byte	.LFE4-.LFB4
+ 778 0038 00000000 		.4byte	.LFB5
+ 779 003c 2C000000 		.4byte	.LFE5-.LFB5
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 19
+
+
+ 780 0040 00000000 		.4byte	0
+ 781 0044 00000000 		.4byte	0
+ 782              		.section	.debug_ranges,"",%progbits
+ 783              	.Ldebug_ranges0:
+ 784 0000 00000000 		.4byte	.LFB0
+ 785 0004 BC000000 		.4byte	.LFE0
+ 786 0008 00000000 		.4byte	.LFB1
+ 787 000c 4C000000 		.4byte	.LFE1
+ 788 0010 00000000 		.4byte	.LFB2
+ 789 0014 1C000000 		.4byte	.LFE2
+ 790 0018 00000000 		.4byte	.LFB3
+ 791 001c 1C000000 		.4byte	.LFE3
+ 792 0020 00000000 		.4byte	.LFB4
+ 793 0024 44000000 		.4byte	.LFE4
+ 794 0028 00000000 		.4byte	.LFB5
+ 795 002c 2C000000 		.4byte	.LFE5
+ 796 0030 00000000 		.4byte	0
+ 797 0034 00000000 		.4byte	0
+ 798              		.section	.debug_line,"",%progbits
+ 799              	.Ldebug_line0:
+ 800 0000 CB000000 		.section	.debug_str,"MS",%progbits,1
+ 800      02004F00 
+ 800      00000201 
+ 800      FB0E0D00 
+ 800      01010101 
+ 801              	.LASF15:
+ 802 0000 72656733 		.ascii	"reg32\000"
+ 802      3200
+ 803              	.LASF16:
+ 804 0006 4C43445F 		.ascii	"LCD_Char_1_LCDPort_SetDriveMode\000"
+ 804      43686172 
+ 804      5F315F4C 
+ 804      4344506F 
+ 804      72745F53 
+ 805              	.LASF19:
+ 806 0026 76616C75 		.ascii	"value\000"
+ 806      6500
+ 807              	.LASF26:
+ 808 002c 4C43445F 		.ascii	"LCD_Char_1_LCDPort_ClearInterrupt\000"
+ 808      43686172 
+ 808      5F315F4C 
+ 808      4344506F 
+ 808      72745F43 
+ 809              	.LASF4:
+ 810 004e 6C6F6E67 		.ascii	"long int\000"
+ 810      20696E74 
+ 810      00
+ 811              	.LASF12:
+ 812 0057 666C6F61 		.ascii	"float\000"
+ 812      7400
+ 813              	.LASF22:
+ 814 005d 4C43445F 		.ascii	"LCD_Char_1_LCDPort_SetInterruptMode\000"
+ 814      43686172 
+ 814      5F315F4C 
+ 814      4344506F 
+ 814      72745F53 
+ 815              	.LASF1:
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 20
+
+
+ 816 0081 756E7369 		.ascii	"unsigned char\000"
+ 816      676E6564 
+ 816      20636861 
+ 816      7200
+ 817              	.LASF24:
+ 818 008f 64725661 		.ascii	"drVal\000"
+ 818      6C00
+ 819              	.LASF5:
+ 820 0095 6C6F6E67 		.ascii	"long unsigned int\000"
+ 820      20756E73 
+ 820      69676E65 
+ 820      6420696E 
+ 820      7400
+ 821              	.LASF3:
+ 822 00a7 73686F72 		.ascii	"short unsigned int\000"
+ 822      7420756E 
+ 822      7369676E 
+ 822      65642069 
+ 822      6E7400
+ 823              	.LASF28:
+ 824 00ba 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 824      43313120 
+ 824      352E342E 
+ 824      31203230 
+ 824      31363036 
+ 825 00ed 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 825      20726576 
+ 825      6973696F 
+ 825      6E203233 
+ 825      37373135 
+ 826 0120 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 826      66756E63 
+ 826      74696F6E 
+ 826      2D736563 
+ 826      74696F6E 
+ 827              	.LASF13:
+ 828 0148 646F7562 		.ascii	"double\000"
+ 828      6C6500
+ 829              	.LASF10:
+ 830 014f 75696E74 		.ascii	"uint16\000"
+ 830      313600
+ 831              	.LASF23:
+ 832 0156 706F7369 		.ascii	"position\000"
+ 832      74696F6E 
+ 832      00
+ 833              	.LASF11:
+ 834 015f 75696E74 		.ascii	"uint32\000"
+ 834      333200
+ 835              	.LASF25:
+ 836 0166 696E7472 		.ascii	"intrCfg\000"
+ 836      43666700 
+ 837              	.LASF8:
+ 838 016e 756E7369 		.ascii	"unsigned int\000"
+ 838      676E6564 
+ 838      20696E74 
+ 838      00
+ 839              	.LASF7:
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 21
+
+
+ 840 017b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 840      206C6F6E 
+ 840      6720756E 
+ 840      7369676E 
+ 840      65642069 
+ 841              	.LASF18:
+ 842 0192 6D6F6465 		.ascii	"mode\000"
+ 842      00
+ 843              	.LASF6:
+ 844 0197 6C6F6E67 		.ascii	"long long int\000"
+ 844      206C6F6E 
+ 844      6720696E 
+ 844      7400
+ 845              	.LASF27:
+ 846 01a5 6D61736B 		.ascii	"maskedStatus\000"
+ 846      65645374 
+ 846      61747573 
+ 846      00
+ 847              	.LASF14:
+ 848 01b2 63686172 		.ascii	"char\000"
+ 848      00
+ 849              	.LASF2:
+ 850 01b7 73686F72 		.ascii	"short int\000"
+ 850      7420696E 
+ 850      7400
+ 851              	.LASF20:
+ 852 01c1 4C43445F 		.ascii	"LCD_Char_1_LCDPort_Read\000"
+ 852      43686172 
+ 852      5F315F4C 
+ 852      4344506F 
+ 852      72745F52 
+ 853              	.LASF21:
+ 854 01d9 4C43445F 		.ascii	"LCD_Char_1_LCDPort_ReadDataReg\000"
+ 854      43686172 
+ 854      5F315F4C 
+ 854      4344506F 
+ 854      72745F52 
+ 855              	.LASF9:
+ 856 01f8 75696E74 		.ascii	"uint8\000"
+ 856      3800
+ 857              	.LASF29:
+ 858 01fe 47656E65 		.ascii	"Generated_Source\\PSoC4\\LCD_Char_1_LCDPort.c\000"
+ 858      72617465 
+ 858      645F536F 
+ 858      75726365 
+ 858      5C50536F 
+ 859              	.LASF30:
+ 860 022a 443A5C55 		.ascii	"D:\\UCU_4th_year\\diploma\\refreshable_braille_devi"
+ 860      43555F34 
+ 860      74685F79 
+ 860      6561725C 
+ 860      6469706C 
+ 861 025a 63655C52 		.ascii	"ce\\RBD\\Braille_device.cydsn\000"
+ 861      42445C42 
+ 861      7261696C 
+ 861      6C655F64 
+ 861      65766963 
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccmfkZFs.s 			page 22
+
+
+ 862              	.LASF17:
+ 863 0276 4C43445F 		.ascii	"LCD_Char_1_LCDPort_Write\000"
+ 863      43686172 
+ 863      5F315F4C 
+ 863      4344506F 
+ 863      72745F57 
+ 864              	.LASF0:
+ 865 028f 7369676E 		.ascii	"signed char\000"
+ 865      65642063 
+ 865      68617200 
+ 866              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
