@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
   29:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYPACKED 
   30:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
   31:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYALIGNED __attribute__ ((aligned))
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 2
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 2
 
 
   32:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CY_CFG_UNUSED __attribute__ ((unused))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
   36              		.cfi_def_cfa_offset 16
   37 0004 00AF     		add	r7, sp, #0
   38              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 3
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 3
 
 
   39 0006 7860     		str	r0, [r7, #4]
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
   84              		.loc 1 85 0
   85 0018 C046     		nop
   86 001a BD46     		mov	sp, r7
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 4
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 4
 
 
   87 001c 04B0     		add	sp, sp, #16
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  134              		.type	ClockSetup, %function
  135              	ClockSetup:
  136              	.LFB5:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 5
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 5
 
 
   93:Generated_Source\PSoC4/cyfitter_cfg.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  147:Generated_Source\PSoC4/cyfitter_cfg.c **** #endif
  148:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  149:Generated_Source\PSoC4/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 6
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 6
 
 
  150:Generated_Source\PSoC4/cyfitter_cfg.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  182:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_CLK_ILO_CONFIG), 0x80000006u);
  159              		.loc 1 182 0
  160 001a 184B     		ldr	r3, .L5+4
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 7
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 7
 
 
  161 001c 184A     		ldr	r2, .L5+8
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  198 005c 1A60     		str	r2, [r3]
  200:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  201:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* CYDEV_CLK_SELECT Starting address: CYDEV_CLK_SELECT */
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 8
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 8
 
 
  202:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_CLK_SELECT), 0x00080000u);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  213:Generated_Source\PSoC4/cyfitter_cfg.c **** /*******************************************************************************
  214:Generated_Source\PSoC4/cyfitter_cfg.c **** * Function Name: AnalogSetDefault
  215:Generated_Source\PSoC4/cyfitter_cfg.c **** ********************************************************************************
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 9
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 9
 
 
  216:Generated_Source\PSoC4/cyfitter_cfg.c **** *
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  277              		.size	AnalogSetDefault, .-AnalogSetDefault
  278              		.section	.psocinit
  279              		.align	2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 10
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 10
 
 
  280              		.global	cyfitter_cfg
@@ -594,11 +594,11 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  303              		.loc 1 261 0
  304              		.thumb
  305              		.syntax unified
- 306 00b0 2F4B     		ldr	r3, .L13
+ 306 00b0 2E4B     		ldr	r3, .L13
  307 00b2 0022     		movs	r2, #0
  308 00b4 1A60     		str	r2, [r3]
  309              	.LBB2:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 11
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 11
 
 
  262:Generated_Source\PSoC4/cyfitter_cfg.c **** 
@@ -635,7 +635,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  321 00c4 5B00     		lsls	r3, r3, #1
  322 00c6 9B18     		adds	r3, r3, r2
  323 00c8 5B00     		lsls	r3, r3, #1
- 324 00ca 2A4A     		ldr	r2, .L13+4
+ 324 00ca 294A     		ldr	r2, .L13+4
  325 00cc 9B18     		adds	r3, r3, r2
  326 00ce 3B60     		str	r3, [r7]
  282:Generated_Source\PSoC4/cyfitter_cfg.c **** 			CYMEMZERO(ms->address, (size_t)(uint32)(ms->size));
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  343 00ee 1B02     		lsls	r3, r3, #8
  344 00f0 1343     		orrs	r3, r2
  345 00f2 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 12
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 12
 
 
  346 00f4 1900     		movs	r1, r3
@@ -683,7 +683,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  285:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* HSIOM Starting address: CYDEV_HSIOM_BASE */
  286:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_HSIOM_BASE), 0xEE000000u);
  361              		.loc 1 286 0 is_stmt 1
- 362 010c 1A4B     		ldr	r3, .L13+8
+ 362 010c 194B     		ldr	r3, .L13+8
  363 010e EE22     		movs	r2, #238
  364 0110 1206     		lsls	r2, r2, #24
  365 0112 1A60     		str	r2, [r3]
@@ -691,7 +691,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  288:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_0 Starting address: CYDEV_UDB_PA0_BASE */
  289:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA0_BASE), 0x00990000u);
  366              		.loc 1 289 0
- 367 0114 194B     		ldr	r3, .L13+12
+ 367 0114 184B     		ldr	r3, .L13+12
  368 0116 9922     		movs	r2, #153
  369 0118 1204     		lsls	r2, r2, #16
  370 011a 1A60     		str	r2, [r3]
@@ -699,7 +699,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  291:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_1 Starting address: CYDEV_UDB_PA1_BASE */
  292:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA1_BASE), 0x00990000u);
  371              		.loc 1 292 0
- 372 011c 184B     		ldr	r3, .L13+16
+ 372 011c 174B     		ldr	r3, .L13+16
  373 011e 9922     		movs	r2, #153
  374 0120 1204     		lsls	r2, r2, #16
  375 0122 1A60     		str	r2, [r3]
@@ -707,7 +707,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  294:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_2 Starting address: CYDEV_UDB_PA2_BASE */
  295:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA2_BASE), 0x00990000u);
  376              		.loc 1 295 0
- 377 0124 174B     		ldr	r3, .L13+20
+ 377 0124 164B     		ldr	r3, .L13+20
  378 0126 9922     		movs	r2, #153
  379 0128 1204     		lsls	r2, r2, #16
  380 012a 1A60     		str	r2, [r3]
@@ -715,10 +715,10 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  297:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_3 Starting address: CYDEV_UDB_PA3_BASE */
  298:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA3_BASE), 0x00990000u);
  381              		.loc 1 298 0
- 382 012c 164B     		ldr	r3, .L13+24
+ 382 012c 154B     		ldr	r3, .L13+24
  383 012e 9922     		movs	r2, #153
  384 0130 1204     		lsls	r2, r2, #16
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 13
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 13
 
 
  385 0132 1A60     		str	r2, [r3]
@@ -726,8 +726,8 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  300:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* Enable digital routing */
  301:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_XTND_REG8((void *)CYREG_UDB_UDBIF_BANK_CTL, (uint8)(CY_GET_XTND_REG8((void *)CYREG_UDB_UDB
  386              		.loc 1 301 0
- 387 0134 154A     		ldr	r2, .L13+28
- 388 0136 154B     		ldr	r3, .L13+28
+ 387 0134 144A     		ldr	r2, .L13+28
+ 388 0136 144B     		ldr	r3, .L13+28
  389 0138 1B78     		ldrb	r3, [r3]
  390 013a DBB2     		uxtb	r3, r3
  391 013c 0621     		movs	r1, #6
@@ -741,71 +741,71 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  305:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_0 Starting address: CYDEV_GPIO_PRT0_BASE */
  306:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_PC), 0x00DB0006u);
  396              		.loc 1 306 0
- 397 0144 124B     		ldr	r3, .L13+32
- 398 0146 134A     		ldr	r2, .L13+36
+ 397 0144 114B     		ldr	r3, .L13+32
+ 398 0146 124A     		ldr	r2, .L13+36
  399 0148 1A60     		str	r2, [r3]
  307:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  308:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_1 Starting address: CYDEV_GPIO_PRT1_BASE */
  309:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT1_PC), 0x00180D86u);
  400              		.loc 1 309 0
- 401 014a 134B     		ldr	r3, .L13+40
- 402 014c 134A     		ldr	r2, .L13+44
+ 401 014a 124B     		ldr	r3, .L13+40
+ 402 014c 124A     		ldr	r2, .L13+44
  403 014e 1A60     		str	r2, [r3]
  310:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  311:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_2 Starting address: CYDEV_GPIO_PRT2_BASE */
- 312:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT2_PC), 0x00180000u);
+ 312:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT2_PC), 0x001B6DB6u);
  404              		.loc 1 312 0
- 405 0150 134B     		ldr	r3, .L13+48
- 406 0152 C022     		movs	r2, #192
- 407 0154 5203     		lsls	r2, r2, #13
- 408 0156 1A60     		str	r2, [r3]
+ 405 0150 124B     		ldr	r3, .L13+48
+ 406 0152 134A     		ldr	r2, .L13+52
+ 407 0154 1A60     		str	r2, [r3]
  313:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  314:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_3 Starting address: CYDEV_GPIO_PRT3_BASE */
- 315:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC), 0x00DB6DB6u);
- 409              		.loc 1 315 0
- 410 0158 124B     		ldr	r3, .L13+52
- 411 015a 134A     		ldr	r2, .L13+56
- 412 015c 1A60     		str	r2, [r3]
+ 315:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC), 0x00036DB6u);
+ 408              		.loc 1 315 0
+ 409 0156 134B     		ldr	r3, .L13+56
+ 410 0158 134A     		ldr	r2, .L13+60
+ 411 015a 1A60     		str	r2, [r3]
  316:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  317:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  318:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Setup clocks based on selections from Clock DWR */
  319:Generated_Source\PSoC4/cyfitter_cfg.c **** 	ClockSetup();
- 413              		.loc 1 319 0
- 414 015e FFF74FFF 		bl	ClockSetup
+ 412              		.loc 1 319 0
+ 413 015c FFF750FF 		bl	ClockSetup
  320:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  321:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Perform basic analog initialization to defaults */
  322:Generated_Source\PSoC4/cyfitter_cfg.c **** 	AnalogSetDefault();
- 415              		.loc 1 322 0
- 416 0162 FFF7FEFF 		bl	AnalogSetDefault
+ 414              		.loc 1 322 0
+ 415 0160 FFF7FEFF 		bl	AnalogSetDefault
  323:Generated_Source\PSoC4/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 14
-
-
  324:Generated_Source\PSoC4/cyfitter_cfg.c **** }
- 417              		.loc 1 324 0
- 418 0166 C046     		nop
- 419 0168 BD46     		mov	sp, r7
- 420 016a 02B0     		add	sp, sp, #8
- 421              		@ sp needed
- 422 016c 80BD     		pop	{r7, pc}
- 423              	.L14:
- 424 016e C046     		.align	2
- 425              	.L13:
- 426 0170 6CF02E40 		.word	1076818028
- 427 0174 00000000 		.word	cfg_memset_list.4893
- 428 0178 00000240 		.word	1073872896
- 429 017c 00500F40 		.word	1074745344
- 430 0180 10500F40 		.word	1074745360
- 431 0184 20500F40 		.word	1074745376
- 432 0188 30500F40 		.word	1074745392
- 433 018c 00700F40 		.word	1074753536
- 434 0190 08000440 		.word	1074003976
- 435 0194 0600DB00 		.word	14352390
- 436 0198 08010440 		.word	1074004232
- 437 019c 860D1800 		.word	1576326
- 438 01a0 08020440 		.word	1074004488
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 14
+
+
+ 416              		.loc 1 324 0
+ 417 0164 C046     		nop
+ 418 0166 BD46     		mov	sp, r7
+ 419 0168 02B0     		add	sp, sp, #8
+ 420              		@ sp needed
+ 421 016a 80BD     		pop	{r7, pc}
+ 422              	.L14:
+ 423              		.align	2
+ 424              	.L13:
+ 425 016c 6CF02E40 		.word	1076818028
+ 426 0170 00000000 		.word	cfg_memset_list.4893
+ 427 0174 00000240 		.word	1073872896
+ 428 0178 00500F40 		.word	1074745344
+ 429 017c 10500F40 		.word	1074745360
+ 430 0180 20500F40 		.word	1074745376
+ 431 0184 30500F40 		.word	1074745392
+ 432 0188 00700F40 		.word	1074753536
+ 433 018c 08000440 		.word	1074003976
+ 434 0190 0600DB00 		.word	14352390
+ 435 0194 08010440 		.word	1074004232
+ 436 0198 860D1800 		.word	1576326
+ 437 019c 08020440 		.word	1074004488
+ 438 01a0 B66D1B00 		.word	1797558
  439 01a4 08030440 		.word	1074004744
- 440 01a8 B66DDB00 		.word	14380470
+ 440 01a8 B66D0300 		.word	224694
  441              		.cfi_endproc
  442              	.LFE7:
  443              		.size	cyfitter_cfg, .-cyfitter_cfg
@@ -831,14 +831,14 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  463 000b 01       		.uleb128 0x1
  464 000c 83000000 		.4byte	.LASF30
  465 0010 0C       		.byte	0xc
- 466 0011 F2010000 		.4byte	.LASF31
- 467 0015 B5010000 		.4byte	.LASF32
+ 466 0011 0D020000 		.4byte	.LASF31
+ 467 0015 1F010000 		.4byte	.LASF32
  468 0019 00000000 		.4byte	.Ldebug_ranges0+0
  469 001d 00000000 		.4byte	0
  470 0021 00000000 		.4byte	.Ldebug_line0
  471 0025 02       		.uleb128 0x2
  472 0026 04       		.byte	0x4
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 15
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 15
 
 
  473 0027 05       		.byte	0x5
@@ -851,19 +851,19 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  480 0037 04       		.uleb128 0x4
  481 0038 04       		.byte	0x4
  482 0039 07       		.byte	0x7
- 483 003a 41010000 		.4byte	.LASF0
+ 483 003a 8D010000 		.4byte	.LASF0
  484 003e 04       		.uleb128 0x4
  485 003f 08       		.byte	0x8
  486 0040 05       		.byte	0x5
- 487 0041 83010000 		.4byte	.LASF1
+ 487 0041 CF010000 		.4byte	.LASF1
  488 0045 04       		.uleb128 0x4
  489 0046 08       		.byte	0x8
  490 0047 04       		.byte	0x4
- 491 0048 A9010000 		.4byte	.LASF2
+ 491 0048 F5010000 		.4byte	.LASF2
  492 004c 04       		.uleb128 0x4
  493 004d 01       		.byte	0x1
  494 004e 06       		.byte	0x6
- 495 004f E6010000 		.4byte	.LASF3
+ 495 004f 01020000 		.4byte	.LASF3
  496 0053 04       		.uleb128 0x4
  497 0054 01       		.byte	0x1
  498 0055 08       		.byte	0x8
@@ -871,7 +871,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  500 005a 04       		.uleb128 0x4
  501 005b 02       		.byte	0x2
  502 005c 05       		.byte	0x5
- 503 005d 96010000 		.4byte	.LASF5
+ 503 005d E2010000 		.4byte	.LASF5
  504 0061 04       		.uleb128 0x4
  505 0062 02       		.byte	0x2
  506 0063 07       		.byte	0x7
@@ -879,7 +879,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  508 0068 04       		.uleb128 0x4
  509 0069 04       		.byte	0x4
  510 006a 05       		.byte	0x5
- 511 006b A0010000 		.4byte	.LASF7
+ 511 006b EC010000 		.4byte	.LASF7
  512 006f 04       		.uleb128 0x4
  513 0070 04       		.byte	0x4
  514 0071 07       		.byte	0x7
@@ -887,18 +887,18 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  516 0076 04       		.uleb128 0x4
  517 0077 08       		.byte	0x8
  518 0078 07       		.byte	0x7
- 519 0079 56010000 		.4byte	.LASF9
+ 519 0079 A2010000 		.4byte	.LASF9
  520 007d 04       		.uleb128 0x4
  521 007e 04       		.byte	0x4
  522 007f 07       		.byte	0x7
- 523 0080 7A010000 		.4byte	.LASF10
+ 523 0080 C6010000 		.4byte	.LASF10
  524 0084 05       		.uleb128 0x5
  525 0085 04       		.byte	0x4
  526 0086 04       		.uleb128 0x4
  527 0087 01       		.byte	0x1
  528 0088 08       		.byte	0x8
- 529 0089 91010000 		.4byte	.LASF11
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 16
+ 529 0089 DD010000 		.4byte	.LASF11
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 16
 
 
  530 008d 06       		.uleb128 0x6
@@ -907,12 +907,12 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  533 0093 FB01     		.2byte	0x1fb
  534 0095 53000000 		.4byte	0x53
  535 0099 06       		.uleb128 0x6
- 536 009a 33010000 		.4byte	.LASF14
+ 536 009a 7F010000 		.4byte	.LASF14
  537 009e 03       		.byte	0x3
  538 009f FC01     		.2byte	0x1fc
  539 00a1 61000000 		.4byte	0x61
  540 00a5 06       		.uleb128 0x6
- 541 00a6 3A010000 		.4byte	.LASF15
+ 541 00a6 86010000 		.4byte	.LASF15
  542 00aa 03       		.byte	0x3
  543 00ab FD01     		.2byte	0x1fd
  544 00ad 6F000000 		.4byte	0x6f
@@ -923,7 +923,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  549 00b8 04       		.uleb128 0x4
  550 00b9 08       		.byte	0x8
  551 00ba 04       		.byte	0x4
- 552 00bb 1F010000 		.4byte	.LASF17
+ 552 00bb 6B010000 		.4byte	.LASF17
  553 00bf 06       		.uleb128 0x6
  554 00c0 5C000000 		.4byte	.LASF18
  555 00c4 03       		.byte	0x3
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  584 0102 09       		.uleb128 0x9
  585 0103 6E00     		.ascii	"n\000"
  586 0105 01       		.byte	0x1
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 17
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 17
 
 
  587 0106 4B       		.byte	0x4b
@@ -968,7 +968,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  591 010d 70       		.sleb128 -16
  592 010e 00       		.byte	0
  593 010f 08       		.uleb128 0x8
- 594 0110 28020000 		.4byte	.LASF21
+ 594 0110 43020000 		.4byte	.LASF21
  595 0114 01       		.byte	0x1
  596 0115 52       		.byte	0x52
  597 0116 00000000 		.4byte	.LFB3
@@ -1006,7 +1006,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  629 014f 53010000 		.4byte	0x153
  630 0153 0C       		.uleb128 0xc
  631 0154 08       		.uleb128 0x8
- 632 0155 18020000 		.4byte	.LASF23
+ 632 0155 33020000 		.4byte	.LASF23
  633 0159 01       		.byte	0x1
  634 015a 59       		.byte	0x59
  635 015b 00000000 		.4byte	.LFB4
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  641 016a 52000000 		.4byte	.LASF22
  642 016e 01       		.byte	0x1
  643 016f 59       		.byte	0x59
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 18
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 18
 
 
  644 0170 84000000 		.4byte	0x84
@@ -1059,7 +1059,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  679 01b2 01       		.uleb128 0x1
  680 01b3 9C       		.byte	0x9c
  681 01b4 0F       		.uleb128 0xf
- 682 01b5 26010000 		.4byte	.LASF33
+ 682 01b5 72010000 		.4byte	.LASF33
  683 01b9 01       		.byte	0x1
  684 01ba 0001     		.2byte	0x100
  685 01bc A8000000 		.4byte	.LFB7
@@ -1075,10 +1075,10 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  695 01d2 0901     		.2byte	0x109
  696 01d4 F3010000 		.4byte	0x1f3
  697 01d8 12       		.uleb128 0x12
- 698 01d9 4E010000 		.4byte	.LASF26
+ 698 01d9 9A010000 		.4byte	.LASF26
  699 01dd 01       		.byte	0x1
  700 01de 0A01     		.2byte	0x10a
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 19
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 19
 
 
  701 01e0 84000000 		.4byte	0x84
@@ -1091,7 +1091,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  708 01f1 04       		.byte	0x4
  709 01f2 00       		.byte	0
  710 01f3 06       		.uleb128 0x6
- 711 01f4 6D010000 		.4byte	.LASF28
+ 711 01f4 B9010000 		.4byte	.LASF28
  712 01f8 01       		.byte	0x1
  713 01f9 0C01     		.2byte	0x10c
  714 01fb CF010000 		.4byte	0x1cf
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  755 0251 0F020000 		.4byte	0x20f
  756 0255 00       		.byte	0
  757 0256 00       		.byte	0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 20
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 20
 
 
  758 0257 00       		.byte	0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  812 0032 03       		.uleb128 0x3
  813 0033 0E       		.uleb128 0xe
  814 0034 00       		.byte	0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 21
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 21
 
 
  815 0035 00       		.byte	0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  869 006c 03       		.uleb128 0x3
  870 006d 08       		.uleb128 0x8
  871 006e 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 22
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 22
 
 
  872 006f 0B       		.uleb128 0xb
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  926 00a5 18       		.uleb128 0x18
  927 00a6 9642     		.uleb128 0x2116
  928 00a8 19       		.uleb128 0x19
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 23
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 23
 
 
  929 00a9 00       		.byte	0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  983 00e1 00       		.byte	0
  984 00e2 11       		.uleb128 0x11
  985 00e3 13       		.uleb128 0x13
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 24
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 24
 
 
  986 00e4 01       		.byte	0x1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  1040 011a 03       		.uleb128 0x3
  1041 011b 0E       		.uleb128 0xe
  1042 011c 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 25
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 25
 
 
  1043 011d 0B       		.uleb128 0xb
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  1097 0014 20000000 		.4byte	.LFE4
  1098 0018 00000000 		.4byte	.LFB5
  1099 001c A8000000 		.4byte	.LFE5
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 26
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 26
 
 
  1100 0020 00000000 		.4byte	.LFB6
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  1130      20756E73 
  1130      69676E65 
  1130      6420696E 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 27
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 27
 
 
  1130      7400
@@ -1590,90 +1590,97 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 1
  1140      676E6564 
  1140      20636861 
  1140      7200
- 1141              	.LASF17:
- 1142 011f 646F7562 		.ascii	"double\000"
- 1142      6C6500
- 1143              	.LASF33:
- 1144 0126 63796669 		.ascii	"cyfitter_cfg\000"
- 1144      74746572 
- 1144      5F636667 
- 1144      00
- 1145              	.LASF14:
- 1146 0133 75696E74 		.ascii	"uint16\000"
- 1146      313600
- 1147              	.LASF15:
- 1148 013a 75696E74 		.ascii	"uint32\000"
- 1148      333200
- 1149              	.LASF0:
- 1150 0141 756E7369 		.ascii	"unsigned int\000"
- 1150      676E6564 
- 1150      20696E74 
- 1150      00
- 1151              	.LASF26:
- 1152 014e 61646472 		.ascii	"address\000"
- 1152      65737300 
- 1153              	.LASF9:
- 1154 0156 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1154      206C6F6E 
- 1154      6720756E 
- 1154      7369676E 
- 1154      65642069 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\cc1JNSfF.s 			page 28
+ 1141              	.LASF32:
+ 1142 011f 443A5C55 		.ascii	"D:\\UCU_4th_year\\diploma\\refreshable_braille_devi"
+ 1142      43555F34 
+ 1142      74685F79 
+ 1142      6561725C 
+ 1142      6469706C 
+ 1143 014f 63655C52 		.ascii	"ce\\RBD\\Braille_device.cydsn\000"
+ 1143      42445C42 
+ 1143      7261696C 
+ 1143      6C655F64 
+ 1143      65766963 
+ 1144              	.LASF17:
+ 1145 016b 646F7562 		.ascii	"double\000"
+ 1145      6C6500
+ 1146              	.LASF33:
+ 1147 0172 63796669 		.ascii	"cyfitter_cfg\000"
+ 1147      74746572 
+ 1147      5F636667 
+ 1147      00
+ 1148              	.LASF14:
+ 1149 017f 75696E74 		.ascii	"uint16\000"
+ 1149      313600
+ 1150              	.LASF15:
+ 1151 0186 75696E74 		.ascii	"uint32\000"
+ 1151      333200
+ 1152              	.LASF0:
+ 1153 018d 756E7369 		.ascii	"unsigned int\000"
+ 1153      676E6564 
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 28
 
 
- 1155              	.LASF28:
- 1156 016d 6366675F 		.ascii	"cfg_memset_t\000"
- 1156      6D656D73 
- 1156      65745F74 
- 1156      00
- 1157              	.LASF10:
- 1158 017a 73697A65 		.ascii	"sizetype\000"
- 1158      74797065 
- 1158      00
- 1159              	.LASF1:
- 1160 0183 6C6F6E67 		.ascii	"long long int\000"
- 1160      206C6F6E 
- 1160      6720696E 
- 1160      7400
- 1161              	.LASF11:
- 1162 0191 63686172 		.ascii	"char\000"
- 1162      00
- 1163              	.LASF5:
- 1164 0196 73686F72 		.ascii	"short int\000"
- 1164      7420696E 
- 1164      7400
- 1165              	.LASF7:
- 1166 01a0 6C6F6E67 		.ascii	"long int\000"
- 1166      20696E74 
- 1166      00
- 1167              	.LASF2:
- 1168 01a9 6C6F6E67 		.ascii	"long double\000"
- 1168      20646F75 
- 1168      626C6500 
- 1169              	.LASF32:
- 1170 01b5 443A5C55 		.ascii	"D:\\UCU_4th_year\\diploma\\RBD\\Braille_device.cyds"
- 1170      43555F34 
- 1170      74685F79 
- 1170      6561725C 
- 1170      6469706C 
- 1171 01e4 6E00     		.ascii	"n\000"
+ 1153      20696E74 
+ 1153      00
+ 1154              	.LASF26:
+ 1155 019a 61646472 		.ascii	"address\000"
+ 1155      65737300 
+ 1156              	.LASF9:
+ 1157 01a2 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1157      206C6F6E 
+ 1157      6720756E 
+ 1157      7369676E 
+ 1157      65642069 
+ 1158              	.LASF28:
+ 1159 01b9 6366675F 		.ascii	"cfg_memset_t\000"
+ 1159      6D656D73 
+ 1159      65745F74 
+ 1159      00
+ 1160              	.LASF10:
+ 1161 01c6 73697A65 		.ascii	"sizetype\000"
+ 1161      74797065 
+ 1161      00
+ 1162              	.LASF1:
+ 1163 01cf 6C6F6E67 		.ascii	"long long int\000"
+ 1163      206C6F6E 
+ 1163      6720696E 
+ 1163      7400
+ 1164              	.LASF11:
+ 1165 01dd 63686172 		.ascii	"char\000"
+ 1165      00
+ 1166              	.LASF5:
+ 1167 01e2 73686F72 		.ascii	"short int\000"
+ 1167      7420696E 
+ 1167      7400
+ 1168              	.LASF7:
+ 1169 01ec 6C6F6E67 		.ascii	"long int\000"
+ 1169      20696E74 
+ 1169      00
+ 1170              	.LASF2:
+ 1171 01f5 6C6F6E67 		.ascii	"long double\000"
+ 1171      20646F75 
+ 1171      626C6500 
  1172              	.LASF3:
- 1173 01e6 7369676E 		.ascii	"signed char\000"
+ 1173 0201 7369676E 		.ascii	"signed char\000"
  1173      65642063 
  1173      68617200 
  1174              	.LASF31:
- 1175 01f2 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyfitter_cfg.c\000"
+ 1175 020d 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyfitter_cfg.c\000"
  1175      72617465 
  1175      645F536F 
  1175      75726365 
  1175      5C50536F 
  1176              	.LASF23:
- 1177 0218 4359434F 		.ascii	"CYCONFIGCPYCODE\000"
+ 1177 0233 4359434F 		.ascii	"CYCONFIGCPYCODE\000"
  1177      4E464947 
  1177      43505943 
  1177      4F444500 
  1178              	.LASF21:
- 1179 0228 4359434F 		.ascii	"CYCONFIGCPY\000"
+ 1179 0243 4359434F 		.ascii	"CYCONFIGCPY\000"
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccxoNGDF.s 			page 29
+
+
  1179      4E464947 
  1179      43505900 
  1180              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

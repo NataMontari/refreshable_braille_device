@@ -18,8 +18,16 @@
         uint8_t left;
         uint8_t right;
     } BrailleCell;
-    
+        
     extern const BrailleCell char_to_braille[128];
+    
+    typedef struct{
+        uint8_t glyphs[8];
+    } LCD_Braille_Cell;
+    
+    extern const LCD_Braille_Cell dots[8];
+    
+    void text_to_lcd_braille(char ch, uint8_t* braille_ch);
     
     
 #endif /* CHAR_TO_BRAILLE_H */ 
