@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|19a1c38d-6ff1-4505-ac12-920a8cd62af1
+C:\Users\semen\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|9e2f18f5-fdf1-4a22-b6a9-9ac075448469
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|66f1ba41-ca7b-4f53-a21d-ab4a8c5f4a11
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|1db97bd4-9c8f-47a1-bd0e-f8b366f669bc
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ea611c80-f70a-4fdb-b7fb-1b12a87659c4
+D:\UCU_4th_year\diploma\RBD\Char_LCD_Horizontal_Bar_Graph01.cydsn\Char_LCD_Horizontal_Bar_Graph01.cyprj|1c8ad979-0cac-4527-a6ed-56220793c2fe
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|22c344cf-b35c-4aea-8ce8-955db759904a
+D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn\Braille_device.cyprj|e7ec2f93-91f4-4ba8-9ed7-e003a9d4e618
