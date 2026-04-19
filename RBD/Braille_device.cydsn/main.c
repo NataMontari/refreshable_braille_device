@@ -14,40 +14,24 @@
 ********************************************************************************/
 
 #include <project.h>
+#include <motor_controller.h>
 
 int main()
 {
 
     CyGlobalIntEnable;  // Enable global interrupts if needed
+    
+    //MotorController Motors = {0,0};
+    /*MotorController_Init(&Motors);*/
 
     //CyDelay(100);
     // Initialize the LCD
-LCD_Char_1_Start();
-
-    // Wait until LCD is ready (poll internally)
-    //RED_LED_Write(1);  // Turn on LED (assuming active-high)
-    //LCD_Char_1_IsReady();
-
-    //CyDelay(100);
-    // Indicate LCD is ready using LED
-    //RED_LED_Write(0);  // Turn on LED (assuming active-high)
-    //BLUE_LED_Write(1);  // Turn on LED (assuming active-high)
-    // Or, if you have RGB LED: 
-    // RED_LED_Write(1);   // turn red on
-    // GREEN_LED_Write(0); // turn green off, etc.
-
-
-    // Print "Hello World" to the screen
-    //LCD_Char_1_PrintString("Hello World");
-
-    /*LCD_Char_1_Start();
-    LCD_Char_1_Init();
-    
-    LCD_Char_1_DisplayOn();
-    
-    LCD_Char_1_ClearDisplay();
-    LCD_Char_1_Position(0,0);
-    LCD_Char_1_PrintString("Hello World");*/
+    LCD_init();
+    LCD_init_braille();
+    LCD_print_string("Hello world!");
+    LCD_set_cursor(1, 0);
+    LCD_test_print_braille("hello world?");
+    //LCD_print_string("just why?");
     
     /*MOTOR_1_DIR_Write(0);
     
@@ -79,13 +63,13 @@ LCD_Char_1_Start();
     }*/
     
     
-    for(;;){
+    /*for(;;){
         LCD_Char_1_Position(0,0);
         LCD_Char_1_PrintString("Hello");
         CyDelay(1000);
         LCD_Char_1_ClearDisplay();
         CyDelay(1000);
-    }
+    }*/
 }
 
 /* [] END OF FILE */

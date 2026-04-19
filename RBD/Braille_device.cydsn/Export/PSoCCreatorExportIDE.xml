@@ -6,7 +6,7 @@
     <Toolchain Name="ARM GCC Generic" Selected="True">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="arm-none-eabi-as.exe" Options="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -alh=${OutputDir}/${CompileFile}.lst -g" />
-      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0" />
+      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0" />
       <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -O0 -ffat-lto-objects" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="Braille_device" Path="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" Version="6.0" Type="Normal">
+  <Project Name="Braille_device" Path="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" Version="6.0" Type="Normal">
     <CMSIS_SVD_File>Braille_device.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,14 +34,16 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC4\Cm0Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="STRICT" Path="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn">
+      <Folder BuildType="STRICT" Path="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn">
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
+          <File BuildType="BUILD" Toolchain="">LCD.h</File>
+          <File BuildType="BUILD" Toolchain="">LCD.c</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn\Generated_Source\PSoC4">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn">
+      <Folder BuildType="STRICT" Path="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Generated_Source\PSoC4">
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn">
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cymetadata.c</File>
@@ -118,45 +120,73 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\MOTOR_2_EN.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\MOTOR_2_EN_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\MOTOR_2_EN_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\RED_LED.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\RED_LED.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\RED_LED_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\RED_LED_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BLUE_LED.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BLUE_LED.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BLUE_LED_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BLUE_LED_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_E.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_E.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_E_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_E_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_RS.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_RS.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_RS_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_RS_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D4.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D4.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D4_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D4_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D5.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D5.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D5_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D5_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D7.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D7.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D7_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D7_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D6.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D6.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D6_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LCD_D6_PM.c</File>
+        </Files>
+      </Folder>
+      <Folder BuildType="STRICT" Path="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn">
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn">
+          <File BuildType="BUILD" Toolchain="">RBD_headers\char_to_braille.h</File>
+          <File BuildType="BUILD" Toolchain="">RBD_headers\motor_controller.h</File>
+        </Files>
+      </Folder>
+      <Folder BuildType="STRICT" Path="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn">
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn">
+          <File BuildType="BUILD" Toolchain="">RBD_sources\char_to_braille.c</File>
+          <File BuildType="BUILD" Toolchain="">RBD_sources\motor_controller.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="D:\UCU_4th_year\diploma\RBD\Braille_device.cydsn" />
+        <Files Root="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn" />
       </Folder>
     </Folders>
   </Project>
