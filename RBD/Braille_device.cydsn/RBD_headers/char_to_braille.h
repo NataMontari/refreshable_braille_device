@@ -19,7 +19,7 @@
         uint8_t right;
     } BrailleCell;
         
-    extern const BrailleCell char_to_braille[128];
+    extern const BrailleCell braille_table[128];
     
     typedef struct{
         uint8_t glyphs[8];

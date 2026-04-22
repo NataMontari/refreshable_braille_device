@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: RED_LED.h  
+* File Name: MOTORS_EN.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_RED_LED_ALIASES_H) /* Pins RED_LED_ALIASES_H */
-#define CY_PINS_RED_LED_ALIASES_H
+#if !defined(CY_PINS_MOTORS_EN_ALIASES_H) /* Pins MOTORS_EN_ALIASES_H */
+#define CY_PINS_MOTORS_EN_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,17 +26,17 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define RED_LED_0			(RED_LED__0__PC)
-#define RED_LED_0_PS		(RED_LED__0__PS)
-#define RED_LED_0_PC		(RED_LED__0__PC)
-#define RED_LED_0_DR		(RED_LED__0__DR)
-#define RED_LED_0_SHIFT	(RED_LED__0__SHIFT)
-#define RED_LED_0_INTR	((uint16)((uint16)0x0003u << (RED_LED__0__SHIFT*2u)))
+#define MOTORS_EN_0			(MOTORS_EN__0__PC)
+#define MOTORS_EN_0_PS		(MOTORS_EN__0__PS)
+#define MOTORS_EN_0_PC		(MOTORS_EN__0__PC)
+#define MOTORS_EN_0_DR		(MOTORS_EN__0__DR)
+#define MOTORS_EN_0_SHIFT	(MOTORS_EN__0__SHIFT)
+#define MOTORS_EN_0_INTR	((uint16)((uint16)0x0003u << (MOTORS_EN__0__SHIFT*2u)))
 
-#define RED_LED_INTR_ALL	 ((uint16)(RED_LED_0_INTR))
+#define MOTORS_EN_INTR_ALL	 ((uint16)(MOTORS_EN_0_INTR))
 
 
-#endif /* End Pins RED_LED_ALIASES_H */
+#endif /* End Pins MOTORS_EN_ALIASES_H */
 
 
 /* [] END OF FILE */

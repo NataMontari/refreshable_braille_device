@@ -153,10 +153,10 @@ void LCD_test_print_braille(char* data){
     for (int i = 0; data[i] != '\0'; i++)
     {
         cur_ch = data[i];
-        character = char_to_braille[cur_ch].left;
+        character = braille_table[cur_ch].left;
         // print left side
         LCD_send_char(character);
-        character = char_to_braille[cur_ch].right;
+        character = braille_table[cur_ch].right;
         LCD_send_char(character);
     }
 }

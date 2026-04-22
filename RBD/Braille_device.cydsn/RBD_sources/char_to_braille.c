@@ -13,7 +13,7 @@
 
     #include <char_to_braille.h>
 
-    const BrailleCell char_to_braille[128] = {
+    const BrailleCell braille_table[128] = {
     ['a'] = {5, 6},
     ['b'] = {4, 6},
     ['c'] = {5, 5},
@@ -55,7 +55,8 @@
     ['7'] = {4, 4},
     ['8'] = {4, 0},
     ['9'] = {0, 5},
-    ['0'] = {0, 4}
+    ['0'] = {0, 4},
+    ['!'] = {2, 0}
 };
     
     const LCD_Braille_Cell dots[8] = {
@@ -142,8 +143,8 @@
 };    
 
     void text_to_lcd_braille(char ch, uint8_t* braille_ch){        
-        uint8_t first_row = char_to_braille[ch].left;
-        uint8_t second_row = char_to_braille[ch].right;
+        uint8_t first_row = braille_table[ch].left;
+        uint8_t second_row = braille_table[ch].right;
         
         for (int i=0; i<8; i++){
             braille_ch[i] = dots[first_row].glyphs[i] | (dots[second_row].glyphs[i] >> 3);
