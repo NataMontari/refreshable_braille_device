@@ -70,39 +70,6 @@ void LCD_set_cursor(uint8_t line, uint8_t pos){
     
 }
 
-void LCD_print_braille(char* data, uint8_t row, uint8_t col){
-    if (data == NULL){
-        return;
-    }
-    for (int i = 0; data[i] != '\0'; i++)
-    {
-        uint8_t glyph[8];
-        text_to_lcd_braille(data[i], glyph);
-
-        uint8_t slot = i % 8;
-
-        // write glyph
-
-        LCD_send_command(0x40 + slot * 8);
-        
-
-        for (int j = 0; j < 8; j++){
-            /*if (j%2== 0){
-                LCD_send_command(0x06);
-            }else{
-                LCD_send_command(0x04);
-            }*/
-            LCD_send_char(glyph[j]);
-        }
-
-        // go back to display memory
-        LCD_set_cursor(row, col+i);
-
-        // print it
-        LCD_send_char(slot);
-    }
-}
-
 void LCD_braille_char(){
     
     uint8_t glyph[8] = {

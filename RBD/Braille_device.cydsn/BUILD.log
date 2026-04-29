@@ -1,22 +1,178 @@
---------------- Build Started: 04/29/2026 06:34:28 Project: Braille_device, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
-The code generation step is up to date.
+--------------- Build Started: 04/29/2026 06:46:07 Project: Braille_device, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\semen\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Braille_device.cyprj -d CY8C4248LQI-BL583 -s D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+HDL Generation...
+Synthesis...
+Tech Mapping...
+ADD: pft.M0040: information: The following 8 pin(s) will be assigned a location by the fitter: \LCD_Char_1:LCDPort(0)\, \LCD_Char_1:LCDPort(1)\, \LCD_Char_1:LCDPort(2)\, \LCD_Char_1:LCDPort(3)\, \LCD_Char_1:LCDPort(4)\, \LCD_Char_1:LCDPort(5)\, \LCD_Char_1:LCDPort(6)\, MOTOR_1_EN(0)
+Analog Placement...
+Analog Routing...
+Analog Code Generation...
+Digital Placement...
+Digital Routing...
+Bitstream Generation...
+Bitstream Verification...
+Static timing analysis...
+API Generation...
+Dependency Generation...
+Cleanup...
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
 main.c: In function 'main':
-main.c:29:5: warning: implicit declaration of function 'LCD_init' [-Wimplicit-function-declaration]
+main.c:25:5: warning: implicit declaration of function 'LCD_init' [-Wimplicit-function-declaration]
      LCD_init();
      ^
-main.c:30:5: warning: implicit declaration of function 'LCD_init_braille' [-Wimplicit-function-declaration]
+main.c:26:5: warning: implicit declaration of function 'LCD_init_braille' [-Wimplicit-function-declaration]
      LCD_init_braille();
      ^
-main.c:31:5: warning: implicit declaration of function 'LCD_print_string' [-Wimplicit-function-declaration]
+main.c:27:5: warning: implicit declaration of function 'LCD_print_string' [-Wimplicit-function-declaration]
      LCD_print_string("Hello, year 2026!");
      ^
-main.c:32:5: warning: implicit declaration of function 'LCD_set_cursor' [-Wimplicit-function-declaration]
+main.c:28:5: warning: implicit declaration of function 'LCD_set_cursor' [-Wimplicit-function-declaration]
      LCD_set_cursor(1, 0);
      ^
-main.c:33:5: warning: implicit declaration of function 'LCD_test_print_braille' [-Wimplicit-function-declaration]
+main.c:29:5: warning: implicit declaration of function 'LCD_test_print_braille' [-Wimplicit-function-declaration]
      LCD_test_print_braille("Hello, year 2026!");
      ^
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/char_to_braille.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c RBD_sources\char_to_braille.c -o .\CortexM0\ARM_GCC_541\Debug\char_to_braille.o
+RBD_sources\char_to_braille.c:89:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+RBD_sources\char_to_braille.c:89:5: note: (near initialization for 'dots[0]')
+RBD_sources\char_to_braille.c:99:5: warning: missing braces around initializer [-Wmissing-braces]
+     {   
+     ^
+RBD_sources\char_to_braille.c:99:5: note: (near initialization for 'dots[1]')
+RBD_sources\char_to_braille.c:109:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+RBD_sources\char_to_braille.c:109:5: note: (near initialization for 'dots[2]')
+RBD_sources\char_to_braille.c:119:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+RBD_sources\char_to_braille.c:119:5: note: (near initialization for 'dots[3]')
+RBD_sources\char_to_braille.c:129:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+RBD_sources\char_to_braille.c:129:5: note: (near initialization for 'dots[4]')
+RBD_sources\char_to_braille.c:139:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+RBD_sources\char_to_braille.c:139:5: note: (near initialization for 'dots[5]')
+RBD_sources\char_to_braille.c:149:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+RBD_sources\char_to_braille.c:149:5: note: (near initialization for 'dots[6]')
+RBD_sources\char_to_braille.c:159:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+RBD_sources\char_to_braille.c:159:5: note: (near initialization for 'dots[7]')
+RBD_sources\char_to_braille.c:88:38: warning: missing braces around initializer [-Wmissing-braces]
+     const LCD_Braille_Cell dots[8] = {
+                                      ^
+RBD_sources\char_to_braille.c:88:38: note: (near initialization for 'dots')
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/motor_controller.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c RBD_sources\motor_controller.c -o .\CortexM0\ARM_GCC_541\Debug\motor_controller.o
+RBD_sources\motor_controller.c: In function 'MotorController_SetSymbol':
+RBD_sources\motor_controller.c:43:9: warning: implicit declaration of function 'MOTORS_EN_Write' [-Wimplicit-function-declaration]
+         MOTORS_EN_Write(0);
+         ^
+RBD_sources\motor_controller.c: In function 'MotorController_SetNextSymbol':
+RBD_sources\motor_controller.c:65:9: warning: implicit declaration of function 'MOTOR_1_DIR_Write' [-Wimplicit-function-declaration]
+         MOTOR_1_DIR_Write(motor_dir);        
+         ^
+RBD_sources\motor_controller.c:69:13: warning: implicit declaration of function 'MOTOR_1_STEP_Write' [-Wimplicit-function-declaration]
+             MOTOR_1_STEP_Write(1);
+             ^
+RBD_sources\motor_controller.c:70:13: warning: implicit declaration of function 'CyDelayUs' [-Wimplicit-function-declaration]
+             CyDelayUs(500);
+             ^
+RBD_sources\motor_controller.c: In function 'MotorController_MoveToPos':
+RBD_sources\motor_controller.c:90:22: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+         if (position > 59 | position < 0){
+                      ^
+RBD_sources\motor_controller.c: In function 'MotorController_SetCell':
+RBD_sources\motor_controller.c:131:9: warning: implicit declaration of function 'MOTOR_2_DIR_Write' [-Wimplicit-function-declaration]
+         MOTOR_2_DIR_Write(motor_dir);
+         ^
+RBD_sources\motor_controller.c:133:21: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+         int steps = abs(diff) * MOTOR_STEP;
+                     ^
+RBD_sources\motor_controller.c:136:13: warning: implicit declaration of function 'MOTOR_2_STEP_Write' [-Wimplicit-function-declaration]
+             MOTOR_2_STEP_Write(1);
+             ^
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c RBD_sources\LCD.c -o .\CortexM0\ARM_GCC_541\Debug\LCD.o
+RBD_sources\LCD.c: In function 'LCD_pulse_enable':
+RBD_sources\LCD.c:16:5: warning: implicit declaration of function 'LCD_E_Write' [-Wimplicit-function-declaration]
+     LCD_E_Write(1);
+     ^
+RBD_sources\LCD.c:17:5: warning: implicit declaration of function 'CyDelayUs' [-Wimplicit-function-declaration]
+     CyDelayUs(500);
+     ^
+RBD_sources\LCD.c: In function 'LCD_send_nibble':
+RBD_sources\LCD.c:23:5: warning: implicit declaration of function 'LCD_D4_Write' [-Wimplicit-function-declaration]
+     LCD_D4_Write((data >> 0) & 0x01);
+     ^
+RBD_sources\LCD.c:24:5: warning: implicit declaration of function 'LCD_D5_Write' [-Wimplicit-function-declaration]
+     LCD_D5_Write((data >> 1) & 0x01);
+     ^
+RBD_sources\LCD.c:25:5: warning: implicit declaration of function 'LCD_D6_Write' [-Wimplicit-function-declaration]
+     LCD_D6_Write((data >> 2) & 0x01);
+     ^
+RBD_sources\LCD.c:26:5: warning: implicit declaration of function 'LCD_D7_Write' [-Wimplicit-function-declaration]
+     LCD_D7_Write((data >> 3) & 0x01);
+     ^
+RBD_sources\LCD.c: In function 'LCD_send_byte':
+RBD_sources\LCD.c:32:5: warning: implicit declaration of function 'LCD_RS_Write' [-Wimplicit-function-declaration]
+     LCD_RS_Write(mode);
+     ^
+RBD_sources\LCD.c: In function 'LCD_test_print_braille':
+RBD_sources\LCD.c:146:34: warning: array subscript has type 'char' [-Wchar-subscripts]
+         character = braille_table[cur_ch].left;
+                                  ^
+RBD_sources\LCD.c:149:34: warning: array subscript has type 'char' [-Wchar-subscripts]
+         character = braille_table[cur_ch].right;
+                                  ^
+RBD_sources\LCD.c: In function 'LCD_init':
+RBD_sources\LCD.c:155:5: warning: implicit declaration of function 'CyDelay' [-Wimplicit-function-declaration]
+     CyDelay(15); // Wait 15ms after power on
+     ^
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/cyfitter_cfg.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\cyfitter_cfg.c -o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/Cm0Start.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\Cm0Start.c -o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/CyFlash.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\CyFlash.c -o .\CortexM0\ARM_GCC_541\Debug\CyFlash.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/CyLib.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\CyLib.c -o .\CortexM0\ARM_GCC_541\Debug\CyLib.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/cyPm.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\cyPm.c -o .\CortexM0\ARM_GCC_541\Debug\cyPm.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/cyutils.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\cyutils.c -o .\CortexM0\ARM_GCC_541\Debug\cyutils.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/CyDMA.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\CyDMA.c -o .\CortexM0\ARM_GCC_541\Debug\CyDMA.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/CyLFClk.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\CyLFClk.c -o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/cy_em_eeprom.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\cy_em_eeprom.c -o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_Char_1.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_Char_1.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_Char_1_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_Char_1_PM.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_Char_1_LCDPort.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_Char_1_LCDPort.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1_LCDPort.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_Char_1_LCDPort_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_Char_1_LCDPort_PM.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1_LCDPort_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_1_DIR.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_1_DIR.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_DIR.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_1_DIR_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_1_DIR_PM.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_DIR_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_1_STEP.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_1_STEP.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_STEP.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_1_STEP_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_1_STEP_PM.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_STEP_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_1_EN.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_1_EN.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_EN.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_1_EN_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_1_EN_PM.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_EN_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_2_DIR.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_2_DIR.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_DIR.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_2_DIR_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_2_DIR_PM.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_DIR_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_2_STEP.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_2_STEP.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_STEP.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTOR_2_STEP_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTOR_2_STEP_PM.c -o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_STEP_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_E.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_E.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_E.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_E_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_E_PM.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_E_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_RS.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_RS.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_RS.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_RS_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_RS_PM.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_RS_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_D4.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_D4.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_D4.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_D4_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_D4_PM.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_D4_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_D5.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_D5.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_D5.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_D5_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_D5_PM.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_D5_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_D7.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_D7.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_D7.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_D7_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_D7_PM.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_D7_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_D6.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_D6.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_D6.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LCD_D6_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\LCD_D6_PM.c -o .\CortexM0\ARM_GCC_541\Debug\LCD_D6_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTORS_EN.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTORS_EN.c -o .\CortexM0\ARM_GCC_541\Debug\MOTORS_EN.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/MOTORS_EN_PM.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c Generated_Source\PSoC4\MOTORS_EN_PM.c -o .\CortexM0\ARM_GCC_541\Debug\MOTORS_EN_PM.o
+arm-none-eabi-as.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -alh=.\CortexM0\ARM_GCC_541\Debug/CyBootAsmGnu.lst -g -o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o Generated_Source\PSoC4\CyBootAsmGnu.s
 arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\Braille_device.a .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyDMA.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1.o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1_LCDPort.o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1_LCDPort_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_DIR.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_DIR_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_STEP.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_STEP_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_EN.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_EN_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_DIR.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_DIR_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_STEP.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_STEP_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_E.o .\CortexM0\ARM_GCC_541\Debug\LCD_E_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_RS.o .\CortexM0\ARM_GCC_541\Debug\LCD_RS_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_D4.o .\CortexM0\ARM_GCC_541\Debug\LCD_D4_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_D5.o .\CortexM0\ARM_GCC_541\Debug\LCD_D5_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_D7.o .\CortexM0\ARM_GCC_541\Debug\LCD_D7_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_D6.o .\CortexM0\ARM_GCC_541\Debug\LCD_D6_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTORS_EN.o .\CortexM0\ARM_GCC_541\Debug\MOTORS_EN_PM.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_541\Debug\Braille_device.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\CortexM0\ARM_GCC_541\Debug\Braille_device.elf .\CortexM0\ARM_GCC_541\Debug\main.o .\CortexM0\ARM_GCC_541\Debug\char_to_braille.o .\CortexM0\ARM_GCC_541\Debug\motor_controller.o .\CortexM0\ARM_GCC_541\Debug\LCD.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o .\CortexM0\ARM_GCC_541\Debug\Braille_device.a -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/Braille_device.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -O0 -ffat-lto-objects -Wl,--end-group
@@ -27,4 +183,4 @@ Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\CortexM0\ARM_GCC_541\Debug\Braille_device.elf
 Flash used: 5760 of 262144 bytes (2.2%).
 SRAM used: 1060 of 32768 bytes (3.2%). Stack: 512 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 04/29/2026 06:34:31 ---------------
+--------------- Build Succeeded: 04/29/2026 06:46:26 ---------------

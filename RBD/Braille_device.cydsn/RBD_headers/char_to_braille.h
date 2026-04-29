@@ -27,8 +27,7 @@
     
     extern const LCD_Braille_Cell dots[8];
     
-    void text_to_lcd_braille(char ch, uint8_t* braille_ch);
-    
+    void test_text_to_lcd_braille(uint8_t num, uint8_t* braille_ch);
     
 #endif /* CHAR_TO_BRAILLE_H */ 
 /* [] END OF FILE */

@@ -23,7 +23,6 @@
     void LCD_init(void);
     void LCD_print_string(char* data);
     void LCD_set_cursor(uint8_t line, uint8_t pos);
-    void LCD_print_braille(char* data, uint8_t row, uint8_t col);
     void LCD_clear(void);
     void LCD_send_char(char ch);
     void LCD_test_print_braille(char* data);
