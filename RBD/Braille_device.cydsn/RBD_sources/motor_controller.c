@@ -12,6 +12,8 @@
 
     #include <motor_controller.h>
     #include <math.h>
+    #include <ctype.h>
+    #include <stdbool.h>
     
     uint8_t rail_cell_pos[60] = {}; /*array to save current rail positions*/
     MotorController Motors = {0, 0};
@@ -69,17 +71,17 @@
         MotorController_SetCell(motor, first);
 
         // Move to second rail (relative move!)
-        CyDelay(1000);
+        //CyDelay(1000);
         MotorController_SetNextRail(motor, 1);
-        CyDelay(1000);
+        //CyDelay(1000);
 
         // Second rail
         MotorController_SetCell(motor, second);
-        CyDelay(1000);
+        //CyDelay(1000);
     
         // Move to next symbol start
         MotorController_SetNextSymbol(motor, 1);
-        CyDelay(1000);
+        //CyDelay(1000);
 
         MOTORS_EN_Write(1);
     } /*set a symbol, referencing the char to braille table. Uses set rail to set the position of two rails in a symbol*/
@@ -171,9 +173,26 @@
         if (data == NULL){
             return;
         }
+        
+        bool in_number_mode = false;
+        char symbol;
+        
         for (int i = 0; data[i] != '\0'; i++)
         {
-           MotorController_SetSymbol(motor, data[i]);
+            if (isdigit(data[i])){
+                if (in_number_mode == false){
+                    MotorController_SetSymbol(motor, 'N'); /*print out the num indicator*/
+                    in_number_mode = true;
+                }
+            } else{
+                in_number_mode = false;
+            }
+            symbol = data[i];
+            if (isupper(data[i])){
+                MotorController_SetSymbol(motor, 'A'); /*print out the capital indicator*/
+                symbol = tolower(data[i]);
+            }
+            MotorController_SetSymbol(motor, symbol);
         }
     }
 /* [] END OF FILE */

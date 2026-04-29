@@ -1,49 +1,22 @@
---------------- Build Started: 04/22/2026 03:08:38 Project: Braille_device, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 04/29/2026 06:34:28 Project: Braille_device, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/char_to_braille.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c RBD_sources\char_to_braille.c -o .\CortexM0\ARM_GCC_541\Debug\char_to_braille.o
-RBD_sources\char_to_braille.c:63:5: warning: missing braces around initializer [-Wmissing-braces]
-     {
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0 -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
+main.c: In function 'main':
+main.c:29:5: warning: implicit declaration of function 'LCD_init' [-Wimplicit-function-declaration]
+     LCD_init();
      ^
-RBD_sources\char_to_braille.c:63:5: note: (near initialization for 'dots[0]')
-RBD_sources\char_to_braille.c:73:5: warning: missing braces around initializer [-Wmissing-braces]
-     {   
+main.c:30:5: warning: implicit declaration of function 'LCD_init_braille' [-Wimplicit-function-declaration]
+     LCD_init_braille();
      ^
-RBD_sources\char_to_braille.c:73:5: note: (near initialization for 'dots[1]')
-RBD_sources\char_to_braille.c:83:5: warning: missing braces around initializer [-Wmissing-braces]
-     {
+main.c:31:5: warning: implicit declaration of function 'LCD_print_string' [-Wimplicit-function-declaration]
+     LCD_print_string("Hello, year 2026!");
      ^
-RBD_sources\char_to_braille.c:83:5: note: (near initialization for 'dots[2]')
-RBD_sources\char_to_braille.c:93:5: warning: missing braces around initializer [-Wmissing-braces]
-     {
+main.c:32:5: warning: implicit declaration of function 'LCD_set_cursor' [-Wimplicit-function-declaration]
+     LCD_set_cursor(1, 0);
      ^
-RBD_sources\char_to_braille.c:93:5: note: (near initialization for 'dots[3]')
-RBD_sources\char_to_braille.c:103:5: warning: missing braces around initializer [-Wmissing-braces]
-     {
+main.c:33:5: warning: implicit declaration of function 'LCD_test_print_braille' [-Wimplicit-function-declaration]
+     LCD_test_print_braille("Hello, year 2026!");
      ^
-RBD_sources\char_to_braille.c:103:5: note: (near initialization for 'dots[4]')
-RBD_sources\char_to_braille.c:113:5: warning: missing braces around initializer [-Wmissing-braces]
-     {
-     ^
-RBD_sources\char_to_braille.c:113:5: note: (near initialization for 'dots[5]')
-RBD_sources\char_to_braille.c:123:5: warning: missing braces around initializer [-Wmissing-braces]
-     {
-     ^
-RBD_sources\char_to_braille.c:123:5: note: (near initialization for 'dots[6]')
-RBD_sources\char_to_braille.c:133:5: warning: missing braces around initializer [-Wmissing-braces]
-     {
-     ^
-RBD_sources\char_to_braille.c:133:5: note: (near initialization for 'dots[7]')
-RBD_sources\char_to_braille.c:62:38: warning: missing braces around initializer [-Wmissing-braces]
-     const LCD_Braille_Cell dots[8] = {
-                                      ^
-RBD_sources\char_to_braille.c:62:38: note: (near initialization for 'dots')
-RBD_sources\char_to_braille.c: In function 'text_to_lcd_braille':
-RBD_sources\char_to_braille.c:146:42: warning: array subscript has type 'char' [-Wchar-subscripts]
-         uint8_t first_row = braille_table[ch].left;
-                                          ^
-RBD_sources\char_to_braille.c:147:43: warning: array subscript has type 'char' [-Wchar-subscripts]
-         uint8_t second_row = braille_table[ch].right;
-                                           ^
 arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\Braille_device.a .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyDMA.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1.o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1_LCDPort.o .\CortexM0\ARM_GCC_541\Debug\LCD_Char_1_LCDPort_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_DIR.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_DIR_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_STEP.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_STEP_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_EN.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_1_EN_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_DIR.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_DIR_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_STEP.o .\CortexM0\ARM_GCC_541\Debug\MOTOR_2_STEP_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_E.o .\CortexM0\ARM_GCC_541\Debug\LCD_E_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_RS.o .\CortexM0\ARM_GCC_541\Debug\LCD_RS_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_D4.o .\CortexM0\ARM_GCC_541\Debug\LCD_D4_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_D5.o .\CortexM0\ARM_GCC_541\Debug\LCD_D5_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_D7.o .\CortexM0\ARM_GCC_541\Debug\LCD_D7_PM.o .\CortexM0\ARM_GCC_541\Debug\LCD_D6.o .\CortexM0\ARM_GCC_541\Debug\LCD_D6_PM.o .\CortexM0\ARM_GCC_541\Debug\MOTORS_EN.o .\CortexM0\ARM_GCC_541\Debug\MOTORS_EN_PM.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_541\Debug\Braille_device.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\CortexM0\ARM_GCC_541\Debug\Braille_device.elf .\CortexM0\ARM_GCC_541\Debug\main.o .\CortexM0\ARM_GCC_541\Debug\char_to_braille.o .\CortexM0\ARM_GCC_541\Debug\motor_controller.o .\CortexM0\ARM_GCC_541\Debug\LCD.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o .\CortexM0\ARM_GCC_541\Debug\Braille_device.a -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/Braille_device.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -O0 -ffat-lto-objects -Wl,--end-group
@@ -52,6 +25,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\CortexM0\ARM_GCC_541\Debug\Braille_device.elf
-Flash used: 5120 of 262144 bytes (2.0%).
+Flash used: 5760 of 262144 bytes (2.2%).
 SRAM used: 1060 of 32768 bytes (3.2%). Stack: 512 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 04/22/2026 03:08:40 ---------------
+--------------- Build Succeeded: 04/29/2026 06:34:31 ---------------

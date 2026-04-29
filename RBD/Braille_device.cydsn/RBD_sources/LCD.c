@@ -148,11 +148,34 @@ void LCD_test_print_braille(char* data){
     }
     char cur_ch;
     uint8_t character = 0;
-
+    
+    bool in_number_mode = false;
     
     for (int i = 0; data[i] != '\0'; i++)
     {
         cur_ch = data[i];
+        if (isdigit(data[i]))
+        {
+            if (!in_number_mode)
+            {
+                LCD_send_char(braille_table['N'].left); /*print number indicator*/
+                LCD_send_char(braille_table['N'].right);
+                in_number_mode = true;
+            }
+        }
+        else
+        {
+            in_number_mode = false;
+        }
+        
+         if (isupper(data[i]))
+        {
+            LCD_send_char(braille_table['A'].left);
+            LCD_send_char(braille_table['A'].right);
+
+            cur_ch = tolower(data[i]);
+        }
+        
         character = braille_table[cur_ch].left;
         // print left side
         LCD_send_char(character);

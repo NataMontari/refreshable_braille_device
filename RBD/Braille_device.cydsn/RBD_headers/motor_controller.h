@@ -44,7 +44,7 @@
     void MotorController_MoveToPos(MotorController* motor, uint8_t position); /* select one of the rails*/
     void MotorController_SetRail(MotorController* motor, uint8_t rail_pos, uint8_t cell_pos); /*choose a rail and then set it's position, uses both functions above*/
     void MotorController_SetSymbol(MotorController* motor, char symbol); /*set a пsymbol, referencing the char to braille table. Uses set rail to set the position of two rails in a symbol*/
-
+    void MotorController_PrintText(MotorController *motor, char* data); /*prints out a word in braille*/
     
 #endif /* MOTOR_CONTROLLER_H */ 
 /* [] END OF FILE */
