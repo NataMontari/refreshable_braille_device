@@ -2,7 +2,7 @@
 --	Conversion of Braille_device.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Apr 16 16:54:10 2026
+--	Wed Apr 22 01:35:49 2026
 --
 
 USE cypress.cypress.all;
@@ -62,11 +62,11 @@ SIGNAL tmpFB_0__MOTOR_2_STEP_net_0 : bit;
 SIGNAL tmpIO_0__MOTOR_2_STEP_net_0 : bit;
 TERMINAL tmpSIOVREF__MOTOR_2_STEP_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__MOTOR_2_STEP_net_0 : bit;
-SIGNAL tmpOE__MOTOR_2_EN_net_0 : bit;
-SIGNAL tmpFB_0__MOTOR_2_EN_net_0 : bit;
-SIGNAL tmpIO_0__MOTOR_2_EN_net_0 : bit;
-TERMINAL tmpSIOVREF__MOTOR_2_EN_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__MOTOR_2_EN_net_0 : bit;
+SIGNAL tmpOE__MOTORS_EN_net_0 : bit;
+SIGNAL tmpFB_0__MOTORS_EN_net_0 : bit;
+SIGNAL tmpIO_0__MOTORS_EN_net_0 : bit;
+TERMINAL tmpSIOVREF__MOTORS_EN_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__MOTORS_EN_net_0 : bit;
 SIGNAL tmpOE__LCD_E_net_0 : bit;
 SIGNAL tmpFB_0__LCD_E_net_0 : bit;
 SIGNAL tmpIO_0__LCD_E_net_0 : bit;
@@ -529,7 +529,7 @@ MOTOR_2_STEP:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__MOTOR_2_STEP_net_0);
-MOTOR_2_EN:cy_psoc3_pins_v1_10
+MOTORS_EN:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"113c51a8-c01a-4578-8c79-e2d1bff891d7",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -587,10 +587,10 @@ MOTOR_2_EN:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>(tmpFB_0__MOTOR_2_EN_net_0),
+		fb=>(tmpFB_0__MOTORS_EN_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__MOTOR_2_EN_net_0),
-		siovref=>(tmpSIOVREF__MOTOR_2_EN_net_0),
+		io=>(tmpIO_0__MOTORS_EN_net_0),
+		siovref=>(tmpSIOVREF__MOTORS_EN_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -598,7 +598,7 @@ MOTOR_2_EN:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__MOTOR_2_EN_net_0);
+		interrupt=>tmpINTERRUPT_0__MOTORS_EN_net_0);
 LCD_E:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"9a7a8340-cb9d-4b56-b1e2-e96ecc0f1832",
 		drive_mode=>"110",

@@ -1,6 +1,6 @@
 // ======================================================================
 // Braille_device.v generated from TopDesign.cysch
-// 04/16/2026 at 16:54
+// 04/22/2026 at 01:35
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -571,11 +571,11 @@ module top ;
 
 	assign tmpOE__MOTOR_2_STEP_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-	wire [0:0] tmpOE__MOTOR_2_EN_net;
-	wire [0:0] tmpFB_0__MOTOR_2_EN_net;
-	wire [0:0] tmpIO_0__MOTOR_2_EN_net;
-	wire [0:0] tmpINTERRUPT_0__MOTOR_2_EN_net;
-	electrical [0:0] tmpSIOVREF__MOTOR_2_EN_net;
+	wire [0:0] tmpOE__MOTORS_EN_net;
+	wire [0:0] tmpFB_0__MOTORS_EN_net;
+	wire [0:0] tmpIO_0__MOTORS_EN_net;
+	wire [0:0] tmpINTERRUPT_0__MOTORS_EN_net;
+	electrical [0:0] tmpSIOVREF__MOTORS_EN_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("113c51a8-c01a-4578-8c79-e2d1bff891d7"),
@@ -630,13 +630,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		MOTOR_2_EN
-		 (.oe(tmpOE__MOTOR_2_EN_net),
+		MOTORS_EN
+		 (.oe(tmpOE__MOTORS_EN_net),
 		  .y({1'b0}),
-		  .fb({tmpFB_0__MOTOR_2_EN_net[0:0]}),
-		  .io({tmpIO_0__MOTOR_2_EN_net[0:0]}),
-		  .siovref(tmpSIOVREF__MOTOR_2_EN_net),
-		  .interrupt({tmpINTERRUPT_0__MOTOR_2_EN_net[0:0]}),
+		  .fb({tmpFB_0__MOTORS_EN_net[0:0]}),
+		  .io({tmpIO_0__MOTORS_EN_net[0:0]}),
+		  .siovref(tmpSIOVREF__MOTORS_EN_net),
+		  .interrupt({tmpINTERRUPT_0__MOTORS_EN_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -644,7 +644,7 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__MOTOR_2_EN_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__MOTORS_EN_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__LCD_E_net;
 	wire [0:0] tmpFB_0__LCD_E_net;

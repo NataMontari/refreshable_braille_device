@@ -16,6 +16,8 @@
     #include <stdint.h>
     #include <stdio.h>
     #include <char_to_braille.h>
+    #include <ctype.h>
+    #include <stdbool.h>
     
     /*User API functions*/
     void LCD_init(void);

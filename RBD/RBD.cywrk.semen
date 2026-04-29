@@ -13,29 +13,22 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="RBD\Braille_device\RBD_headers">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="RBD\Braille_device\Source Files\main.c">
 <ExpandedNodeIds>
 <v>RBD</v>
 <v>RBD\Braille_device</v>
 <v>RBD\Braille_device\TopDesign</v>
-<v>RBD\Braille_device\RBD_headers</v>
-<v>RBD\Braille_device\RBD_headers\char_to_braille.h</v>
-<v>RBD\Braille_device\RBD_headers\LCD.h</v>
-<v>RBD\Braille_device\RBD_headers\motor_controller.h</v>
-<v>RBD\Braille_device\RBD_sources</v>
-<v>RBD\Braille_device\RBD_sources\char_to_braille.c</v>
-<v>RBD\Braille_device\RBD_sources\LCD.c</v>
-<v>RBD\Braille_device\RBD_sources\motor_controller.c</v>
-<v>RBD\Braille_device\Generated_Source\PSoC4</v>
-<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_Char_1</v>
-<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_Char_1_LCDPort</v>
-</ExpandedNodeIds>
-<VisibleNodeIds>
-<v>RBD</v>
-<v>RBD\Braille_device</v>
-<v>RBD\Braille_device\TopDesign</v>
 <v>RBD\Braille_device\Braille_device.cydwr</v>
+<v>RBD\Braille_device\Braille_device.cydwr\Pins</v>
+<v>RBD\Braille_device\Braille_device.cydwr\Analog</v>
+<v>RBD\Braille_device\Braille_device.cydwr\DMA</v>
+<v>RBD\Braille_device\Braille_device.cydwr\Clocks</v>
+<v>RBD\Braille_device\Braille_device.cydwr\Interrupts</v>
+<v>RBD\Braille_device\Braille_device.cydwr\System</v>
+<v>RBD\Braille_device\Braille_device.cydwr\Directives</v>
+<v>RBD\Braille_device\Braille_device.cydwr\Flash Security</v>
 <v>RBD\Braille_device\Header Files</v>
+<v>RBD\Braille_device\Header Files\cyapicallbacks.h</v>
 <v>RBD\Braille_device\RBD_headers</v>
 <v>RBD\Braille_device\RBD_headers\char_to_braille.h</v>
 <v>RBD\Braille_device\RBD_headers\LCD.h</v>
@@ -45,11 +38,62 @@
 <v>RBD\Braille_device\RBD_sources\LCD.c</v>
 <v>RBD\Braille_device\RBD_sources\motor_controller.c</v>
 <v>RBD\Braille_device\Source Files</v>
+<v>RBD\Braille_device\Source Files\main.c</v>
 <v>RBD\Braille_device\Digital_Pins.pdf</v>
 <v>RBD\Braille_device\Generated_Source</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>RBD\Braille_device\Braille_device.cydwr\Interrupts</v>
+<v>RBD\Braille_device\Braille_device.cydwr\System</v>
+<v>RBD\Braille_device\Braille_device.cydwr\Directives</v>
+<v>RBD\Braille_device\Braille_device.cydwr\Flash Security</v>
+<v>RBD\Braille_device\Header Files</v>
+<v>RBD\Braille_device\Header Files\cyapicallbacks.h</v>
+<v>RBD\Braille_device\RBD_headers</v>
+<v>RBD\Braille_device\RBD_headers\char_to_braille.h</v>
+<v>RBD\Braille_device\RBD_headers\LCD.h</v>
+<v>RBD\Braille_device\RBD_headers\motor_controller.h</v>
+<v>RBD\Braille_device\RBD_sources</v>
+<v>RBD\Braille_device\RBD_sources\char_to_braille.c</v>
+<v>RBD\Braille_device\RBD_sources\LCD.c</v>
+<v>RBD\Braille_device\RBD_sources\motor_controller.c</v>
+<v>RBD\Braille_device\Source Files</v>
+<v>RBD\Braille_device\Source Files\main.c</v>
+<v>RBD\Braille_device\Digital_Pins.pdf</v>
+<v>RBD\Braille_device\Generated_Source</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cy_boot</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cy_dmac</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cy_lfclk</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\Em_EEPROM_Dynamic</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_Char_1</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_Char_1_LCDPort</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_D4</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_D5</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_D6</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_D7</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_E</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\LCD_RS</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\MOTOR_1_DIR</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\MOTOR_1_EN</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\MOTOR_1_STEP</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\MOTOR_2_DIR</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\MOTOR_2_STEP</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\MOTORS_EN</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cycodeshareexport.ld</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cycodeshareimport.ld</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cycodeshareimport.scat</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cydevice_trm.h</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cydevicegnu_trm.inc</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cydevicerv_trm.inc</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cydisabledsheets.h</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cyfitter.h</v>
+<v>RBD\Braille_device\Generated_Source\PSoC4\cyfitter_cfg.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="RBD\Braille_device\TopDesign\TopDesign.cysch">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>RBD</v>
 <v>RBD\Braille_device</v>
@@ -147,11 +191,11 @@
 <v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_1_STEP_PM.lst</v>
 <v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_2_DIR.lst</v>
 <v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_2_DIR_PM.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_2_EN.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_2_EN_PM.lst</v>
 <v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_2_STEP.lst</v>
 <v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_2_STEP_PM.lst</v>
 <v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\motor_controller.lst</v>
+<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTORS_EN.lst</v>
+<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTORS_EN_PM.lst</v>
 <v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Braille_device.elf</v>
 <v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Braille_device.hex</v>
 <v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Braille_device.map</v>
@@ -162,40 +206,6 @@
 <VisibleNodeIds>
 <v>RBD</v>
 <v>RBD\Braille_device</v>
-<v>RBD\Braille_device\CortexM0</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\char_to_braille.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_Char_1.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_Char_1_LCDPort.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_Char_1_LCDPort_PM.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_Char_1_PM.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_D4.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_D4_PM.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_D5.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_D5_PM.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_D6.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_D6_PM.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_D7.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_D7_PM.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_E.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_E_PM.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_RS.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_RS_PM.lst</v>
-<v>RBD\Braille_device\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -251,10 +261,11 @@
 <name v=".\Braille_device.cydsn\Braille_device.cydwr" />
 <name v=".\Braille_device.cydsn\Generated_Source\PSoC4\LCD_Char_1.c" />
 <name v=".\Braille_device.cydsn\Generated_Source\PSoC4\LCD_Char_1.h" />
-<name v=".\Braille_device.cydsn\LCD.c" />
-<name v=".\Braille_device.cydsn\LCD.h" />
 <name v=".\Braille_device.cydsn\RBD_headers\char_to_braille.h" />
 <name v=".\Braille_device.cydsn\cyapicallbacks.h" />
+<name v=".\Braille_device.cydsn\RBD_headers\LCD.h" />
+<name v=".\Braille_device.cydsn\RBD_sources\LCD.c" />
+<name v=".\Braille_device.cydsn\Generated_Source\PSoC4\Cm0Start.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -262,7 +273,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1150, 519" SelectedTabbedMdiWindow="b6335451-584f-4ff2-9d92-0992f80c57a8"><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_sources\motor_controller.c" Guid="a8db78bd-5aac-4513-9411-56ba4e991672" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_sources\char_to_braille.c" Guid="13b1c97d-e97c-427e-9b8b-6a6696fba712" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_headers\motor_controller.h" Guid="ec809fd9-e8ca-44b3-b93d-ee0dd07028bd" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\main.c" Guid="5a1ae6a0-dade-4713-afc0-8edb82d22ebb" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\TopDesign\TopDesign.cysch" Guid="834a4b5c-7dac-4913-aa2f-696856b6b3c0" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Braille_device.cydwr" Guid="89ce07cc-022f-4d8d-9b7f-89d462a005e8" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Generated_Source\PSoC4\LCD_Char_1.c" Guid="625a706a-7214-4f40-b758-f11283ee0773" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Generated_Source\PSoC4\LCD_Char_1.h" Guid="a3a6d7bb-8490-4b10-b1c6-236eb1f5342b" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\LCD.c" Guid="b6335451-584f-4ff2-9d92-0992f80c57a8" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\LCD.h" Guid="cc1ea14d-2020-40e0-9e38-ff97153a2d35" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_headers\char_to_braille.h" Guid="c37d0707-04db-4e1a-b763-5aad2a85ac77" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\cyapicallbacks.h" Guid="7231dd5b-fece-4185-9725-c40f62e81c0d" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="45261a2f-1fcc-4f80-b90a-1668a7c5bda3" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1150, 519" SelectedTabbedMdiWindow="a8db78bd-5aac-4513-9411-56ba4e991672"><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_sources\motor_controller.c" Guid="a8db78bd-5aac-4513-9411-56ba4e991672" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_sources\char_to_braille.c" Guid="13b1c97d-e97c-427e-9b8b-6a6696fba712" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_headers\motor_controller.h" Guid="ec809fd9-e8ca-44b3-b93d-ee0dd07028bd" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\main.c" Guid="5a1ae6a0-dade-4713-afc0-8edb82d22ebb" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\TopDesign\TopDesign.cysch" Guid="834a4b5c-7dac-4913-aa2f-696856b6b3c0" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Braille_device.cydwr" Guid="89ce07cc-022f-4d8d-9b7f-89d462a005e8" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Generated_Source\PSoC4\LCD_Char_1.c" Guid="625a706a-7214-4f40-b758-f11283ee0773" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Generated_Source\PSoC4\LCD_Char_1.h" Guid="a3a6d7bb-8490-4b10-b1c6-236eb1f5342b" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_headers\char_to_braille.h" Guid="c37d0707-04db-4e1a-b763-5aad2a85ac77" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\cyapicallbacks.h" Guid="7231dd5b-fece-4185-9725-c40f62e81c0d" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_headers\LCD.h" Guid="6ca9f3e0-edaa-4430-947c-4821ca2e9d52" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\RBD_sources\LCD.c" Guid="7d0df83b-d857-4353-97c8-6f88e8434b3b" /><DocumentWindow Key="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Generated_Source\PSoC4\Cm0Start.c" Guid="8ac0a722-e206-4802-97fc-cdc9044e26b1" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="45261a2f-1fcc-4f80-b90a-1668a7c5bda3" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

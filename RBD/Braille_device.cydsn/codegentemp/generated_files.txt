@@ -36,10 +36,10 @@
   <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTOR_2_STEP.h" value="HEADER;;;;;MOTOR_2_STEP" />
   <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTOR_2_STEP_aliases.h" value="HEADER;;;;;MOTOR_2_STEP" />
   <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTOR_2_STEP_PM.c" value="SOURCE_C;CortexM0;;;;MOTOR_2_STEP" />
-  <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTOR_2_EN.c" value="SOURCE_C;CortexM0;;;;MOTOR_2_EN" />
-  <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTOR_2_EN.h" value="HEADER;;;;;MOTOR_2_EN" />
-  <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTOR_2_EN_aliases.h" value="HEADER;;;;;MOTOR_2_EN" />
-  <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTOR_2_EN_PM.c" value="SOURCE_C;CortexM0;;;;MOTOR_2_EN" />
+  <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTORS_EN.c" value="SOURCE_C;CortexM0;;;;MOTORS_EN" />
+  <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTORS_EN.h" value="HEADER;;;;;MOTORS_EN" />
+  <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTORS_EN_aliases.h" value="HEADER;;;;;MOTORS_EN" />
+  <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\MOTORS_EN_PM.c" value="SOURCE_C;CortexM0;;;;MOTORS_EN" />
   <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\LCD_E.c" value="SOURCE_C;CortexM0;;;;LCD_E" />
   <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\LCD_E.h" value="HEADER;;;;;LCD_E" />
   <file name="D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\codegentemp\LCD_E_aliases.h" value="HEADER;;;;;LCD_E" />

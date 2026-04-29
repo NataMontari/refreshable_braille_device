@@ -13,7 +13,8 @@
 
     #include <char_to_braille.h>
 
-    const BrailleCell char_to_braille[128] = {
+    const BrailleCell braille_table[128] = {
+    //letters
     ['a'] = {5, 6},
     ['b'] = {4, 6},
     ['c'] = {5, 5},
@@ -42,10 +43,24 @@
     ['x'] = {1, 1},
     ['y'] = {1, 3},
     ['z'] = {1, 2},
-
-    [' '] = {6, 6},
     
+    // punctuation
+    [' '] = {6, 6},
     ['#'] = {7, 3},
+    ['!'] = {2, 0},
+    ['.'] = {2, 2},
+    [','] = {0, 6},
+    ['?'] = {0, 7},
+    [';'] = {2, 6},
+    [':'] = {0, 0},
+    ['\''] = {5, 7},
+    ['"'] = {2, 2},
+    ['('] = {4, 7},
+    [')'] = {7, 4},
+    ['`']  = {0, 6},
+    ['_']  = {7, 7},
+
+    // numbers / math common symbols
     ['1'] = {5, 6},
     ['2'] = {4, 6},
     ['3'] = {5, 5},
@@ -55,7 +70,19 @@
     ['7'] = {4, 4},
     ['8'] = {4, 0},
     ['9'] = {0, 5},
-    ['0'] = {0, 4}
+    ['0'] = {0, 4},
+    
+    ['+'] = {2, 0},
+    ['-'] = {7, 7},
+    ['='] = {2, 2},
+    ['/'] = {7, 5},
+    ['*'] = {7, 0},
+    ['<'] = {0, 1},
+    ['>'] = {1, 0},
+
+    ['A'] = {6, 7}, /*temporarely solution to store the capital indicator config*/
+    ['N'] = {7, 3} /*temporarely solution to store the number indicator*/
+    
 };
     
     const LCD_Braille_Cell dots[8] = {
@@ -142,8 +169,8 @@
 };    
 
     void text_to_lcd_braille(char ch, uint8_t* braille_ch){        
-        uint8_t first_row = char_to_braille[ch].left;
-        uint8_t second_row = char_to_braille[ch].right;
+        uint8_t first_row = braille_table[ch].left;
+        uint8_t second_row = braille_table[ch].right;
         
         for (int i=0; i<8; i++){
             braille_ch[i] = dots[first_row].glyphs[i] | (dots[second_row].glyphs[i] >> 3);

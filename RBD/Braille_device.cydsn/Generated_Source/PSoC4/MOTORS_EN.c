@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: MOTOR_2_EN.c  
+* File Name: MOTORS_EN.c  
 * Version 2.20
 *
 * Description:
@@ -13,35 +13,35 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "MOTOR_2_EN.h"
+#include "MOTORS_EN.h"
 
 
-#if defined(MOTOR_2_EN__PC)
-    #define MOTOR_2_EN_SetP4PinDriveMode(shift, mode)  \
+#if defined(MOTORS_EN__PC)
+    #define MOTORS_EN_SetP4PinDriveMode(shift, mode)  \
     do { \
-        MOTOR_2_EN_PC =   (MOTOR_2_EN_PC & \
-                                (uint32)(~(uint32)(MOTOR_2_EN_DRIVE_MODE_IND_MASK << \
-                                (MOTOR_2_EN_DRIVE_MODE_BITS * (shift))))) | \
+        MOTORS_EN_PC =   (MOTORS_EN_PC & \
+                                (uint32)(~(uint32)(MOTORS_EN_DRIVE_MODE_IND_MASK << \
+                                (MOTORS_EN_DRIVE_MODE_BITS * (shift))))) | \
                                 (uint32)((uint32)(mode) << \
-                                (MOTOR_2_EN_DRIVE_MODE_BITS * (shift))); \
+                                (MOTORS_EN_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 #else
     #if (CY_PSOC4_4200L)
-        #define MOTOR_2_EN_SetP4PinDriveMode(shift, mode)  \
+        #define MOTORS_EN_SetP4PinDriveMode(shift, mode)  \
         do { \
-            MOTOR_2_EN_USBIO_CTRL_REG = (MOTOR_2_EN_USBIO_CTRL_REG & \
-                                    (uint32)(~(uint32)(MOTOR_2_EN_DRIVE_MODE_IND_MASK << \
-                                    (MOTOR_2_EN_DRIVE_MODE_BITS * (shift))))) | \
+            MOTORS_EN_USBIO_CTRL_REG = (MOTORS_EN_USBIO_CTRL_REG & \
+                                    (uint32)(~(uint32)(MOTORS_EN_DRIVE_MODE_IND_MASK << \
+                                    (MOTORS_EN_DRIVE_MODE_BITS * (shift))))) | \
                                     (uint32)((uint32)(mode) << \
-                                    (MOTOR_2_EN_DRIVE_MODE_BITS * (shift))); \
+                                    (MOTORS_EN_DRIVE_MODE_BITS * (shift))); \
         } while (0)
     #endif
 #endif
   
 
-#if defined(MOTOR_2_EN__PC) || (CY_PSOC4_4200L) 
+#if defined(MOTORS_EN__PC) || (CY_PSOC4_4200L) 
     /*******************************************************************************
-    * Function Name: MOTOR_2_EN_SetDriveMode
+    * Function Name: MOTORS_EN_SetDriveMode
     ****************************************************************************//**
     *
     * \brief Sets the drive mode for each of the Pins component's pins.
@@ -67,17 +67,17 @@
     *  APIs (primary method) or disable interrupts around this function.
     *
     * \funcusage
-    *  \snippet MOTOR_2_EN_SUT.c usage_MOTOR_2_EN_SetDriveMode
+    *  \snippet MOTORS_EN_SUT.c usage_MOTORS_EN_SetDriveMode
     *******************************************************************************/
-    void MOTOR_2_EN_SetDriveMode(uint8 mode)
+    void MOTORS_EN_SetDriveMode(uint8 mode)
     {
-		MOTOR_2_EN_SetP4PinDriveMode(MOTOR_2_EN__0__SHIFT, mode);
+		MOTORS_EN_SetP4PinDriveMode(MOTORS_EN__0__SHIFT, mode);
     }
 #endif
 
 
 /*******************************************************************************
-* Function Name: MOTOR_2_EN_Write
+* Function Name: MOTORS_EN_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -106,18 +106,18 @@
 *  this function.
 *
 * \funcusage
-*  \snippet MOTOR_2_EN_SUT.c usage_MOTOR_2_EN_Write
+*  \snippet MOTORS_EN_SUT.c usage_MOTORS_EN_Write
 *******************************************************************************/
-void MOTOR_2_EN_Write(uint8 value)
+void MOTORS_EN_Write(uint8 value)
 {
-    uint8 drVal = (uint8)(MOTOR_2_EN_DR & (uint8)(~MOTOR_2_EN_MASK));
-    drVal = (drVal | ((uint8)(value << MOTOR_2_EN_SHIFT) & MOTOR_2_EN_MASK));
-    MOTOR_2_EN_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(MOTORS_EN_DR & (uint8)(~MOTORS_EN_MASK));
+    drVal = (drVal | ((uint8)(value << MOTORS_EN_SHIFT) & MOTORS_EN_MASK));
+    MOTORS_EN_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: MOTOR_2_EN_Read
+* Function Name: MOTORS_EN_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -131,16 +131,16 @@ void MOTOR_2_EN_Write(uint8 value)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet MOTOR_2_EN_SUT.c usage_MOTOR_2_EN_Read  
+*  \snippet MOTORS_EN_SUT.c usage_MOTORS_EN_Read  
 *******************************************************************************/
-uint8 MOTOR_2_EN_Read(void)
+uint8 MOTORS_EN_Read(void)
 {
-    return (uint8)((MOTOR_2_EN_PS & MOTOR_2_EN_MASK) >> MOTOR_2_EN_SHIFT);
+    return (uint8)((MOTORS_EN_PS & MOTORS_EN_MASK) >> MOTORS_EN_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: MOTOR_2_EN_ReadDataReg
+* Function Name: MOTORS_EN_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -149,8 +149,8 @@ uint8 MOTOR_2_EN_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred MOTOR_2_EN_Read() API because the 
-* MOTOR_2_EN_ReadDataReg() reads the data register instead of the status 
+* preferred MOTORS_EN_Read() API because the 
+* MOTORS_EN_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -159,16 +159,16 @@ uint8 MOTOR_2_EN_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet MOTOR_2_EN_SUT.c usage_MOTOR_2_EN_ReadDataReg 
+*  \snippet MOTORS_EN_SUT.c usage_MOTORS_EN_ReadDataReg 
 *******************************************************************************/
-uint8 MOTOR_2_EN_ReadDataReg(void)
+uint8 MOTORS_EN_ReadDataReg(void)
 {
-    return (uint8)((MOTOR_2_EN_DR & MOTOR_2_EN_MASK) >> MOTOR_2_EN_SHIFT);
+    return (uint8)((MOTORS_EN_DR & MOTORS_EN_MASK) >> MOTORS_EN_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: MOTOR_2_EN_SetInterruptMode
+* Function Name: MOTORS_EN_SetInterruptMode
 ****************************************************************************//**
 *
 * \brief Configures the interrupt mode for each of the Pins component's
@@ -181,12 +181,12 @@ uint8 MOTOR_2_EN_ReadDataReg(void)
 * \param position
 *  The pin position as listed in the Pins component. You may OR these to be 
 *  able to configure the interrupt mode of multiple pins within a Pins 
-*  component. Or you may use MOTOR_2_EN_INTR_ALL to configure the
+*  component. Or you may use MOTORS_EN_INTR_ALL to configure the
 *  interrupt mode of all the pins in the Pins component.       
-*  - MOTOR_2_EN_0_INTR       (First pin in the list)
-*  - MOTOR_2_EN_1_INTR       (Second pin in the list)
+*  - MOTORS_EN_0_INTR       (First pin in the list)
+*  - MOTORS_EN_1_INTR       (Second pin in the list)
 *  - ...
-*  - MOTOR_2_EN_INTR_ALL     (All pins in Pins component)
+*  - MOTORS_EN_INTR_ALL     (All pins in Pins component)
 *
 * \param mode
 *  Interrupt mode for the selected pins. Valid options are documented in
@@ -202,19 +202,19 @@ uint8 MOTOR_2_EN_ReadDataReg(void)
 *  port.
 *
 * \funcusage
-*  \snippet MOTOR_2_EN_SUT.c usage_MOTOR_2_EN_SetInterruptMode
+*  \snippet MOTORS_EN_SUT.c usage_MOTORS_EN_SetInterruptMode
 *******************************************************************************/
-void MOTOR_2_EN_SetInterruptMode(uint16 position, uint16 mode)
+void MOTORS_EN_SetInterruptMode(uint16 position, uint16 mode)
 {
     uint32 intrCfg;
     
-    intrCfg =  MOTOR_2_EN_INTCFG & (uint32)(~(uint32)position);
-    MOTOR_2_EN_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
+    intrCfg =  MOTORS_EN_INTCFG & (uint32)(~(uint32)position);
+    MOTORS_EN_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
 }
 
 
 /*******************************************************************************
-* Function Name: MOTOR_2_EN_ClearInterrupt
+* Function Name: MOTORS_EN_ClearInterrupt
 ****************************************************************************//**
 *
 * \brief Clears any active interrupts attached with the component and returns 
@@ -231,13 +231,13 @@ void MOTOR_2_EN_SetInterruptMode(uint16 position, uint16 mode)
 *  those associated with the Pins component.
 *
 * \funcusage
-*  \snippet MOTOR_2_EN_SUT.c usage_MOTOR_2_EN_ClearInterrupt
+*  \snippet MOTORS_EN_SUT.c usage_MOTORS_EN_ClearInterrupt
 *******************************************************************************/
-uint8 MOTOR_2_EN_ClearInterrupt(void)
+uint8 MOTORS_EN_ClearInterrupt(void)
 {
-	uint8 maskedStatus = (uint8)(MOTOR_2_EN_INTSTAT & MOTOR_2_EN_MASK);
-	MOTOR_2_EN_INTSTAT = maskedStatus;
-    return maskedStatus >> MOTOR_2_EN_SHIFT;
+	uint8 maskedStatus = (uint8)(MOTORS_EN_INTSTAT & MOTORS_EN_MASK);
+	MOTORS_EN_INTSTAT = maskedStatus;
+    return maskedStatus >> MOTORS_EN_SHIFT;
 }
 
 

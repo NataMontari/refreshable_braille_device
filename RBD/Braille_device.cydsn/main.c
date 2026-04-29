@@ -28,9 +28,27 @@ int main()
     // Initialize the LCD
     LCD_init();
     LCD_init_braille();
-    LCD_print_string("Hello world!");
+    LCD_print_string("Hello, year 2026!");
     LCD_set_cursor(1, 0);
-    LCD_test_print_braille("hello world?");
+    LCD_test_print_braille("Hello, year 2026!");
+    /*for(int i=0; i<20; i++){ 
+        MotorController_SetNextRail(&Motors, 1);
+        CyDelay(500);
+        MotorController_SetNextSymbol(&Motors, 1);
+        CyDelay(1000);
+    }*/
+    
+    //MotorController_SetCell(&Motors, 1);
+    MotorController_Init(&Motors);
+    /*MotorController_MoveToPos(&Motors, 10);
+    MotorController_SetCell(&Motors, 7);
+    MotorController_MoveToPos(&Motors, 5);
+    MotorController_SetCell(&Motors, 2);*/
+    //MotorController_SetSymbol(&Motors, 'a');
+    MotorController_PrintText(&Motors, "Hello, year 2026!");
+    
+    //MotorController_Init(&Motors);
+    //MotorController_MoveToPos(&Motors, 10);
     //LCD_print_string("just why?");
     
     /*MOTOR_1_DIR_Write(0);

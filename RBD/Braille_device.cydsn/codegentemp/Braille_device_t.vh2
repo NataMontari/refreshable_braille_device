@@ -1,5 +1,5 @@
 -- Project:   D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Braille_device.cyprj
--- Generated: 04/16/2026 16:54:14
+-- Generated: 04/22/2026 01:35:50
 -- PSoC Creator  4.4
 
 ENTITY Braille_device IS
@@ -16,7 +16,7 @@ ENTITY Braille_device IS
         MOTOR_1_STEP(0)_PAD : OUT std_ulogic;
         MOTOR_1_EN(0)_PAD : OUT std_ulogic;
         MOTOR_2_STEP(0)_PAD : OUT std_ulogic;
-        MOTOR_2_EN(0)_PAD : OUT std_ulogic;
+        MOTORS_EN(0)_PAD : OUT std_ulogic;
         LCD_E(0)_PAD : OUT std_ulogic;
         LCD_RS(0)_PAD : OUT std_ulogic;
         LCD_D4(0)_PAD : OUT std_ulogic;
@@ -53,11 +53,11 @@ ARCHITECTURE __DEFAULT__ OF Braille_device IS
     SIGNAL LCD_D7(0)__PA : bit;
     SIGNAL LCD_E(0)__PA : bit;
     SIGNAL LCD_RS(0)__PA : bit;
+    SIGNAL MOTORS_EN(0)__PA : bit;
     SIGNAL MOTOR_1_DIR(0)__PA : bit;
     SIGNAL MOTOR_1_EN(0)__PA : bit;
     SIGNAL MOTOR_1_STEP(0)__PA : bit;
     SIGNAL MOTOR_2_DIR(0)__PA : bit;
-    SIGNAL MOTOR_2_EN(0)__PA : bit;
     SIGNAL MOTOR_2_STEP(0)__PA : bit;
     SIGNAL \\\LCD_Char_1:LCDPort(0)\\__PA\ : bit;
     SIGNAL \\\LCD_Char_1:LCDPort(1)\\__PA\ : bit;
@@ -100,8 +100,8 @@ ARCHITECTURE __DEFAULT__ OF Braille_device IS
     ATTRIBUTE Location OF MOTOR_1_EN(0) : LABEL IS "P0[0]";
     ATTRIBUTE lib_model OF MOTOR_2_STEP(0) : LABEL IS "iocell12";
     ATTRIBUTE Location OF MOTOR_2_STEP(0) : LABEL IS "P1[6]";
-    ATTRIBUTE lib_model OF MOTOR_2_EN(0) : LABEL IS "iocell13";
-    ATTRIBUTE Location OF MOTOR_2_EN(0) : LABEL IS "P0[5]";
+    ATTRIBUTE lib_model OF MOTORS_EN(0) : LABEL IS "iocell13";
+    ATTRIBUTE Location OF MOTORS_EN(0) : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF LCD_E(0) : LABEL IS "iocell14";
     ATTRIBUTE Location OF LCD_E(0) : LABEL IS "P3[4]";
     ATTRIBUTE lib_model OF LCD_RS(0) : LABEL IS "iocell15";
@@ -938,7 +938,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    MOTOR_2_EN:logicalport
+    MOTORS_EN:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -1009,18 +1009,18 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    MOTOR_2_EN(0):iocell
+    MOTORS_EN(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "MOTOR_2_EN",
+            logicalport => "MOTORS_EN",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
-            pa_out => MOTOR_2_EN(0)__PA,
+            pa_out => MOTORS_EN(0)__PA,
             oe => open,
-            pad_in => MOTOR_2_EN(0)_PAD,
+            pad_in => MOTORS_EN(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',

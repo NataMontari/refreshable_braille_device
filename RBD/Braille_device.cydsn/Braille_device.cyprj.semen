@@ -11,12 +11,6 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\CortexM0\ARM_GCC_541\Debug\char_to_braille.o">
-<dep name=".\RBD_headers\char_to_braille.h" />
-<dep name=".\RBD_sources\char_to_braille.c" />
-</file>
-<file name=".\RBD_headers\char_to_braille.h" />
-<file name=".\RBD_sources\char_to_braille.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\main.o">
 <dep name=".\Generated_Source\PSoC4\CyDMA.h" />
 <dep name=".\Generated_Source\PSoC4\CyFlash.h" />
@@ -37,6 +31,8 @@
 <dep name=".\Generated_Source\PSoC4\LCD_E_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\LCD_RS.h" />
 <dep name=".\Generated_Source\PSoC4\LCD_RS_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\MOTORS_EN.h" />
+<dep name=".\Generated_Source\PSoC4\MOTORS_EN_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\MOTOR_1_DIR.h" />
 <dep name=".\Generated_Source\PSoC4\MOTOR_1_DIR_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\MOTOR_1_EN.h" />
@@ -45,8 +41,6 @@
 <dep name=".\Generated_Source\PSoC4\MOTOR_1_STEP_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\MOTOR_2_DIR.h" />
 <dep name=".\Generated_Source\PSoC4\MOTOR_2_DIR_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN.h" />
-<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\MOTOR_2_STEP.h" />
 <dep name=".\Generated_Source\PSoC4\MOTOR_2_STEP_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
@@ -63,6 +57,7 @@
 <dep name=".\Generated_Source\PSoC4\cypins.h" />
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 <dep name=".\Generated_Source\PSoC4\project.h" />
+<dep name=".\RBD_headers\char_to_braille.h" />
 <dep name=".\RBD_headers\motor_controller.h" />
 <dep name=".\main.c" />
 </file>
@@ -85,6 +80,8 @@
 <file name=".\Generated_Source\PSoC4\LCD_E_aliases.h" />
 <file name=".\Generated_Source\PSoC4\LCD_RS.h" />
 <file name=".\Generated_Source\PSoC4\LCD_RS_aliases.h" />
+<file name=".\Generated_Source\PSoC4\MOTORS_EN.h" />
+<file name=".\Generated_Source\PSoC4\MOTORS_EN_aliases.h" />
 <file name=".\Generated_Source\PSoC4\MOTOR_1_DIR.h" />
 <file name=".\Generated_Source\PSoC4\MOTOR_1_DIR_aliases.h" />
 <file name=".\Generated_Source\PSoC4\MOTOR_1_EN.h" />
@@ -93,8 +90,6 @@
 <file name=".\Generated_Source\PSoC4\MOTOR_1_STEP_aliases.h" />
 <file name=".\Generated_Source\PSoC4\MOTOR_2_DIR.h" />
 <file name=".\Generated_Source\PSoC4\MOTOR_2_DIR_aliases.h" />
-<file name=".\Generated_Source\PSoC4\MOTOR_2_EN.h" />
-<file name=".\Generated_Source\PSoC4\MOTOR_2_EN_aliases.h" />
 <file name=".\Generated_Source\PSoC4\MOTOR_2_STEP.h" />
 <file name=".\Generated_Source\PSoC4\MOTOR_2_STEP_aliases.h" />
 <file name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
@@ -111,15 +106,27 @@
 <file name=".\Generated_Source\PSoC4\cypins.h" />
 <file name=".\Generated_Source\PSoC4\cytypes.h" />
 <file name=".\Generated_Source\PSoC4\project.h" />
+<file name=".\RBD_headers\char_to_braille.h" />
 <file name=".\RBD_headers\motor_controller.h" />
 <file name=".\main.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\LCD.o">
+<file name=".\CortexM0\ARM_GCC_541\Debug\motor_controller.o">
 <dep name=".\RBD_headers\char_to_braille.h" />
-<dep name=".\LCD.c" />
-<dep name=".\LCD.h" />
+<dep name=".\RBD_headers\motor_controller.h" />
+<dep name=".\RBD_sources\motor_controller.c" />
 </file>
-<file name=".\LCD.c" />
-<file name=".\LCD.h" />
+<file name=".\RBD_sources\motor_controller.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\LCD.o">
+<dep name=".\RBD_headers\LCD.h" />
+<dep name=".\RBD_headers\char_to_braille.h" />
+<dep name=".\RBD_sources\LCD.c" />
+</file>
+<file name=".\RBD_headers\LCD.h" />
+<file name=".\RBD_sources\LCD.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\char_to_braille.o">
+<dep name=".\RBD_headers\char_to_braille.h" />
+<dep name=".\RBD_sources\char_to_braille.c" />
+</file>
+<file name=".\RBD_sources\char_to_braille.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\Cm0Start.o">
 <dep name=".\Generated_Source\PSoC4\Cm0Start.c" />
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
@@ -329,6 +336,26 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\LCD_RS_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\MOTORS_EN.o">
+<dep name=".\Generated_Source\PSoC4\MOTORS_EN.c" />
+<dep name=".\Generated_Source\PSoC4\MOTORS_EN.h" />
+<dep name=".\Generated_Source\PSoC4\MOTORS_EN_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\MOTORS_EN.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\MOTORS_EN_PM.o">
+<dep name=".\Generated_Source\PSoC4\MOTORS_EN.h" />
+<dep name=".\Generated_Source\PSoC4\MOTORS_EN_PM.c" />
+<dep name=".\Generated_Source\PSoC4\MOTORS_EN_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\MOTORS_EN_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_1_DIR.o">
 <dep name=".\Generated_Source\PSoC4\MOTOR_1_DIR.c" />
 <dep name=".\Generated_Source\PSoC4\MOTOR_1_DIR.h" />
@@ -409,26 +436,6 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\MOTOR_2_DIR_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_EN.o">
-<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN.c" />
-<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN.h" />
-<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\MOTOR_2_EN.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_EN_PM.o">
-<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN.h" />
-<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN_PM.c" />
-<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\MOTOR_2_EN_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_STEP.o">
 <dep name=".\Generated_Source\PSoC4\MOTOR_2_STEP.c" />
 <dep name=".\Generated_Source\PSoC4\MOTOR_2_STEP.h" />
@@ -498,11 +505,30 @@
 <file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
 <file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\motor_controller.o">
-<dep name=".\RBD_headers\motor_controller.h" />
-<dep name=".\RBD_sources\motor_controller.c" />
+<file name=".\Generated_Source\PSoC4\MOTOR_2_EN.h" />
+<file name=".\Generated_Source\PSoC4\MOTOR_2_EN_aliases.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_EN.o">
+<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN.c" />
+<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN.h" />
+<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
-<file name=".\RBD_sources\motor_controller.c" />
+<file name=".\Generated_Source\PSoC4\MOTOR_2_EN.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_EN_PM.o">
+<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN.h" />
+<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN_PM.c" />
+<dep name=".\Generated_Source\PSoC4\MOTOR_2_EN_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\MOTOR_2_EN_PM.c" />
+<file name=".\LCD.c" />
+<file name=".\LCD.h" />
 <file name=".\Generated_Source\PSoC4\BLUE_LED.h" />
 <file name=".\Generated_Source\PSoC4\BLUE_LED_aliases.h" />
 <file name=".\Generated_Source\PSoC4\RED_LED.h" />
@@ -589,8 +615,6 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_DIR_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_STEP.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_STEP_PM.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_EN.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\MOTOR_2_EN_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LCD_E.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LCD_E_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LCD_RS.o" />
@@ -603,6 +627,8 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LCD_D7_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LCD_D6.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LCD_D6_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\MOTORS_EN.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\MOTORS_EN_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\Braille_device.a" />
 </file>
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
@@ -664,6 +690,9 @@
 <name_val_pair name="Generated_Source\PSoC4\LCD_D7_PM.c" v="-mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0" />
 <name_val_pair name="Generated_Source\PSoC4\LCD_D6.c" v="-mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0" />
 <name_val_pair name="Generated_Source\PSoC4\LCD_D6_PM.c" v="-mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0" />
+<name_val_pair name="RBD_sources\LCD.c" v="-mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0" />
+<name_val_pair name="Generated_Source\PSoC4\MOTORS_EN.c" v="-mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0" />
+<name_val_pair name="Generated_Source\PSoC4\MOTORS_EN_PM.c" v="-mcpu=cortex-m0 -mthumb -I.\RBD_headers -I.\RBD_sources -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\semen\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Braille_device.cyprj -d CY8C4248LQI-BL583 -s D:\UCU_4th_year\diploma\refreshable_braille_device\RBD\Braille_device.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -903,15 +932,19 @@
 <v>Generated_Source\PSoC4\LCD_D6.h</v>
 <v>Generated_Source\PSoC4\LCD_D6_aliases.h</v>
 <v>Generated_Source\PSoC4\LCD_D6_PM.c</v>
+<v>Generated_Source\PSoC4\MOTORS_EN.c</v>
+<v>Generated_Source\PSoC4\MOTORS_EN.h</v>
+<v>Generated_Source\PSoC4\MOTORS_EN_aliases.h</v>
+<v>Generated_Source\PSoC4\MOTORS_EN_PM.c</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="134208212576439583" />
+<deps_time v="134212845521542099" />
 <top_block v="TopDesign" />
-<last_generation v="19" />
+<last_generation v="21" />
 <pdl_path v="" />
 <sw_packages />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
@@ -919,7 +952,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="134209046669898821" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="134219072712041069" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
