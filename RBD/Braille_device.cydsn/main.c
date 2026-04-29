@@ -20,74 +20,16 @@ int main()
 {
 
     CyGlobalIntEnable;  // Enable global interrupts if needed
-    
-    //MotorController Motors = {0,0};
-    /*MotorController_Init(&Motors);*/
 
-    //CyDelay(100);
     // Initialize the LCD
     LCD_init();
     LCD_init_braille();
     LCD_print_string("Hello, year 2026!");
     LCD_set_cursor(1, 0);
     LCD_test_print_braille("Hello, year 2026!");
-    /*for(int i=0; i<20; i++){ 
-        MotorController_SetNextRail(&Motors, 1);
-        CyDelay(500);
-        MotorController_SetNextSymbol(&Motors, 1);
-        CyDelay(1000);
-    }*/
-    
-    //MotorController_SetCell(&Motors, 1);
+
     MotorController_Init(&Motors);
-    /*MotorController_MoveToPos(&Motors, 10);
-    MotorController_SetCell(&Motors, 7);
-    MotorController_MoveToPos(&Motors, 5);
-    MotorController_SetCell(&Motors, 2);*/
-    //MotorController_SetSymbol(&Motors, 'a');
     MotorController_PrintText(&Motors, "Hello, year 2026!");
-    
-    //MotorController_Init(&Motors);
-    //MotorController_MoveToPos(&Motors, 10);
-    //LCD_print_string("just why?");
-    
-    /*MOTOR_1_DIR_Write(0);
-    
-    for(int i=0; i<6400; i++){
-        MOTOR_1_STEP_Write(1);
-        CyDelay(1);
-        MOTOR_1_STEP_Write(0);
-    }*/
-    
-    
-    
-    /*MOTOR_2_DIR_Write(0);
-    
-    for(int i=0; i<6400; i++){
-        MOTOR_2_STEP_Write(1);
-        CyDelay(1);
-        MOTOR_2_STEP_Write(0);
-    }*/
-    
-    /*MOTOR_1_DIR_Write(1);
-    
-    for(int j=0; j<4; j++){
-        
-        for(int i=0; i<6400; i++){
-            MOTOR_1_STEP_Write(1);
-            CyDelay(1);
-            MOTOR_1_STEP_Write(0);
-        }
-    }*/
-    
-    
-    /*for(;;){
-        LCD_Char_1_Position(0,0);
-        LCD_Char_1_PrintString("Hello");
-        CyDelay(1000);
-        LCD_Char_1_ClearDisplay();
-        CyDelay(1000);
-    }*/
 }
 
 /* [] END OF FILE */

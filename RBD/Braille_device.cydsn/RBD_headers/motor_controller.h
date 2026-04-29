@@ -20,10 +20,7 @@
     #define MOTOR_1_LEFT 0;
     #define MOTOR_1_RIGHT 0;
     
-    /*Define fucntions and variables to work with the stepper motors */
-   
-
-    
+    /*Define functions and variables to work with the stepper motors */
     
     typedef struct MotorController MotorController; /*a structure to track the current position of the motors*/
     
@@ -34,8 +31,8 @@
     
 
     
-    extern uint8_t rail_cell_pos[60];   // ✅ declaration
-    extern MotorController Motors; // ✅ declaration
+    extern uint8_t rail_cell_pos[60];   // stores current position of the rails
+    extern MotorController Motors; // stores current state of the motors
     
     void MotorController_Init(MotorController* motor); /*initialize stepper motors to the starting position*/
     void MotorController_SetNextSymbol(MotorController* motor, uint8_t motor_dir); /*go to the first rail in the next symbol*/

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
   51              	CySysTickInitVar:
   52 0014 00000000 		.space	4
   53              		.global	cyImoFreqMhz2Reg
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 2
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 2
 
 
   54              		.section	.rodata
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  108              		.type	CySysClkPumpConfig, %object
  109              		.size	CySysClkPumpConfig, 4
  110              	CySysClkPumpConfig:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 3
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 3
 
 
  111 0010 01000000 		.word	1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
   45:Generated_Source\PSoC4/CyLib.c **** * initialized to 0 and set to 1 the first time CySysTickStart() is called.
   46:Generated_Source\PSoC4/CyLib.c **** *
   47:Generated_Source\PSoC4/CyLib.c **** * This allows the component to restart without reinitialization after the first
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 4
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 4
 
 
   48:Generated_Source\PSoC4/CyLib.c **** * call to the CySysTickStart() routine.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  102:Generated_Source\PSoC4/CyLib.c **** * in the Design Wide Resources tab.
  103:Generated_Source\PSoC4/CyLib.c **** *
  104:Generated_Source\PSoC4/CyLib.c **** *******************************************************************************/
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 5
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 5
 
 
  105:Generated_Source\PSoC4/CyLib.c **** void CySysClkImoStart(void)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  157              	CySysClkImoStop:
  158              	.LFB3:
  123:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 6
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 6
 
 
  124:Generated_Source\PSoC4/CyLib.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  187              		.size	CySysClkImoStop, .-CySysClkImoStop
  188              		.section	.text.CySysClkWriteHfclkDirect,"ax",%progbits
  189              		.align	2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 7
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 7
 
 
  190              		.global	CySysClkWriteHfclkDirect
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  198:Generated_Source\PSoC4/CyLib.c ****             #if(CY_IP_SRSSV2)
  199:Generated_Source\PSoC4/CyLib.c ****                 freq = CY_SYS_CLK_IMO_MIN_FREQ_MHZ;
  200:Generated_Source\PSoC4/CyLib.c ****                 for(i = 0u; i < CY_SYS_CLK_IMO_FREQ_TABLE_SIZE; i++)
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 8
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 8
 
 
  201:Generated_Source\PSoC4/CyLib.c ****                 {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  255:Generated_Source\PSoC4/CyLib.c ****                 lfLimit += CY_SYS_CLK_WCO_CONFIG_DPLL_LF_LIMIT_STEP;
  256:Generated_Source\PSoC4/CyLib.c ****                 CY_SYS_CLK_WCO_DPLL_REG = (regTmp | (lfLimit << CY_SYS_CLK_WCO_CONFIG_DPLL_LF_LIMIT
  257:Generated_Source\PSoC4/CyLib.c ****             }
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 9
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 9
 
 
  258:Generated_Source\PSoC4/CyLib.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  312:Generated_Source\PSoC4/CyLib.c ****             #endif  /* (CY_IP_SRSSLT) */
  313:Generated_Source\PSoC4/CyLib.c **** 
  314:Generated_Source\PSoC4/CyLib.c ****         #endif  /* (CY_IP_SRSSV2) */
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 10
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 10
 
 
  315:Generated_Source\PSoC4/CyLib.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  369:Generated_Source\PSoC4/CyLib.c ****         #if (CY_IP_IMO_TRIMMABLE_BY_WCO && CY_IP_IMO_TRIMMABLE_BY_USB)
  370:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_OSCINTF_CTL_REG = (CY_SYS_CLK_OSCINTF_CTL_REG & (uint32) ~CY_SYS_CLK_OSCINTF
  371:Generated_Source\PSoC4/CyLib.c ****                                           CY_SYS_CLK_OSCINTF_CTL_PORT_SEL_USB;
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 11
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 11
 
 
  372:Generated_Source\PSoC4/CyLib.c ****         #endif /* (CY_IP_IMO_TRIMMABLE_BY_WCO && CY_IP_IMO_TRIMMABLE_BY_USB) */
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  426:Generated_Source\PSoC4/CyLib.c ****             CY_PWR_BG_TRIM5_REG = CySysClkImoTrim5;
  427:Generated_Source\PSoC4/CyLib.c **** 
  428:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_IMO_TRIM1_REG = CY_SFLASH_IMO_TRIM_REG(freq - CY_SYS_CLK_IMO_FREQ_TABLE_OFFS
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 12
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 12
 
 
  429:Generated_Source\PSoC4/CyLib.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  483:Generated_Source\PSoC4/CyLib.c ****     * Updates IMO trim registers based on the IMO frequency and test program
  484:Generated_Source\PSoC4/CyLib.c ****     * revision.
  485:Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 13
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 13
 
 
  486:Generated_Source\PSoC4/CyLib.c ****     *******************************************************************************/
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  540:Generated_Source\PSoC4/CyLib.c **** 
  541:Generated_Source\PSoC4/CyLib.c ****             /* Set IMO Gain in IMO Trim Register 4 */
  542:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_IMO_TRIM4_REG = (CY_SYS_CLK_IMO_TRIM4_REG & (uint32) ~CY_SYS_CLK_IMO_TRIM4_G
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 14
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 14
 
 
  543:Generated_Source\PSoC4/CyLib.c ****                                         CY_SFLASH_USBMODE_IMO_GAIN_TRIM_REG;
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  207 0004 00AF     		add	r7, sp, #0
  208              		.cfi_def_cfa_register 7
  209 0006 7860     		str	r0, [r7, #4]
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 15
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 15
 
 
  586:Generated_Source\PSoC4/CyLib.c ****     uint8  interruptState;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  628:Generated_Source\PSoC4/CyLib.c **** #if (CY_IP_SRSSV2 && CY_IP_PLL)
  629:Generated_Source\PSoC4/CyLib.c ****     if ((CY_SYS_CLK_HFCLK_PLL0 == clkSelect) || (CY_SYS_CLK_HFCLK_PLL1 == clkSelect))
  630:Generated_Source\PSoC4/CyLib.c ****     {
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 16
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 16
 
 
  631:Generated_Source\PSoC4/CyLib.c ****         tmpReg |= (clkSelect & CY_SYS_CLK_SELECT_HFCLK_SEL_MASK);
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  647:Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
  648:Generated_Source\PSoC4/CyLib.c **** *
  649:Generated_Source\PSoC4/CyLib.c **** * Enables / disables the pump clock.
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 17
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 17
 
 
  650:Generated_Source\PSoC4/CyLib.c **** *
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  677:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_SELECT_REG |= (CySysClkPumpConfig << CY_SYS_CLK_SELECT_PUMP_SEL_SHIFT);
  678:Generated_Source\PSoC4/CyLib.c ****         }
  679:Generated_Source\PSoC4/CyLib.c ****         else
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 18
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 18
 
 
  680:Generated_Source\PSoC4/CyLib.c ****         {
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  690:Generated_Source\PSoC4/CyLib.c **** * Function Name: CySysClkGetSysclkSource
  691:Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
  692:Generated_Source\PSoC4/CyLib.c **** *
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 19
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 19
 
 
  693:Generated_Source\PSoC4/CyLib.c **** * Returns the source of the System clock.
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  353              		.loc 1 722 0
  354 001a FB1D     		adds	r3, r7, #7
  355 001c 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 20
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 20
 
 
  356 001e 1800     		movs	r0, r3
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  752:Generated_Source\PSoC4/CyLib.c **** *  CY_SYS_CLK_SYSCLK_DIV8        SYSCLK = HFCLK / 8
  753:Generated_Source\PSoC4/CyLib.c **** *  CY_SYS_CLK_SYSCLK_DIV16       SYSCLK = HFCLK / 16  (N/A for 4000 Family)
  754:Generated_Source\PSoC4/CyLib.c **** *  CY_SYS_CLK_SYSCLK_DIV32       SYSCLK = HFCLK / 32  (N/A for 4000 Family)
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 21
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 21
 
 
  755:Generated_Source\PSoC4/CyLib.c **** *  CY_SYS_CLK_SYSCLK_DIV64       SYSCLK = HFCLK / 64  (N/A for 4000 Family)
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  417              		.loc 1 770 0
  418 002c 0F23     		movs	r3, #15
  419 002e FB18     		adds	r3, r7, r3
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 22
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 22
 
 
  420 0030 1B78     		ldrb	r3, [r3]
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  800:Generated_Source\PSoC4/CyLib.c **** * \ref CySysFlashSetWaitCycles() with the appropriate parameter to adjust the
  801:Generated_Source\PSoC4/CyLib.c **** * number of clock cycles the cache will wait before sampling data comes back
  802:Generated_Source\PSoC4/CyLib.c **** * from Flash. If the SYSCLK clock frequency decreases, you can call
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 23
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 23
 
 
  803:Generated_Source\PSoC4/CyLib.c **** * \ref CySysFlashSetWaitCycles() to improve the CPU performance. See
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  461 000a FC18     		adds	r4, r7, r3
  462 000c FFF7FEFF 		bl	CyEnterCriticalSection
  463 0010 0300     		movs	r3, r0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 24
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 24
 
 
  464 0012 2370     		strb	r3, [r4]
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  468 0018 00D8     		bhi	.LCB302
  469 001a AFE0     		b	.L24	@long jump
  470              	.LCB302:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 25
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 25
 
 
  471              		.loc 1 890 0 is_stmt 0 discriminator 1
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  515 0062 0E23     		movs	r3, #14
  516 0064 FB18     		adds	r3, r7, r3
  517 0066 1278     		ldrb	r2, [r2]
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 26
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 26
 
 
  518 0068 1A70     		strb	r2, [r3]
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  562 00b0 1A70     		strb	r2, [r3]
  563 00b2 09E0     		b	.L26
  564              	.L29:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 27
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 27
 
 
  911:Generated_Source\PSoC4/CyLib.c ****             }
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  934:Generated_Source\PSoC4/CyLib.c ****                 CY_SYS_CLK_IMO_TRIM2_REG = (uint32) cyImoFreqMhz2Reg[CY_SYS_CLK_IMO_TEMP_FREQ_MHZ -
  596              		.loc 1 934 0 is_stmt 1
  597 00e6 3B4B     		ldr	r3, .L35+60
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 28
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 28
 
 
  598 00e8 1922     		movs	r2, #25
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  958:Generated_Source\PSoC4/CyLib.c ****                 CY_SYS_CLK_IMO_TRIM2_REG = cyImoFreqMhz2Reg[freq - CY_SYS_CLK_IMO_FREQ_TABLE_OFFSET
  629              		.loc 1 958 0
  630 011c 2D4B     		ldr	r3, .L35+60
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 29
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 29
 
 
  631 011e 7A68     		ldr	r2, [r7, #4]
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  971:Generated_Source\PSoC4/CyLib.c ****                 CY_SYS_CLK_IMO_TRIM2_REG = cyImoFreqMhz2Reg[freq - CY_SYS_CLK_IMO_FREQ_TABLE_OFFSET
  673              		.loc 1 971 0
  674 0168 1A4B     		ldr	r3, .L35+60
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 30
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 30
 
 
  675 016a 7A68     		ldr	r2, [r7, #4]
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  701 0194 90BD     		pop	{r4, r7, pc}
  702              	.L36:
  703 0196 C046     		.align	2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 31
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 31
 
 
  704              	.L35:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1022:Generated_Source\PSoC4/CyLib.c ****                 (freq == 48u))
 1023:Generated_Source\PSoC4/CyLib.c ****         #endif /* (CY_PSOC4_4000) */
 1024:Generated_Source\PSoC4/CyLib.c ****         {
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 32
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 32
 
 
 1025:Generated_Source\PSoC4/CyLib.c ****             interruptState = CyEnterCriticalSection();
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1079:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_IMO_TRIM2_REG = CY_SYS_CLK_IMO_TRIM2_REG & ((uint32) ~CY_SYS_CLK_IMO_TRIM2_F
 1080:Generated_Source\PSoC4/CyLib.c **** 
 1081:Generated_Source\PSoC4/CyLib.c ****             /* Apply TC trim */
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 33
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 33
 
 
 1082:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_IMO_TRIM3_REG = (CY_SYS_CLK_IMO_TRIM3_REG & ((uint32) ~CY_SYS_CLK_IMO_TRIM3_
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1136:Generated_Source\PSoC4/CyLib.c ****     * input before use as HFCLK. The predivider is capable of dividing the HFCLK by
 1137:Generated_Source\PSoC4/CyLib.c ****     * powers of 2 between 1 and 8.
 1138:Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 34
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 34
 
 
 1139:Generated_Source\PSoC4/CyLib.c ****     * PSoC 4000: The SYSCLK has the speed of 16 MHz, so HFCLK and SYSCLK dividers
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1193:Generated_Source\PSoC4/CyLib.c ****     *
 1194:Generated_Source\PSoC4/CyLib.c ****     * \return \ref CYRET_TIMEOUT Timeout occurred. If the crystal is not oscillating
 1195:Generated_Source\PSoC4/CyLib.c ****     * or amplitude didn't reach 60% after specified amount of time, CYRET_TIMEOUT
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 35
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 35
 
 
 1196:Generated_Source\PSoC4/CyLib.c ****     * is returned.
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1215:Generated_Source\PSoC4/CyLib.c ****         #elif (CY_IP_ECO_BLESSV3)
 1216:Generated_Source\PSoC4/CyLib.c ****             uint32 regConfig;
 1217:Generated_Source\PSoC4/CyLib.c ****             uint32 intrRegMaskStore = 0u;
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 36
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 36
 
 
 1218:Generated_Source\PSoC4/CyLib.c **** 
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1272:Generated_Source\PSoC4/CyLib.c ****                     CY_SYS_BLESS_INTR_MASK_REG &= ~(CY_SYS_RCB_INTR_RCB_DONE | CY_SYS_RCB_INTR_RCB_
 1273:Generated_Source\PSoC4/CyLib.c ****                 }
 1274:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 37
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 37
 
 
 1275:Generated_Source\PSoC4/CyLib.c ****                 /* Send read commands to RBUS */
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1319:Generated_Source\PSoC4/CyLib.c ****             {
 1320:Generated_Source\PSoC4/CyLib.c ****                 CyDelayUs(1u);
  780              		.loc 1 1320 0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 38
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 38
 
 
  781 0038 0120     		movs	r0, #1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  821              		.section	.text.CySysClkEcoStop,"ax",%progbits
  822              		.align	2
  823              		.global	CySysClkEcoStop
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 39
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 39
 
 
  824              		.code	16
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1358:Generated_Source\PSoC4/CyLib.c ****         #endif /* (CY_IP_WCO_BLESS) */
 1359:Generated_Source\PSoC4/CyLib.c ****     }
  853              		.loc 1 1359 0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 40
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 40
 
 
  854 001c C046     		nop
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  885 0004 00AF     		add	r7, sp, #0
  886              		.cfi_def_cfa_register 7
 1383:Generated_Source\PSoC4/CyLib.c ****         uint32 returnValue;
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 41
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 41
 
 
 1384:Generated_Source\PSoC4/CyLib.c **** 
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1409:Generated_Source\PSoC4/CyLib.c ****         * The HFCLK source can be changed to the other clock source by call to the
 1410:Generated_Source\PSoC4/CyLib.c ****         * CySysClkWriteHfclkDirect() function. If the ECO sources the HFCLK this
 1411:Generated_Source\PSoC4/CyLib.c ****         * function will not have any effect if compiler in release mode, and halt the
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 42
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 42
 
 
 1412:Generated_Source\PSoC4/CyLib.c ****         * CPU when compiler in debug mode.
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  945 0022 7A68     		ldr	r2, [r7, #4]
  946 0024 0321     		movs	r1, #3
  947 0026 1140     		ands	r1, r2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 43
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 43
 
 
 1437:Generated_Source\PSoC4/CyLib.c ****                                                       (CY_SYS_CLK_XTAL_CLK_DIV_CONFIG_REG & ((uint3
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  990              	.LFB13:
 1447:Generated_Source\PSoC4/CyLib.c **** 
 1448:Generated_Source\PSoC4/CyLib.c ****     #else
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 44
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 44
 
 
 1449:Generated_Source\PSoC4/CyLib.c **** 
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1503:Generated_Source\PSoC4/CyLib.c ****         * - \ref CY_SYS_CLK_ECO_RTRIM1       24 MHz < Crystal frequency <= 30 MHz
 1504:Generated_Source\PSoC4/CyLib.c ****         * - \ref CY_SYS_CLK_ECO_RTRIM2       17 MHz < Crystal frequency <= 24 MHz
 1505:Generated_Source\PSoC4/CyLib.c ****         * - \ref CY_SYS_CLK_ECO_RTRIM3       Crystal frequency <= 17 MHz
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 45
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 45
 
 
 1506:Generated_Source\PSoC4/CyLib.c ****         *
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1560:Generated_Source\PSoC4/CyLib.c ****         *  amplitude level equals or above 2. In this case the amplitude is not
 1561:Generated_Source\PSoC4/CyLib.c ****         *  explicitly controlled and will grow until it saturates to the supply rail
 1562:Generated_Source\PSoC4/CyLib.c ****         *  (1.8V nom). WARNING: use care when disabling AGC because driving a crystal
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 46
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 46
 
 
 1563:Generated_Source\PSoC4/CyLib.c ****         *  beyond its rated limit can permanently damage the crystal.
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1617:Generated_Source\PSoC4/CyLib.c ****                 {
 1618:Generated_Source\PSoC4/CyLib.c ****                     aTrim = CY_SYS_CLK_ECO_ATRIM6;
 1619:Generated_Source\PSoC4/CyLib.c ****                 }
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 47
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 47
 
 
 1620:Generated_Source\PSoC4/CyLib.c ****                 else
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1674:Generated_Source\PSoC4/CyLib.c ****                 {
 1675:Generated_Source\PSoC4/CyLib.c ****                     /* The amplitude is not explicitly controlled and will grow until it saturates 
 1676:Generated_Source\PSoC4/CyLib.c ****                     * supply rail (1.8V nom).
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 48
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 48
 
 
 1677:Generated_Source\PSoC4/CyLib.c ****                     */
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1731:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_PLL_BASE.pll[pll].config &= (uint32) ~CY_SYS_CLK_PLL_CONFIG_ISOLATE;
 1732:Generated_Source\PSoC4/CyLib.c **** 
 1733:Generated_Source\PSoC4/CyLib.c ****             /* Enable PLL */
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 49
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 49
 
 
 1734:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_PLL_BASE.pll[pll].config |= CY_SYS_CLK_PLL_CONFIG_ENABLE;
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1788:Generated_Source\PSoC4/CyLib.c ****     {
 1789:Generated_Source\PSoC4/CyLib.c ****         uint8  interruptState;
 1790:Generated_Source\PSoC4/CyLib.c ****         uint32 returnStatus;
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 50
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 50
 
 
 1791:Generated_Source\PSoC4/CyLib.c **** 
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1845:Generated_Source\PSoC4/CyLib.c ****     *
 1846:Generated_Source\PSoC4/CyLib.c ****     * The PLL must not be the system clock source when calling this function. The
 1847:Generated_Source\PSoC4/CyLib.c ****     * PLL output will glitch during this function call.
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 51
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 51
 
 
 1848:Generated_Source\PSoC4/CyLib.c ****     *
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1902:Generated_Source\PSoC4/CyLib.c ****         return (returnStatus);
 1903:Generated_Source\PSoC4/CyLib.c ****     }
 1904:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 52
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 52
 
 
 1905:Generated_Source\PSoC4/CyLib.c **** 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 1959:Generated_Source\PSoC4/CyLib.c ****     *  Gets the bypass mode for the specified PLL.
 1960:Generated_Source\PSoC4/CyLib.c ****     *  This API is available only for PSoC 4200L / 4100S / 4500 with PLL devices.
 1961:Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 53
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 53
 
 
 1962:Generated_Source\PSoC4/CyLib.c ****     *  \return bypass: Bypass mode.
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2016:Generated_Source\PSoC4/CyLib.c ****         {
 2017:Generated_Source\PSoC4/CyLib.c ****             returnValue = CYRET_SUCCESS;
 2018:Generated_Source\PSoC4/CyLib.c ****         }
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 54
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 54
 
 
 2019:Generated_Source\PSoC4/CyLib.c **** 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2073:Generated_Source\PSoC4/CyLib.c ****     *  1   PLL#1 (available only for PSoC 4200L)
 2074:Generated_Source\PSoC4/CyLib.c ****     *
 2075:Generated_Source\PSoC4/CyLib.c ****     * \param inputFreq The reference frequency in KHz. The valid range is from 1000 to 49152 KHz.
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 55
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 55
 
 
 2076:Generated_Source\PSoC4/CyLib.c ****     *
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2130:Generated_Source\PSoC4/CyLib.c ****             {
 2131:Generated_Source\PSoC4/CyLib.c ****                 for(q = qMin; q <= qMax; q++)
 2132:Generated_Source\PSoC4/CyLib.c ****                 {
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 56
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 56
 
 
 2133:Generated_Source\PSoC4/CyLib.c ****                     /* Solve for the feedback divisor value */
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2187:Generated_Source\PSoC4/CyLib.c ****     *  CY_SYS_PLL_SOURCE_DSI1       DSI_OUT[1] (available only for PSoC 4200L)
 2188:Generated_Source\PSoC4/CyLib.c ****     *  CY_SYS_PLL_SOURCE_DSI2       DSI_OUT[2] (available only for PSoC 4200L)
 2189:Generated_Source\PSoC4/CyLib.c ****     *  CY_SYS_PLL_SOURCE_DSI3       DSI_OUT[3] (available only for PSoC 4200L)
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 57
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 57
 
 
 2190:Generated_Source\PSoC4/CyLib.c ****     *
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2244:Generated_Source\PSoC4/CyLib.c ****     *
 2245:Generated_Source\PSoC4/CyLib.c ****     *  This API is available only for PSoC 4200L / 4100S / 4500 with PLL devices.
 2246:Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 58
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 58
 
 
 2247:Generated_Source\PSoC4/CyLib.c ****     *  \param PLL:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2301:Generated_Source\PSoC4/CyLib.c ****         * \return A set bit indicates the source of the interrupt:
 2302:Generated_Source\PSoC4/CyLib.c ****         *  *CY_SYS_PLL_INTR_PLL_LOCK
 2303:Generated_Source\PSoC4/CyLib.c ****         *  *CY_SYS_PLL_INTR_WD_ERR
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 59
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 59
 
 
 2304:Generated_Source\PSoC4/CyLib.c ****         *  *CY_SYS_PLL_INTR_CSV_CLK_SW
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2358:Generated_Source\PSoC4/CyLib.c ****         *  This API sets the interrupt mask bit for the corresponding interrupts.
 2359:Generated_Source\PSoC4/CyLib.c ****         *
 2360:Generated_Source\PSoC4/CyLib.c ****         *  This API is available only for PSoC 4500 with PLL devices.
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 60
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 60
 
 
 2361:Generated_Source\PSoC4/CyLib.c ****         *
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2415:Generated_Source\PSoC4/CyLib.c **** 
 2416:Generated_Source\PSoC4/CyLib.c ****         /*******************************************************************************
 2417:Generated_Source\PSoC4/CyLib.c ****         * Function Name: CySysClkPllCsvEnable
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 61
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 61
 
 
 2418:Generated_Source\PSoC4/CyLib.c ****         ****************************************************************************//**
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2472:Generated_Source\PSoC4/CyLib.c ****         }
 2473:Generated_Source\PSoC4/CyLib.c **** 
 2474:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 62
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 62
 
 
 2475:Generated_Source\PSoC4/CyLib.c ****         /*******************************************************************************
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2529:Generated_Source\PSoC4/CyLib.c ****         *  This API sets the csv period time.
 2530:Generated_Source\PSoC4/CyLib.c ****         *
 2531:Generated_Source\PSoC4/CyLib.c ****         *  This API is available only for PSoC 4500 with PLL devices.
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 63
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 63
 
 
 2532:Generated_Source\PSoC4/CyLib.c ****         *
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2586:Generated_Source\PSoC4/CyLib.c ****             CY_SET_REG32_FIELD(CYREG_EXCO_RSTDLY_CTL, CYFLD_EXCO_EN, 0x1uL);
 2587:Generated_Source\PSoC4/CyLib.c ****         }
 2588:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 64
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 64
 
 
 2589:Generated_Source\PSoC4/CyLib.c **** 
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2643:Generated_Source\PSoC4/CyLib.c ****     *         Define                     Voltage threshold
 2644:Generated_Source\PSoC4/CyLib.c ****     *    CY_LVD_THRESHOLD_1_75_V       1.7500 V
 2645:Generated_Source\PSoC4/CyLib.c ****     *    CY_LVD_THRESHOLD_1_80_V       1.8000 V
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 65
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 65
 
 
 2646:Generated_Source\PSoC4/CyLib.c ****     *    CY_LVD_THRESHOLD_1_90_V       1.9000 V
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1021 0024 1E20     		movs	r0, #30
  1022 0026 0240     		ands	r2, r0
 2668:Generated_Source\PSoC4/CyLib.c ****                 ((threshold << CY_LVD_PWR_VMON_CONFIG_LVD_SEL_SHIFT) & CY_LVD_PWR_VMON_CONFIG_LVD_S
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 66
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 66
 
 
  1023              		.loc 1 2668 0
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1064              		.code	16
  1065              		.thumb_func
  1066              		.type	CySysLvdDisable, %function
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 67
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 67
 
 
  1067              	CySysLvdDisable:
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1107              		.align	2
  1108              		.global	CySysLvdGetInterruptSource
  1109              		.code	16
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 68
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 68
 
 
  1110              		.thumb_func
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1147              	CySysLvdClearInterrupt:
  1148              	.LFB16:
 2714:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 69
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 69
 
 
 2715:Generated_Source\PSoC4/CyLib.c **** 
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2735:Generated_Source\PSoC4/CyLib.c **** * Function Name: CySysGetResetReason
 2736:Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
 2737:Generated_Source\PSoC4/CyLib.c **** *
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 70
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 70
 
 
 2738:Generated_Source\PSoC4/CyLib.c **** *  Reports the cause for the latest reset(s) that occurred in the system. All
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2762:Generated_Source\PSoC4/CyLib.c **** }
  1213              		.loc 1 2762 0
  1214 0022 1800     		movs	r0, r3
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 71
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 71
 
 
  1215 0024 BD46     		mov	sp, r7
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2782:Generated_Source\PSoC4/CyLib.c ****     /* Disable all interrupts. */
 2783:Generated_Source\PSoC4/CyLib.c ****     CY_INT_CLEAR_REG = CY_INT_CLEAR_DISABLE_ALL;
  1250              		.loc 1 2783 0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 72
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 72
 
 
  1251 000c 044B     		ldr	r3, .L77
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1289              		.cfi_def_cfa_register 7
  1290 0006 7860     		str	r0, [r7, #4]
 2800:Generated_Source\PSoC4/CyLib.c ****     CY_INT_ENABLE_REG = mask;
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 73
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 73
 
 
  1291              		.loc 1 2800 0
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1321              		.cfi_def_cfa_offset 8
  1322              		.cfi_offset 7, -8
  1323              		.cfi_offset 14, -4
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 74
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 74
 
 
  1324 0002 84B0     		sub	sp, sp, #16
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1365 0042 BD46     		mov	sp, r7
  1366 0044 04B0     		add	sp, sp, #16
  1367              		@ sp needed
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 75
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 75
 
 
  1368 0046 80BD     		pop	{r7, pc}
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2861:Generated_Source\PSoC4/CyLib.c ****     CYASSERT(number < CY_INT_IRQ_BASE);
  1399              		.loc 1 2861 0
  1400 0012 FB1D     		adds	r3, r7, #7
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 76
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 76
 
 
  1401 0014 1B78     		ldrb	r3, [r3]
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1436 0000 80B5     		push	{r7, lr}
  1437              		.cfi_def_cfa_offset 8
  1438              		.cfi_offset 7, -8
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 77
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 77
 
 
  1439              		.cfi_offset 14, -4
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2893:Generated_Source\PSoC4/CyLib.c **** }
  1481              		.loc 1 2893 0
  1482 0044 1800     		movs	r0, r3
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 78
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 78
 
 
  1483 0046 BD46     		mov	sp, r7
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1519 0014 1B78     		ldrb	r3, [r3]
  1520 0016 1F2B     		cmp	r3, #31
  1521 0018 02D9     		bls	.L92
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 79
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 79
 
 
  1522              		.loc 1 2911 0 is_stmt 0 discriminator 1
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1560 0002 87B0     		sub	sp, sp, #28
  1561              		.cfi_def_cfa_offset 40
  1562 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 80
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 80
 
 
  1563              		.cfi_def_cfa_register 7
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1605 004c 9B08     		lsrs	r3, r3, #2
  1606 004e DBB2     		uxtb	r3, r3
  1607 0050 9B00     		lsls	r3, r3, #2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 81
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 81
 
 
  1608 0052 144A     		ldr	r2, .L97
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1656              	.L97:
  1657 00a4 00E400E0 		.word	-536812544
  1658              		.cfi_endproc
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 82
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 82
 
 
  1659              	.LFE24:
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2966:Generated_Source\PSoC4/CyLib.c ****     priority = (uint8) (CY_INT_PRIORITY_REG(number) >> CY_INT_PRIORITY_SHIFT(number));
  1693              		.loc 1 2966 0 is_stmt 1
  1694 001a FB1D     		adds	r3, r7, #7
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 83
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 83
 
 
  1695 001c 1B78     		ldrb	r3, [r3]
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2975:Generated_Source\PSoC4/CyLib.c **** *
 2976:Generated_Source\PSoC4/CyLib.c **** *  Enables the specified interrupt number.
 2977:Generated_Source\PSoC4/CyLib.c **** *
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 84
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 84
 
 
 2978:Generated_Source\PSoC4/CyLib.c **** *  \param number: Valid range [0-31].  Interrupt number
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 2986:Generated_Source\PSoC4/CyLib.c **** 
 2987:Generated_Source\PSoC4/CyLib.c **** /*******************************************************************************
 2988:Generated_Source\PSoC4/CyLib.c **** * Function Name: CyIntGetState
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 85
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 85
 
 
 2989:Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1826              	.LFE27:
  1827              		.size	CyIntGetState, .-CyIntGetState
  1828              		.section	.text.CyIntDisable,"ax",%progbits
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 86
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 86
 
 
  1829              		.align	2
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1868 0026 C046     		.align	2
  1869              	.L112:
  1870 0028 80E100E0 		.word	-536813184
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 87
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 87
 
 
  1871              		.cfi_endproc
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1911              		@ sp needed
  1912 0024 80BD     		pop	{r7, pc}
  1913              	.L116:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 88
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 88
 
 
  1914 0026 C046     		.align	2
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  1953              		.loc 1 3047 0
  1954 001e C046     		nop
  1955 0020 BD46     		mov	sp, r7
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 89
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 89
 
 
  1956 0022 02B0     		add	sp, sp, #8
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3069:Generated_Source\PSoC4/CyLib.c ****         __asm("    bkpt    1");
  1989              		.loc 1 3069 0
  1990              		.syntax divided
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 90
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 90
 
 
  1991              	@ 3069 "Generated_Source\PSoC4\CyLib.c" 1
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2025 0006 054A     		ldr	r2, .L122
  2026 0008 1268     		ldr	r2, [r2]
  2027 000a 1204     		lsls	r2, r2, #16
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 91
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 91
 
 
  2028 000c 120C     		lsrs	r2, r2, #16
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2066              		.cfi_def_cfa_register 7
  2067 0006 7860     		str	r0, [r7, #4]
 3105:Generated_Source\PSoC4/CyLib.c ****     while (milliseconds > CY_DELAY_MS_OVERFLOW)
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 92
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 92
 
 
  2068              		.loc 1 3105 0
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2111              		.section	.text.CyDelayUs,"ax",%progbits
  2112              		.align	2
  2113              		.global	CyDelayUs
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 93
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 93
 
 
  2114              		.code	16
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2154              		.size	CyDelayUs, .-CyDelayUs
  2155              		.global	__aeabi_uidiv
  2156              		.section	.text.CyDelayFreq,"ax",%progbits
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 94
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 94
 
 
  2157              		.align	2
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3149:Generated_Source\PSoC4/CyLib.c ****     }
 3150:Generated_Source\PSoC4/CyLib.c **** 
 3151:Generated_Source\PSoC4/CyLib.c ****     cydelayFreqMhz = (uint8)((cydelayFreqHz + CY_DELAY_1M_MINUS_1_THRESHOLD) / CY_DELAY_1M_THRESHOL
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 95
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 95
 
 
  2192              		.loc 1 3151 0
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2243              		.size	CyDelayFreq, .-CyDelayFreq
  2244              		.section	.text.CySysTickStart,"ax",%progbits
  2245              		.align	2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 96
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 96
 
 
  2246              		.global	CySysTickStart
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2274              		.loc 1 3180 0
  2275 0016 FFF7FEFF 		bl	CySysTickEnable
 3181:Generated_Source\PSoC4/CyLib.c **** }
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 97
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 97
 
 
  2276              		.loc 1 3181 0
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3204:Generated_Source\PSoC4/CyLib.c **** 
 3205:Generated_Source\PSoC4/CyLib.c ****     for (i = 0u; i<CY_SYS_SYST_NUM_OF_CALLBACKS; i++)
  2308              		.loc 1 3205 0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 98
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 98
 
 
  2309 0006 0023     		movs	r3, #0
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2348              		.loc 1 3218 0
  2349 004c C046     		nop
  2350 004e BD46     		mov	sp, r7
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 99
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 99
 
 
  2351 0050 02B0     		add	sp, sp, #8
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2389 0012 1A60     		str	r2, [r3]
 3235:Generated_Source\PSoC4/CyLib.c **** }
  2390              		.loc 1 3235 0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 100
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 100
 
 
  2391 0014 C046     		nop
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2429 0012 BD46     		mov	sp, r7
  2430              		@ sp needed
  2431 0014 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 101
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 101
 
 
  2432              	.L151:
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2470 0016 C046     		.align	2
  2471              	.L153:
  2472 0018 10E000E0 		.word	-536813552
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 102
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 102
 
 
  2473              		.cfi_endproc
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2511              	.LFE41:
  2512              		.size	CySysTickDisableInterrupt, .-CySysTickDisableInterrupt
  2513              		.section	.text.CySysTickSetReload,"ax",%progbits
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 103
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 103
 
 
  2514              		.align	2
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2551              	.LFE42:
  2552              		.size	CySysTickSetReload, .-CySysTickSetReload
  2553              		.section	.text.CySysTickGetReload,"ax",%progbits
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 104
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 104
 
 
  2554              		.align	2
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2592              		.thumb_func
  2593              		.type	CySysTickGetValue, %function
  2594              	CySysTickGetValue:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 105
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 105
 
 
  2595              	.LFB44:
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3335:Generated_Source\PSoC4/CyLib.c **** #if(CY_SYSTICK_LFCLK_SOURCE)
 3336:Generated_Source\PSoC4/CyLib.c ****     /*******************************************************************************
 3337:Generated_Source\PSoC4/CyLib.c ****     * Function Name: CySysTickSetClockSource
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 106
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 106
 
 
 3338:Generated_Source\PSoC4/CyLib.c ****     ****************************************************************************//**
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3368:Generated_Source\PSoC4/CyLib.c ****         {
 3369:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_SYST_CSR_REG &= ((uint32) ~((uint32)(CY_SYS_SYST_CSR_CLK_SRC_SYSCLK << CY_SYS_SY
 3370:Generated_Source\PSoC4/CyLib.c ****         }
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 107
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 107
 
 
 3371:Generated_Source\PSoC4/CyLib.c ****     }
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2691 0000 80B5     		push	{r7, lr}
  2692              		.cfi_def_cfa_offset 8
  2693              		.cfi_offset 7, -8
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 108
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 108
 
 
  2694              		.cfi_offset 14, -4
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2725              		@ args = 0, pretend = 0, frame = 0
  2726              		@ frame_needed = 1, uses_anonymous_args = 0
  2727 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 109
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 109
 
 
  2728              		.cfi_def_cfa_offset 8
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3424:Generated_Source\PSoC4/CyLib.c ****     CY_SYS_SYST_CVR_REG = 0u;
  2769              		.loc 1 3424 0
  2770 0004 024B     		ldr	r3, .L184
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 110
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 110
 
 
  2771 0006 0022     		movs	r2, #0
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3457:Generated_Source\PSoC4/CyLib.c **** cySysTickCallback CySysTickSetCallback(uint32 number, cySysTickCallback function)
 3458:Generated_Source\PSoC4/CyLib.c **** {
  2793              		.loc 1 3458 0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 111
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 111
 
 
  2794              		.cfi_startproc
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3465:Generated_Source\PSoC4/CyLib.c **** 
 3466:Generated_Source\PSoC4/CyLib.c **** 
 3467:Generated_Source\PSoC4/CyLib.c **** /*******************************************************************************
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 112
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 112
 
 
 3468:Generated_Source\PSoC4/CyLib.c **** * Function Name: CySysTickGetCallback
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2879              	.LFB51:
 3485:Generated_Source\PSoC4/CyLib.c **** 
 3486:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 113
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 113
 
 
 3487:Generated_Source\PSoC4/CyLib.c **** /*******************************************************************************
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2915              	.L197:
 3501:Generated_Source\PSoC4/CyLib.c ****         {
  2916              		.loc 1 3501 0 discriminator 2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 114
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 114
 
 
  2917 002c 7B68     		ldr	r3, [r7, #4]
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2948              		.cfi_startproc
  2949              		@ args = 0, pretend = 0, frame = 8
  2950              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 115
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 115
 
 
  2951 0000 80B5     		push	{r7, lr}
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  2998 004a 7B68     		ldr	r3, [r7, #4]
  2999 004c 0433     		adds	r3, r3, #4
  3000 004e 184A     		ldr	r2, .L203+16
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 116
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 116
 
 
  3001 0050 1278     		ldrb	r2, [r2]
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3040              		.loc 1 3549 0
  3041 0098 C046     		nop
  3042 009a BD46     		mov	sp, r7
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 117
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 117
 
 
  3043 009c 02B0     		add	sp, sp, #8
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3074              		.cfi_offset 7, -8
  3075              		.cfi_offset 14, -4
  3076 0002 84B0     		sub	sp, sp, #16
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 118
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 118
 
 
  3077              		.cfi_def_cfa_offset 24
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3582:Generated_Source\PSoC4/CyLib.c ****     * Function Name: CySysSetFlashAccessArbPriority
 3583:Generated_Source\PSoC4/CyLib.c ****     ****************************************************************************//**
 3584:Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 119
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 119
 
 
 3585:Generated_Source\PSoC4/CyLib.c ****     *  Sets flash access priority between CPU and DMA. The FLASH_CTL register is
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3154              		.loc 1 3606 0
  3155 0028 C046     		nop
  3156 002a BD46     		mov	sp, r7
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 120
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 120
 
 
  3157 002c 04B0     		add	sp, sp, #16
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3629:Generated_Source\PSoC4/CyLib.c ****         uint32 regTmp;
 3630:Generated_Source\PSoC4/CyLib.c **** 
 3631:Generated_Source\PSoC4/CyLib.c ****         regTmp  = CY_SYS_CPUSS_DMAC_CTL_REG & ~CY_SYS_CPUSS_DMAC_CTL_ARB_MASK;
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 121
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 121
 
 
  3189              		.loc 1 3631 0
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
 3645:Generated_Source\PSoC4/CyLib.c ****     *  This API is applicable for PSoC 4200M / PSoC 4200L / 4100S with
 3646:Generated_Source\PSoC4/CyLib.c ****     *  DMA devices only.
 3647:Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 122
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 122
 
 
 3648:Generated_Source\PSoC4/CyLib.c ****     *  \param  interfaceNumber: the slave interface number. Please refer to the
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3266 002e 1A60     		str	r2, [r3]
 3666:Generated_Source\PSoC4/CyLib.c ****         } else
 3667:Generated_Source\PSoC4/CyLib.c ****     #if (CY_IP_SL_NR >= 2)
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 123
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 123
 
 
 3668:Generated_Source\PSoC4/CyLib.c ****         if (interfaceNumber == 1u)
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3296              		.loc 1 3676 0
  3297 005a 7B68     		ldr	r3, [r7, #4]
  3298 005c 022B     		cmp	r3, #2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 124
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 124
 
 
  3299 005e 10D1     		bne	.L218
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3349 0004 0400     		.2byte	0x4
  3350 0006 00000000 		.4byte	.Ldebug_abbrev0
  3351 000a 04       		.byte	0x4
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 125
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 125
 
 
  3352 000b 01       		.uleb128 0x1
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3406 0078 17000000 		.4byte	.LASF10
  3407 007c 02       		.byte	0x2
  3408 007d FC01     		.2byte	0x1fc
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 126
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 126
 
 
  3409 007f 3A000000 		.4byte	0x3a
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3463 00f3 04       		.uleb128 0x4
  3464 00f4 48050000 		.4byte	.LASF21
  3465 00f8 03       		.byte	0x3
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 127
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 127
 
 
  3466 00f9 0801     		.2byte	0x108
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3520 016a 01       		.byte	0x1
  3521 016b 9502     		.2byte	0x295
  3522 016d 00000000 		.4byte	.LFB5
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 128
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 128
 
 
  3523 0171 50000000 		.4byte	.LFE5-.LFB5
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3577 01e6 02       		.uleb128 0x2
  3578 01e7 91       		.byte	0x91
  3579 01e8 64       		.sleb128 -28
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 129
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 129
 
 
  3580 01e9 0B       		.uleb128 0xb
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3634 0253 6B000000 		.4byte	0x6b
  3635 0257 02       		.uleb128 0x2
  3636 0258 91       		.byte	0x91
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 130
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 130
 
 
  3637 0259 6D       		.sleb128 -19
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3691 02cb DF020000 		.4byte	0x2df
  3692 02cf 0B       		.uleb128 0xb
  3693 02d0 BB070000 		.4byte	.LASF45
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 131
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 131
 
 
  3694 02d4 01       		.byte	0x1
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3748 0340 840A     		.2byte	0xa84
  3749 0342 00000000 		.4byte	.LFB14
  3750 0346 2C000000 		.4byte	.LFE14-.LFB14
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 132
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 132
 
 
  3751 034a 01       		.uleb128 0x1
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3805 03c2 9C       		.byte	0x9c
  3806 03c3 D7030000 		.4byte	0x3d7
  3807 03c7 0B       		.uleb128 0xb
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 133
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 133
 
 
  3808 03c8 1E000000 		.4byte	.LASF54
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3862 043a 01       		.byte	0x1
  3863 043b 090B     		.2byte	0xb09
  3864 043d D2000000 		.4byte	0xd2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 134
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 134
 
 
  3865 0441 02       		.uleb128 0x2
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3919 04b2 01       		.byte	0x1
  3920 04b3 3F0B     		.2byte	0xb3f
  3921 04b5 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 135
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 135
 
 
  3922 04b9 02       		.uleb128 0x2
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  3976 0522 00       		.byte	0
  3977 0523 09       		.uleb128 0x9
  3978 0524 22050000 		.4byte	.LASF65
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 136
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 136
 
 
  3979 0528 01       		.byte	0x1
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4033 0595 58000000 		.4byte	.LFE25-.LFB25
  4034 0599 01       		.uleb128 0x1
  4035 059a 9C       		.byte	0x9c
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 137
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 137
 
 
  4036 059b BE050000 		.4byte	0x5be
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4090 060d 00       		.byte	0
  4091 060e 0C       		.uleb128 0xc
  4092 060f 56010000 		.4byte	.LASF72
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 138
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 138
 
 
  4093 0613 01       		.byte	0x1
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4147 0685 01       		.byte	0x1
  4148 0686 F30B     		.2byte	0xbf3
  4149 0688 00000000 		.4byte	.LFB31
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 139
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 139
 
 
  4150 068c 16000000 		.4byte	.LFE31-.LFB31
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4204 0701 91       		.byte	0x91
  4205 0702 76       		.sleb128 -10
  4206 0703 00       		.byte	0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 140
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 140
 
 
  4207 0704 09       		.uleb128 0x9
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4261 0777 01       		.byte	0x1
  4262 0778 B00C     		.2byte	0xcb0
  4263 077a 00000000 		.4byte	.LFB39
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 141
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 141
 
 
  4264 077e 1C000000 		.4byte	.LFE39-.LFB39
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4318 07f9 9C       		.byte	0x9c
  4319 07fa 0C       		.uleb128 0xc
  4320 07fb EB020000 		.4byte	.LASF92
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 142
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 142
 
 
  4321 07ff 01       		.byte	0x1
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4375 087d 01       		.byte	0x1
  4376 087e 810D     		.2byte	0xd81
  4377 0880 83000000 		.4byte	0x83
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 143
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 143
 
 
  4378 0884 02       		.uleb128 0x2
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4432 08f1 91       		.byte	0x91
  4433 08f2 74       		.sleb128 -12
  4434 08f3 00       		.byte	0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 144
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 144
 
 
  4435 08f4 0C       		.uleb128 0xc
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4489 0966 9C       		.byte	0x9c
  4490 0967 8A090000 		.4byte	0x98a
  4491 096b 0A       		.uleb128 0xa
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 145
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 145
 
 
  4492 096c 2D040000 		.4byte	.LASF104
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4546 09db 490E     		.2byte	0xe49
  4547 09dd 83000000 		.4byte	0x83
  4548 09e1 02       		.uleb128 0x2
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 146
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 146
 
 
  4549 09e2 91       		.byte	0x91
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4603 0a4d 6B000000 		.4byte	0x6b
  4604 0a51 05       		.uleb128 0x5
  4605 0a52 03       		.byte	0x3
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 147
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 147
 
 
  4606 0a53 00000000 		.4byte	cydelayFreqMhz
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4660 0007 03       		.uleb128 0x3
  4661 0008 0E       		.uleb128 0xe
  4662 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 148
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 148
 
 
  4663 000a 0E       		.uleb128 0xe
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4717 0040 0B       		.uleb128 0xb
  4718 0041 0B       		.uleb128 0xb
  4719 0042 49       		.uleb128 0x49
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 149
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 149
 
 
  4720 0043 13       		.uleb128 0x13
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4774 007b 01       		.uleb128 0x1
  4775 007c 13       		.uleb128 0x13
  4776 007d 00       		.byte	0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 150
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 150
 
 
  4777 007e 00       		.byte	0
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4831 00b5 00       		.byte	0
  4832 00b6 00       		.byte	0
  4833 00b7 0D       		.uleb128 0xd
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 151
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 151
 
 
  4834 00b8 2E       		.uleb128 0x2e
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4888 00f0 03       		.uleb128 0x3
  4889 00f1 0E       		.uleb128 0xe
  4890 00f2 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 152
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 152
 
 
  4891 00f3 0B       		.uleb128 0xb
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  4945 012b 05       		.uleb128 0x5
  4946 012c 27       		.uleb128 0x27
  4947 012d 19       		.uleb128 0x19
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 153
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 153
 
 
  4948 012e 11       		.uleb128 0x11
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5002 0166 13       		.uleb128 0x13
  5003 0167 00       		.byte	0
  5004 0168 00       		.byte	0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 154
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 154
 
 
  5005 0169 15       		.uleb128 0x15
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5059 000b 00       		.byte	0
  5060 000c 0000     		.2byte	0
  5061 000e 0000     		.2byte	0
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 155
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 155
 
 
  5062 0010 00000000 		.4byte	.LFB2
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5116 00e8 00000000 		.4byte	.LFB29
  5117 00ec 2C000000 		.4byte	.LFE29-.LFB29
  5118 00f0 00000000 		.4byte	.LFB30
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 156
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 156
 
 
  5119 00f4 2C000000 		.4byte	.LFE30-.LFB30
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5173 01cc 00000000 		.4byte	0
  5174              		.section	.debug_ranges,"",%progbits
  5175              	.Ldebug_ranges0:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 157
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 157
 
 
  5176 0000 00000000 		.4byte	.LFB2
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5230 00d8 00000000 		.4byte	.LFB29
  5231 00dc 2C000000 		.4byte	.LFE29
  5232 00e0 00000000 		.4byte	.LFB30
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 158
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 158
 
 
  5233 00e4 2C000000 		.4byte	.LFE30
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5287 01bc 00000000 		.4byte	0
  5288              		.section	.debug_line,"",%progbits
  5289              	.Ldebug_line0:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 159
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 159
 
 
  5290 0000 79050000 		.section	.debug_str,"MS",%progbits,1
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5312      65642069 
  5313              	.LASF115:
  5314 009b 43795379 		.ascii	"CySysTickInitVar\000"
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 160
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 160
 
 
  5314      73546963 
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5336      6B476574 
  5336      52656C6F 
  5336      616400
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 161
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 161
 
 
  5337              	.LASF4:
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5362      7973636C 
  5362      6B536F75 
  5363              	.LASF69:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 162
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 162
 
 
  5364 01f2 4379496E 		.ascii	"CyIntGetPriority\000"
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5384      72757074 
  5385              	.LASF23:
  5386 029d 43795379 		.ascii	"CySysClkImoStop\000"
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 163
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 163
 
 
  5386      73436C6B 
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5407      20726576 
  5407      6973696F 
  5407      6E203233 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 164
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 164
 
 
  5407      37373135 
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5428      6E64696E 
  5428      6700
  5429              	.LASF19:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 165
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 165
 
 
  5430 0473 6C6F6E67 		.ascii	"long double\000"
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5451      7400
  5452              	.LASF47:
  5453 0539 43795379 		.ascii	"CySysLvdEnable\000"
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 166
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 166
 
 
  5453      734C7664 
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5476              	.LASF28:
  5477 05df 636C6B53 		.ascii	"clkSelect\000"
  5477      656C6563 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 167
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 167
 
 
  5477      7400
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5501      73546963 
  5501      6B476574 
  5501      436C6F63 
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 168
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 168
 
 
  5501      6B536F75 
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 1
  5523      74617274 
  5523      00
  5524              	.LASF37:
-ARM GAS  C:\Users\semen\AppData\Local\Temp\ccvsjy9O.s 			page 169
+ARM GAS  C:\Users\semen\AppData\Local\Temp\ccugbw69.s 			page 169
 
 
  5525 074a 6E657749 		.ascii	"newImoTrim2Value\000"

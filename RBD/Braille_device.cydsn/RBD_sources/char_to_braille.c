@@ -168,17 +168,6 @@
     }
 };    
 
-    void text_to_lcd_braille(char ch, uint8_t* braille_ch){        
-        uint8_t first_row = braille_table[ch].left;
-        uint8_t second_row = braille_table[ch].right;
-        
-        for (int i=0; i<8; i++){
-            braille_ch[i] = dots[first_row].glyphs[i] | (dots[second_row].glyphs[i] >> 3);
-        }
-
-        
-    }
-    
     void test_text_to_lcd_braille(uint8_t num, uint8_t* braille_ch){        
         
         for (int i=0; i<8; i++){

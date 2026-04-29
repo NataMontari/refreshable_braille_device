@@ -21,29 +21,7 @@
 // Create an instance (optional global)
     void MotorController_Init(MotorController* motor)
     {
-        /*int steps = 110*MOTOR_STEP;
-        MOTOR_1_DIR_Write(1);
-        MOTOR_2_DIR_Write(0);
-        for(int i=0; i<steps; i++){
-            MOTOR_1_STEP_Write(1);
-            MOTOR_2_STEP_Write(1);
-            CyDelay(1);
-            MOTOR_1_STEP_Write(0);
-            MOTOR_2_STEP_Write(0);
-        };*/
 
-        /*set each rail using motor2 and light sensor*/
-        /*MOTOR_1_DIR_Write(0);
-        MOTOR_2_DIR_Write(0);
-        for(int i=0; i<steps; i++){
-            MOTOR_1_STEP_Write(1);
-            MOTOR_2_STEP_Write(1);
-            CyDelay(1);
-            MOTOR_1_STEP_Write(0);
-            MOTOR_2_STEP_Write(0);
-        };
-        */
-        
         motor->rail_pos=0;
         motor->cell_pos=0;
         for (int i = 0; i<60; i++){
@@ -71,17 +49,13 @@
         MotorController_SetCell(motor, first);
 
         // Move to second rail (relative move!)
-        //CyDelay(1000);
         MotorController_SetNextRail(motor, 1);
-        //CyDelay(1000);
 
         // Second rail
         MotorController_SetCell(motor, second);
-        //CyDelay(1000);
     
         // Move to next symbol start
         MotorController_SetNextSymbol(motor, 1);
-        //CyDelay(1000);
 
         MOTORS_EN_Write(1);
     } /*set a symbol, referencing the char to braille table. Uses set rail to set the position of two rails in a symbol*/
