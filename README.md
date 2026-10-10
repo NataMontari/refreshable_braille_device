@@ -1,4 +1,4 @@
-# Refreshable Braille Display
+# Refreshable Braille Display Update
 This project offers a software implementation for a mechanical prototype that converts text to Braille.
 
 It was designed in PSoC Creator 4.4 for PSoC 4 CY8C4248LQI-BL583 kit.
